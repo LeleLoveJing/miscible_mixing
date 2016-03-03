@@ -116,8 +116,8 @@
 
       VectorTools::interpolate_boundary_values (dof_handler_velocity,
                                                 0,
-																																																ZeroFunction<dim>(dim),
-																																																constraints_velocity);
+                                                ZeroFunction<dim>(dim),
+                                                constraints_velocity);
 
       DoFTools::make_periodicity_constraints (dof_handler_velocity,
                                               8, 9,
@@ -132,14 +132,14 @@
 
       if (dim == 3 && parameters.is_symmetry_boundary == true)
       {
-      	 ComponentMask symmetric_bnd_velocity (dim, false);
+        ComponentMask symmetric_bnd_velocity (dim, false);
         symmetric_bnd_velocity.set (parameters.depth_direction, true);
 
         VectorTools::interpolate_boundary_values (dof_handler_velocity,
                                                   6,
-																																																  ZeroFunction<dim>(dim),
-																																																  constraints_velocity,
-																																																  symmetric_bnd_velocity);
+                                                  ZeroFunction<dim>(dim),
+                                                  constraints_velocity,
+                                                  symmetric_bnd_velocity);
       }
       constraints_velocity.close ();
     }
@@ -232,104 +232,104 @@
     DoFTools::make_hanging_node_constraints (dof_handler_auxilary,
                                              constraints_auxilary);
 
-    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) ==	0
-								&&
-							 parameters.domain_boundary[1] == 5
-								&&
-							 parameters.ist_pressure_boundary == 1)
+    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) == 0
+        &&
+        parameters.domain_boundary[1] == 5
+        &&
+        parameters.ist_pressure_boundary == 1)
     {
-						std::set<types::boundary_id> boundary_set;
-						boundary_set.insert(parameters.domain_boundary[0]);
-						IndexSet selected_dofs (dof_handler_auxilary.n_dofs());
-						ComponentMask selected_component (1, true);
-						DoFTools::extract_boundary_dofs (dof_handler_auxilary,
-																																							selected_component,
-																																							selected_dofs,
-																																							boundary_set);
+      std::set<types::boundary_id> boundary_set;
+      boundary_set.insert(parameters.domain_boundary[0]);
+      IndexSet selected_dofs (dof_handler_auxilary.n_dofs());
+      ComponentMask selected_component (1, true);
+      DoFTools::extract_boundary_dofs (dof_handler_auxilary,
+                                       selected_component,
+                                       selected_dofs,
+                                       boundary_set);
 
-						pcout << "selected_dofs.n_elements()  = " << selected_dofs.n_elements() << std::endl;
+      pcout << "selected_dofs.n_elements()  = " << selected_dofs.n_elements() << std::endl;
 
-						Assert(selected_dofs.n_elements() > 0,
-													ExcMessage ("No extract boundary dofs.."));
+      Assert(selected_dofs.n_elements() > 0,
+             ExcMessage ("No extract boundary dofs.."));
 
-						std::vector<bool> boundary_dofs (dof_handler_auxilary.n_dofs(), true);
+      std::vector<bool> boundary_dofs (dof_handler_auxilary.n_dofs(), true);
 
-						types::global_dof_index first_boundary_dof = numbers::invalid_unsigned_int;
+      types::global_dof_index first_boundary_dof = numbers::invalid_unsigned_int;
 
-						for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-						if (selected_dofs.is_element(i) == true)
-						{
-								first_boundary_dof = i;
-								break;
-						}
+      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
+      if (selected_dofs.is_element(i) == true)
+      {
+        first_boundary_dof = i;
+        break;
+      }
 
-						pcout << "first_boundary_dof = " << first_boundary_dof << std::endl;
+      pcout << "first_boundary_dof = " << first_boundary_dof << std::endl;
 
-						constraints_auxilary.add_line (first_boundary_dof);
-						for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-							if (selected_dofs.is_element(i) == true && i != first_boundary_dof)
-						{
-								constraints_auxilary.add_entry (first_boundary_dof, i, -1);
-						}
+      constraints_auxilary.add_line (first_boundary_dof);
+      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
+       if (selected_dofs.is_element(i) == true && i != first_boundary_dof)
+      {
+        constraints_auxilary.add_entry (first_boundary_dof, i, -1);
+      }
     }
 
-//    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) ==
-//								Utilities::MPI::n_mpi_processes(MPI_COMM_WORLD) - 1
-//								&&
-//							 parameters.domain_boundary[1] == 4
-//								&&
-//							 parameters.ist_pressure_boundary == 1)
-    if (parameters.domain_boundary[1] == 4
-								&&
-							 parameters.ist_pressure_boundary == 1)
+    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) ==
+        Utilities::MPI::n_mpi_processes(MPI_COMM_WORLD) - 1
+        &&
+        parameters.domain_boundary[1] == 4
+        &&
+        parameters.ist_pressure_boundary == 1)
+//    if (parameters.domain_boundary[1] == 4
+//        &&
+//        parameters.ist_pressure_boundary == 1)
     {
-						std::set<types::boundary_id> boundary_set;
-						boundary_set.insert(parameters.domain_boundary[1]);
-						IndexSet selected_dofs (dof_handler_auxilary.n_dofs());
-						ComponentMask selected_component (1, true);
-						DoFTools::extract_boundary_dofs (dof_handler_auxilary,
-																																							selected_component,
-																																							selected_dofs,
-																																							boundary_set);
+      std::set<types::boundary_id> boundary_set;
+      boundary_set.insert(parameters.domain_boundary[1]);
+      IndexSet selected_dofs (dof_handler_auxilary.n_dofs());
+      ComponentMask selected_component (1, true);
+      DoFTools::extract_boundary_dofs (dof_handler_auxilary,
+                                       selected_component,
+                                       selected_dofs,
+                                       boundary_set);
 
-						pcout << "selected_dofs.n_elements()  = " << selected_dofs.n_elements() << std::endl;
+      pcout << "selected_dofs.n_elements()  = " << selected_dofs.n_elements() << std::endl;
 
-						Assert(selected_dofs.n_elements() > 0,
-													ExcMessage ("No extract boundary dofs.."));
+      Assert(selected_dofs.n_elements() > 0,
+             ExcMessage ("No extract boundary dofs.."));
 
-						std::vector<bool> boundary_dofs (dof_handler_auxilary.n_dofs(), true);
+      std::vector<bool> boundary_dofs (dof_handler_auxilary.n_dofs(), true);
 
-						types::global_dof_index first_boundary_dof = numbers::invalid_unsigned_int;
+      types::global_dof_index first_boundary_dof = numbers::invalid_unsigned_int;
 
-						for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-						if (selected_dofs.is_element(i) == true)
-						{
-								first_boundary_dof = i;
-								break;
-						}
+      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
+      if (selected_dofs.is_element(i) == true)
+      {
+        first_boundary_dof = i;
+        break;
+      }
 
-						pcout << "first_boundary_dof = " << first_boundary_dof << std::endl;
+      pcout << "first_boundary_dof = " << first_boundary_dof << std::endl;
 
-						constraints_auxilary.add_line (first_boundary_dof);
-						for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-							if (selected_dofs.is_element(i) == true && i != first_boundary_dof)
-						{
-								constraints_auxilary.add_entry (first_boundary_dof, i, -1);
-						}
+      constraints_auxilary.add_line (first_boundary_dof);
+      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
+       if (selected_dofs.is_element(i) == true && i != first_boundary_dof)
+      {
+        constraints_auxilary.add_entry (first_boundary_dof, i, -1);
+      }
     }
 
-				if (parameters.ist_pressure_boundary == 0)
-				{
-						VectorTools::interpolate_boundary_values (dof_handler_auxilary,
-																																																4,
-																																																ZeroFunction<dim>(1),
-																																																constraints_auxilary);
+    if (parameters.ist_pressure_boundary == 0)
+    {
+      VectorTools::interpolate_boundary_values (dof_handler_auxilary,
+                                                4,
+                                                ZeroFunction<dim>(1),
+                                                constraints_auxilary);
 
-						VectorTools::interpolate_boundary_values (dof_handler_auxilary,
-																																																5,
-																																																ZeroFunction<dim>(1),
-																																																constraints_auxilary);
-				}
+      VectorTools::interpolate_boundary_values (dof_handler_auxilary,
+                                                5,
+                                                ZeroFunction<dim>(1),
+                                                constraints_auxilary);
+    }
      
     constraints_auxilary.close ();
 
