@@ -273,15 +273,15 @@
       }
     }
 
-    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) ==
-        Utilities::MPI::n_mpi_processes(MPI_COMM_WORLD) - 1
-        &&
-        parameters.domain_boundary[1] == 4
-        &&
-        parameters.ist_pressure_boundary == 1)
-//    if (parameters.domain_boundary[1] == 4
+//    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) ==
+//        Utilities::MPI::n_mpi_processes(MPI_COMM_WORLD) - 1
+//        &&
+//        parameters.domain_boundary[1] == 4
 //        &&
 //        parameters.ist_pressure_boundary == 1)
+    if (parameters.domain_boundary[1] == 4
+        &&
+        parameters.ist_pressure_boundary == 1)
     {
       std::set<types::boundary_id> boundary_set;
       boundary_set.insert(parameters.domain_boundary[1]);
