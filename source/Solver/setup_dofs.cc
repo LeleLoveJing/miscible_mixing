@@ -199,6 +199,11 @@
                                                   constraints_pressure);
       }
      
+      DoFTools::make_periodicity_constraints (dof_handler_pressure,
+                                              8, 9,
+                                              parameters.flow_direction,
+                                              constraints_pressure);
+
       constraints_pressure.close ();
     }
 
@@ -232,89 +237,83 @@
     DoFTools::make_hanging_node_constraints (dof_handler_auxilary,
                                              constraints_auxilary);
 
-    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) == 0
-        &&
-        parameters.domain_boundary[1] == 5
-        &&
-        parameters.ist_pressure_boundary == 1)
+    if (parameters.ist_pressure_boundary == 1)
     {
-      std::set<types::boundary_id> boundary_set;
-      boundary_set.insert(parameters.domain_boundary[0]);
-      IndexSet selected_dofs (dof_handler_auxilary.n_dofs());
-      ComponentMask selected_component (1, true);
-      DoFTools::extract_boundary_dofs (dof_handler_auxilary,
-                                       selected_component,
-                                       selected_dofs,
-                                       boundary_set);
-
-      pcout << "selected_dofs.n_elements()  = " << selected_dofs.n_elements() << std::endl;
-
-      Assert(selected_dofs.n_elements() > 0,
-             ExcMessage ("No extract boundary dofs.."));
-
-      std::vector<bool> boundary_dofs (dof_handler_auxilary.n_dofs(), true);
-
-      types::global_dof_index first_boundary_dof = numbers::invalid_unsigned_int;
-
-      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-      if (selected_dofs.is_element(i) == true)
+      if (parameters.domain_boundary[1] == 4 ||
+          parameters.domain_boundary[1] == 9)
       {
-        first_boundary_dof = i;
-        break;
+
+        std::set<types::boundary_id> boundary_set;
+        boundary_set.insert(parameters.domain_boundary[1]);
+        IndexSet boundary_dofs (dof_handler_auxilary.n_dofs());
+        DoFTools::extract_boundary_dofs (dof_handler_auxilary,
+                                         ComponentMask(),
+                                         boundary_dofs,
+                                         boundary_set);
+
+//        std::cout << "selected_dofs.n_elements()  = " << Utilities::MPI::this_mpi_process(MPI_COMM_WORLD)
+//                                                      << ", "
+//                                                      << boundary_dofs.n_elements() << std::endl;
+//        std::cout << "is_contiguous() = " << Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) << ", " << boundary_dofs.is_contiguous() << std::endl;
+
+        IndexSet::ElementIterator boundary_begin = boundary_dofs.begin(),
+                                  boundary_end   = boundary_dofs.end();
+
+//        unsigned int nth_first_dof = 0;
+//        for (; boundary_begin != boundary_end; ++boundary_begin, ++nth_first_dof)
+//          std::cout << "check index to global_dofs = " << Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) << ", "
+//          << nth_first_dof << ", " << *boundary_begin << std::endl;
+
+        // To-Do
+        if (boundary_dofs.n_elements() > 0)
+        {
+          IndexSet::ElementIterator boundary_begin1 = boundary_dofs.begin(),
+                                    boundary_end1   = boundary_dofs.end();
+
+          types::global_dof_index first_boundary_dof = *boundary_begin1;
+          constraints_auxilary.add_line (first_boundary_dof);
+//          std::cout << " first_boundary_dof = " << Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) << ", "
+//                                                << first_boundary_dof << std::endl;
+          ++boundary_begin1;
+          for (; boundary_begin1 != boundary_end1; ++boundary_begin1)
+          {
+//            std::cout << " *boundary_begin1 = " << Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) << ", "
+//                                                << *boundary_begin1 << std::endl;
+            constraints_auxilary.add_entry (first_boundary_dof, *boundary_begin1, -1);
+          }
+        }
       }
 
-      pcout << "first_boundary_dof = " << first_boundary_dof << std::endl;
-
-      constraints_auxilary.add_line (first_boundary_dof);
-      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-       if (selected_dofs.is_element(i) == true && i != first_boundary_dof)
+      if (parameters.domain_boundary[0] == 5 ||
+          parameters.domain_boundary[0] == 8)
       {
-        constraints_auxilary.add_entry (first_boundary_dof, i, -1);
-      }
-    }
 
-//    if (Utilities::MPI::this_mpi_process(MPI_COMM_WORLD) ==
-//        Utilities::MPI::n_mpi_processes(MPI_COMM_WORLD) - 1
-//        &&
-//        parameters.domain_boundary[1] == 4
-//        &&
-//        parameters.ist_pressure_boundary == 1)
-    if (parameters.domain_boundary[1] == 4
-        &&
-        parameters.ist_pressure_boundary == 1)
-    {
-      std::set<types::boundary_id> boundary_set;
-      boundary_set.insert(parameters.domain_boundary[1]);
-      IndexSet selected_dofs (dof_handler_auxilary.n_dofs());
-      ComponentMask selected_component (1, true);
-      DoFTools::extract_boundary_dofs (dof_handler_auxilary,
-                                       selected_component,
-                                       selected_dofs,
-                                       boundary_set);
+        std::set<types::boundary_id> boundary_set;
+        boundary_set.insert(parameters.domain_boundary[0]);
+        IndexSet boundary_dofs (dof_handler_auxilary.n_dofs());
+        DoFTools::extract_boundary_dofs (dof_handler_auxilary,
+                                         ComponentMask(),
+                                         boundary_dofs,
+                                         boundary_set);
 
-      pcout << "selected_dofs.n_elements()  = " << selected_dofs.n_elements() << std::endl;
+        IndexSet::ElementIterator boundary_begin = boundary_dofs.begin(),
+                                  boundary_end   = boundary_dofs.end();
 
-      Assert(selected_dofs.n_elements() > 0,
-             ExcMessage ("No extract boundary dofs.."));
 
-      std::vector<bool> boundary_dofs (dof_handler_auxilary.n_dofs(), true);
+        if (boundary_dofs.n_elements() > 0)
+        {
+          IndexSet::ElementIterator boundary_begin1 = boundary_dofs.begin(),
+                                    boundary_end1   = boundary_dofs.end();
 
-      types::global_dof_index first_boundary_dof = numbers::invalid_unsigned_int;
+          types::global_dof_index first_boundary_dof = *boundary_begin1;
+          constraints_auxilary.add_line (first_boundary_dof);
 
-      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-      if (selected_dofs.is_element(i) == true)
-      {
-        first_boundary_dof = i;
-        break;
-      }
-
-      pcout << "first_boundary_dof = " << first_boundary_dof << std::endl;
-
-      constraints_auxilary.add_line (first_boundary_dof);
-      for (unsigned int i=0; i<dof_handler_auxilary.n_dofs(); ++i)
-       if (selected_dofs.is_element(i) == true && i != first_boundary_dof)
-      {
-        constraints_auxilary.add_entry (first_boundary_dof, i, -1);
+          ++boundary_begin1;
+          for (; boundary_begin1 != boundary_end1; ++boundary_begin1)
+          {
+            constraints_auxilary.add_entry (first_boundary_dof, *boundary_begin1, -1);
+          }
+        }
       }
     }
 
@@ -331,6 +330,11 @@
                                                 constraints_auxilary);
     }
      
+    DoFTools::make_periodicity_constraints (dof_handler_auxilary,
+                                            8, 9,
+                                            parameters.flow_direction,
+                                            constraints_auxilary);
+
     constraints_auxilary.close ();
 
     setup_matrix_auxilary   (auxilary_partitioning);
