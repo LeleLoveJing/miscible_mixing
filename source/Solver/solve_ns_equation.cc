@@ -319,20 +319,6 @@
                                    scratch.fe_velocity_values.JxW(q);
 
          //Convective-Term
-         bool allow_for_convection = false;
-//         if (dim == 3 &&
-//             component_i == parameters.depth_direction &&
-//             parameters.exclude_depth_direction == true)
-//         {
-//           allow_for_convection = false;
-//         }
-         if (component_i == parameters.flow_direction &&
-             parameters.exclude_depth_direction == true)
-         {
-           allow_for_convection = true;
-         }
-
-         if (allow_for_convection == true)
          {
            data.local_matrix(i,j) += time_step*
                                      scratch.grads_phi_u[j]*
