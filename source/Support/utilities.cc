@@ -401,6 +401,9 @@
                               const double                           coeff3_for_source,
                               const double                           cell_diameter) const
   {
+
+    if (timestep_number < 2) return std::make_pair (0.0, 0.0);
+
     const unsigned int n_q_points = old_velocity.size();
 
     double avr_min_local_viscosity = 0.0;
@@ -545,6 +548,28 @@
     pcout << solver_control.last_step() << std::endl;
   }
   
+  template <int dim>
+  std::pair<double,double>
+  UBC_mis_mixing<dim>::compute_discont_variable_on_cell (unsigned int            number_of_data,
+                                                         std::vector<double>     &data)
+  {
+    std::pair<double, double> local_value;
+
+    for (unsigned int qq=0; qq<number_of_data; ++qq)
+    {
+      double b = data[qq];
+      if (b>1.0) data[qq] = 1.0;
+      if (b<0.0) data[qq] = 0.0;
+
+      local_value.first += b/double(number_of_data);
+    }
+
+    local_value.second = (1.0-local_value.second)*parameters.fluid1_viscosity +
+                         local_value.second*parameters.fluid2_viscosity;
+
+    return std::make_pair (local_value.first, local_value.second);
+  }
+
 // Explicit instantiations
 // template class UBC_mis_mixing<1>;
 template class UBC_mis_mixing<2>;

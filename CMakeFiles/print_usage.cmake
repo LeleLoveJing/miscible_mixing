@@ -1,7 +1,7 @@
 MESSAGE(
 "###
 #
-#  Project  mismix_p4est  set up with  deal.II-8.5.0-pre  found at
+#  Project  ../test/mismix_p4est  set up with  deal.II-8.5.0-pre  found at
 #      /Users/miranus/shy/dealii-pre
 #
 #  CMAKE_BUILD_TYPE:          Release

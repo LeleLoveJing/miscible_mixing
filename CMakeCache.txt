@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+../test/mismix_p4est_BINARY_DIR:STATIC=/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing
+
+//Value Computed by CMake
+../test/mismix_p4est_SOURCE_DIR:STATIC=/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing
+
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
@@ -127,7 +133,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=mismix_p4est
+CMAKE_PROJECT_NAME:STATIC=../test/mismix_p4est
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib

@@ -112,6 +112,9 @@
 
     void compute_global_error_norm (std::ofstream &);
     
+    std::pair<double,double> compute_discont_variable_on_cell (unsigned int,
+                                                               std::vector<double> &);
+
   public :
     struct Parameters
     {
@@ -299,6 +302,8 @@
 
     bool                           rebuild_concentr_matrices;
     bool                           rebuild_concentr_preconditioner;
+
+    types::global_dof_index        global_first_boundary_dof;
 
     TimerOutput                    computing_timer;
 

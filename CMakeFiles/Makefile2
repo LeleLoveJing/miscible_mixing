@@ -53,13 +53,48 @@ CMAKE_SOURCE_DIR = /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixi
 CMAKE_BINARY_DIR = /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing
 
 #=============================================================================
+# Target rules for target CMakeFiles/../test/mismix_p4est.dir
+
+# All Build rule for target.
+CMakeFiles/../test/mismix_p4est.dir/all:
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/depend
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13
+	@echo "Built target ../test/mismix_p4est"
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/all
+
+# Include target in all.
+all: CMakeFiles/../test/mismix_p4est.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/../test/mismix_p4est.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles 13
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/../test/mismix_p4est.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles 0
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/rule
+
+# Convenience name for target.
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/rule
+.PHONY : ../test/mismix_p4est
+
+# clean rule for target.
+CMakeFiles/../test/mismix_p4est.dir/clean:
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/clean
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/../test/mismix_p4est.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/debug.dir
 
 # All Build rule for target.
 CMakeFiles/debug.dir/all:
 	$(MAKE) -f CMakeFiles/debug.dir/build.make CMakeFiles/debug.dir/depend
 	$(MAKE) -f CMakeFiles/debug.dir/build.make CMakeFiles/debug.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles  14
 	@echo "Built target debug"
 .PHONY : CMakeFiles/debug.dir/all
 
@@ -90,7 +125,7 @@ clean: CMakeFiles/debug.dir/clean
 CMakeFiles/distclean.dir/all:
 	$(MAKE) -f CMakeFiles/distclean.dir/build.make CMakeFiles/distclean.dir/depend
 	$(MAKE) -f CMakeFiles/distclean.dir/build.make CMakeFiles/distclean.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles  15
 	@echo "Built target distclean"
 .PHONY : CMakeFiles/distclean.dir/all
 
@@ -146,41 +181,6 @@ clean: CMakeFiles/info.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/mismix_p4est.dir
-
-# All Build rule for target.
-CMakeFiles/mismix_p4est.dir/all:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/depend
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles  3 4 5 6 7 8 9 10 11 12 13 14 15
-	@echo "Built target mismix_p4est"
-.PHONY : CMakeFiles/mismix_p4est.dir/all
-
-# Include target in all.
-all: CMakeFiles/mismix_p4est.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/mismix_p4est.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles 13
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mismix_p4est.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles 0
-.PHONY : CMakeFiles/mismix_p4est.dir/rule
-
-# Convenience name for target.
-mismix_p4est: CMakeFiles/mismix_p4est.dir/rule
-.PHONY : mismix_p4est
-
-# clean rule for target.
-CMakeFiles/mismix_p4est.dir/clean:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/clean
-.PHONY : CMakeFiles/mismix_p4est.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/mismix_p4est.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/release.dir
 
 # All Build rule for target.
@@ -215,7 +215,7 @@ clean: CMakeFiles/release.dir/clean
 # Target rules for target CMakeFiles/run.dir
 
 # All Build rule for target.
-CMakeFiles/run.dir/all: CMakeFiles/mismix_p4est.dir/all
+CMakeFiles/run.dir/all:
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles  17
@@ -224,7 +224,7 @@ CMakeFiles/run.dir/all: CMakeFiles/mismix_p4est.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles 0
 .PHONY : CMakeFiles/run.dir/rule

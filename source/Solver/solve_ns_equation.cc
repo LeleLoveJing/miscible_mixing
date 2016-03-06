@@ -159,25 +159,25 @@
     
     typename DoFHandler<dim>::active_cell_iterator
     pressure_cell (&triangulation,
-            cell->level(),
-            cell->index(),
-            &dof_handler_pressure);
+                   cell->level(),
+                   cell->index(),
+                   &dof_handler_pressure);
     scratch.fe_pressure_values.reinit (pressure_cell);
     
     typename DoFHandler<dim>::active_cell_iterator
     concentr_cell (&triangulation,
-            cell->level(),
-            cell->index(),
-            &concentr_dof_handler);
+                   cell->level(),
+                   cell->index(),
+                   &concentr_dof_handler);
     scratch.concentr_fe_values.reinit (concentr_cell);
     
     cell->get_dof_indices (data.local_dof_indices);
     
     typename DoFHandler<dim>::active_cell_iterator
     error_cell (&triangulation,
-            cell->level(),
-            cell->index(),
-            &dof_handler_error);
+                cell->level(),
+                cell->index(),
+                &dof_handler_error);
 
     std::vector<types::global_dof_index>  error_local_dof_indices (fe_error.dofs_per_cell);
     error_cell->get_dof_indices (error_local_dof_indices);
@@ -210,16 +210,8 @@
 //    std::vector<Tensor<1, dim> > old_vel_energy_values (n_q_points);
 //    std::vector<Tensor<2, dim> > grad_vel_energy_values (n_q_points);
 
-    double avr_concentr_cell = 0.0;
-   
-    for (unsigned int qq=0; qq<n_q_points; ++qq)
-    {
-      double b = scratch.concentr_values[qq];
-      if (b>1.0) scratch.concentr_values[qq] = 1.0;
-      if (b<0.0) scratch.concentr_values[qq] = 0.0;
-     
-      avr_concentr_cell += b/double(n_q_points);
-    }
+    std::pair<double, double> discont_variables = compute_discont_variable_on_cell (n_q_points,
+                                                                                    scratch.concentr_values);
  
     std::vector<Tensor<1, dim> > div_vel_values (n_q_points);
     std::vector<Tensor<1, dim> > projected_grad_pressure_values (n_q_points);
@@ -234,11 +226,9 @@
                                           (1./3.)*scratch.grad_aux_n_minus_1_values[q];
     }
 
-    double current_q_viscosity = (1.0-avr_concentr_cell)*parameters.fluid1_viscosity +
-                                 avr_concentr_cell*parameters.fluid2_viscosity;
-    double theta = 1.0 - 2.0*avr_concentr_cell;
+    double theta = 1.0 - 2.0*discont_variables.first;
     if (parameters.is_density_stable_flow == true)
-      theta = 2.0*avr_concentr_cell - 1.0;
+      theta = 2.0*discont_variables.first - 1.0;
 
     double coeff_with_adv_term = 1.0 + theta*parameters.Atwood_number;
     double inv_coeff_with_adv_term = 1./coeff_with_adv_term;
@@ -247,24 +237,20 @@
     for (unsigned int d=0; d<dim; ++d)
       source_vector[d] = parameters.inclined_angle_vector[d];
     double coeff1_for_adv = coeff_with_adv_term;
-    double coeff2_for_visco =  current_q_viscosity/parameters.Reynolds_number;
+    double coeff2_for_visco =  discont_variables.second/parameters.Reynolds_number;
     double coeff3_for_source = (theta/(parameters.Froude_number*parameters.Froude_number));
-    std::pair<double, double> entropy_pair;
 
-    if (timestep_number > 2)
-    {
-      entropy_pair =
-        compute_entropy_viscosity_for_navier_stokes(scratch.vel_n_values,
-                                                    scratch.vel_n_minus_1_values,
-                                                    scratch.grad_vel_star_values,
-                                                    scratch.laplacian_vel_star_values,
-                                                    scratch.grad_pre_n_values,
-                                                    source_vector,
-                                                    coeff1_for_adv,
-                                                    coeff2_for_visco,
-                                                    coeff3_for_source,
-                                                    cell->diameter());
-    }
+    std::pair<double, double> entropy_pair =
+      compute_entropy_viscosity_for_navier_stokes(scratch.vel_n_values,
+                                                  scratch.vel_n_minus_1_values,
+                                                  scratch.grad_vel_star_values,
+                                                  scratch.laplacian_vel_star_values,
+                                                  scratch.grad_pre_n_values,
+                                                  source_vector,
+                                                  coeff1_for_adv,
+                                                  coeff2_for_visco,
+                                                  coeff3_for_source,
+                                                  cell->diameter());
 
     for (unsigned int k=0; k<fe_error.dofs_per_cell; ++k)
     {
@@ -279,7 +265,7 @@
         scratch.phi_u[k] = scratch.fe_velocity_values[velocities].value (k,q);
         scratch.grads_phi_u[k] = scratch.fe_velocity_values[velocities].gradient (k,q);
         scratch.symm_grads_phi_u[k] = scratch.fe_velocity_values[velocities].symmetric_gradient(k,q);
-//        scratch.divergence_phi_u[k] = scratch.fe_velocity_values[velocities].divergence (k,q);
+        scratch.divergence_phi_u[k] = scratch.fe_velocity_values[velocities].divergence (k,q);
       }
             
       for (unsigned int i=0; i<dofs_per_cell; ++i)
@@ -341,13 +327,13 @@
          //Viscous term
          data.local_matrix(i,j) += inv_coeff_with_adv_term*
                                    time_step*
-                                   (current_q_viscosity)*
+                                   (discont_variables.second)*
                                    (2.0/parameters.Reynolds_number)*
                                    scratch.symm_grads_phi_u[i]*
                                    scratch.symm_grads_phi_u[j]*
                                    scratch.fe_velocity_values.JxW(q);
 
-         //Artificial Viscous term
+         // Artificial Viscous Term
          data.local_matrix(i,j) += inv_coeff_with_adv_term*
                                    time_step*
                                    entropy_pair.second*
@@ -355,12 +341,14 @@
                                    scratch.symm_grads_phi_u[j]*
                                    scratch.fe_velocity_values.JxW(q);
 
-//         data.local_matrix(i,j) += inv_coeff_with_adv_term*
-//                                   time_step*
-//                                   parameters.coeff_gamma_grad_div*
-//                                   scratch.divergence_phi_u[i]*
-//                                   scratch.divergence_phi_u[j]*
-//                                   scratch.fe_velocity_values.JxW(q);
+         // Grad-Div Stablization Term
+         // Check the Nan value and need to adaptive coefficient
+         data.local_matrix(i,j) += inv_coeff_with_adv_term*
+                                   time_step*
+                                   parameters.coeff_gamma_grad_div*
+                                   scratch.divergence_phi_u[i]*
+                                   scratch.divergence_phi_u[j]*
+                                   scratch.fe_velocity_values.JxW(q);
 
         }//j-loop
       }//i-loop
@@ -419,21 +407,21 @@
                           std_cxx1x::_1),
          Assembly::Scratch::
          pressure_rot_step<dim> (fe_pressure, 
-     pressure_mapping, 
-     quadrature_formula,
-     (update_values  |
-      update_quadrature_points |
-      update_JxW_values |
-      update_gradients),
-     fe_velocity, 
-     velocity_mapping, 
-     (update_values  |
-      update_quadrature_points |
-      update_gradients),
-     concentr_fe,
-     concentr_mapping,
-     (update_values      |
-      update_quadrature_points)),
+                                 pressure_mapping,
+                                 quadrature_formula,
+                                 (update_values  |
+                                  update_quadrature_points |
+                                  update_JxW_values |
+                                  update_gradients),
+                                 fe_velocity,
+                                 velocity_mapping,
+                                 (update_values  |
+                                  update_quadrature_points |
+                                  update_gradients),
+                                 concentr_fe,
+                                 concentr_mapping,
+                                 (update_values      |
+                                  update_quadrature_points)),
          Assembly::CopyData::pressure_rot_step<dim> (fe_pressure));
 
     matrix_pressure.compress(VectorOperation::add);
@@ -477,9 +465,9 @@
    
     typename DoFHandler<dim>::active_cell_iterator
     concentr_cell (&triangulation,
-            cell->level(),
-            cell->index(),
-                  &concentr_dof_handler);
+                   cell->level(),
+                   cell->index(),
+                   &concentr_dof_handler);
     scratch.concentr_fe_values.reinit (concentr_cell);
 
     cell->get_dof_indices (data.local_dof_indices);
@@ -492,21 +480,11 @@
     scratch.fe_pressure_values.get_function_values (aux_n_plus_1, scratch.aux_sol_values);
     scratch.concentr_fe_values.get_function_values (concentr_solution, scratch.concentr_values);
 
-    double avr_concentr_cell = 0.0;
-   
-    for (unsigned int qq=0; qq<n_q_points; ++qq)
-    {
-      double b = scratch.concentr_values[qq];
-      if (b>1.0) scratch.concentr_values[qq] = 1.0;
-      if (b<0.0) scratch.concentr_values[qq] = 0.0;
-     
-      avr_concentr_cell += b/double(n_q_points);
-    }
+    std::pair<double, double> discont_variables
+                              = compute_discont_variable_on_cell (n_q_points, scratch.concentr_values);
    
     for (unsigned int q=0; q<n_q_points; ++q)
     {
-      double current_q_viscosity = (1.0-avr_concentr_cell)*parameters.fluid1_viscosity +
-                                   avr_concentr_cell*parameters.fluid2_viscosity;
 
       for (unsigned int k=0; k<dofs_per_cell; ++k)
        scratch.phi_p[k] = scratch.fe_pressure_values.shape_value (k,q);
@@ -526,7 +504,7 @@
 
           data.local_rhs(i) -= scratch.phi_p[i]*
                                bb*
-                               (current_q_viscosity)*
+                               (discont_variables.second)*
                                (1.0/parameters.Reynolds_number)*
                                scratch.fe_pressure_values.JxW(q);
      

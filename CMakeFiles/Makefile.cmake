@@ -59,9 +59,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/../test/mismix_p4est.dir/DependInfo.cmake"
   "CMakeFiles/runclean.dir/DependInfo.cmake"
   "CMakeFiles/sign.dir/DependInfo.cmake"
-  "CMakeFiles/mismix_p4est.dir/DependInfo.cmake"
   "CMakeFiles/strip_comments.dir/DependInfo.cmake"
   "CMakeFiles/run.dir/DependInfo.cmake"
   "CMakeFiles/info.dir/DependInfo.cmake"
