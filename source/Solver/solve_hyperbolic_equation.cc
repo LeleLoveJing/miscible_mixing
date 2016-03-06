@@ -365,17 +365,17 @@
 
      concentr_constraints.distribute (distributed_concentr_solution);
 
-      std::pair<unsigned int, unsigned int> range_i = distributed_concentr_solution.local_range();
+     std::pair<unsigned int, unsigned int> range_i = distributed_concentr_solution.local_range();
    
-    for (unsigned int i=0 ; i<distributed_concentr_solution.size(); ++i)
-    {
-        if (distributed_concentr_solution.in_local_range(i))
-        {
-       double temp_value = distributed_concentr_solution[i];
-       if (temp_value > 1.0) distributed_concentr_solution[i] = 1.0;
-       if (temp_value < 0.0) distributed_concentr_solution[i] = 0.0;
-        }
-    }
+//     for (unsigned int i=0 ; i<distributed_concentr_solution.size(); ++i)
+//     {
+//       if (distributed_concentr_solution.in_local_range(i))
+//       {
+//         double temp_value = distributed_concentr_solution[i];
+//         if (temp_value > 1.000000) distributed_concentr_solution[i] = 1.0;
+//         if (temp_value < -0.00000) distributed_concentr_solution[i] = 0.0;
+//       }
+//     }
 
      concentr_solution = distributed_concentr_solution;
 

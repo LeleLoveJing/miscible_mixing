@@ -1,5 +1,5 @@
 # Set the name of the project and target:
-SET(TARGET mismix_p4est)
+SET(TARGET ../test/mismix_p4est)
 
 file(GLOB _files source/AMR/*.cc 
                  source/Main/*.cc 

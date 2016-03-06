@@ -114,29 +114,21 @@
  
     typename DoFHandler<dim>::active_cell_iterator
     concentr_cell (&triangulation,
-             cell->level(),
-             cell->index(),
-             &concentr_dof_handler);
+                   cell->level(),
+                   cell->index(),
+                   &concentr_dof_handler);
     scratch.concentr_fe_values.reinit (concentr_cell);
     
     scratch.concentr_fe_values.get_function_values (concentr_solution, scratch.concentr_values);
  
-    double avr_concentr_cell = 0.0;
-   
-    for (unsigned int qq=0; qq<n_q_points; ++qq)
-    {
-      double b = scratch.concentr_values[qq];
-      if (b>1.0) scratch.concentr_values[qq] = 1.0;
-      if (b<0.0) scratch.concentr_values[qq] = 0.0;
-     
-      avr_concentr_cell += b/double(n_q_points);
-    }
+    std::pair<double, double> discont_variables
+                              = compute_discont_variable_on_cell (n_q_points, scratch.concentr_values);
    
     for (unsigned int q=0; q<n_q_points; ++q)
     {
-      double theta = 1.0 - 2.0*avr_concentr_cell;
+      double theta = 1.0 - 2.0*discont_variables.first;
       if (parameters.is_density_stable_flow == true)
-        theta = 2.0*avr_concentr_cell - 1.0;
+        theta = 2.0*discont_variables.first - 1.0;
         
       double coeff_with_adv_term = 1.0 + theta*parameters.Atwood_number;
       double inv_coeff_with_adv_term = 1.0/coeff_with_adv_term;
@@ -154,20 +146,20 @@
       for (unsigned int i=0; i<dofs_per_cell; ++i)
       {
        data.local_rhs(i) += scratch.phi_p[i]*
-                      mm1*
-                      scratch.fe_auxilary_values.JxW(q);
+                            mm1*
+                            scratch.fe_auxilary_values.JxW(q);
      
        for (unsigned int j=0; j<dofs_per_cell; ++j)
           {
               data.local_matrix(i,i) += scratch.phi_p[i]*
-                         scratch.phi_p[j]*
-                         scratch.fe_auxilary_values.JxW(q);
+                                        scratch.phi_p[j]*
+                                        scratch.fe_auxilary_values.JxW(q);
            
         data.local_matrix(i,i) += cell->diameter()*
-                                        parameters.coeff_relax_div_velocity*
-                                        scratch.grads_phi_p[i]*
-                         scratch.grads_phi_p[j]*
-                         scratch.fe_auxilary_values.JxW(q);
+                                  parameters.coeff_relax_div_velocity*
+                                  scratch.grads_phi_p[i]*
+                                  scratch.grads_phi_p[j]*
+                                  scratch.fe_auxilary_values.JxW(q);
           }
       }  
     }
@@ -223,22 +215,22 @@
                           this,
                           std_cxx1x::_1),
          Assembly::Scratch::
-         projection_step<dim> ( fe_auxilary,
-    pressure_mapping,
-    quadrature_formula,
-    (update_values      |
-     update_quadrature_points |
-     update_JxW_values   |
-     update_gradients),
-    fe_velocity,
-    velocity_mapping,
-    (update_values      |
-     update_quadrature_points |
-     update_gradients),
-    concentr_fe,
-    concentr_mapping,
-    (update_values      |
-    update_quadrature_points)),
+         projection_step<dim> (fe_auxilary,
+                               pressure_mapping,
+                               quadrature_formula,
+                               (update_values      |
+                                update_quadrature_points |
+                                update_JxW_values   |
+                                update_gradients),
+                               fe_velocity,
+                               velocity_mapping,
+                               (update_values      |
+                                update_quadrature_points |
+                                update_gradients),
+                               concentr_fe,
+                               concentr_mapping,
+                               (update_values      |
+                               update_quadrature_points)),
          Assembly::CopyData::projection_step<dim> (fe_auxilary));
 
     matrix_auxilary.compress(VectorOperation::add);
@@ -296,22 +288,14 @@
     scratch.concentr_fe_values.get_function_values (concentr_solution, scratch.concentr_values);
     scratch.fe_auxilary_values.get_function_values (aux_n_plus_1, scratch.div_vel_values);
  
-    double avr_concentr_cell = 0.0;
-   
-    for (unsigned int qq=0; qq<n_q_points; ++qq)
-    {
-      double b = scratch.concentr_values[qq];
-      if (b>1.0) scratch.concentr_values[qq] = 1.0;
-      if (b<0.0) scratch.concentr_values[qq] = 0.0;
-     
-      avr_concentr_cell += b/double(n_q_points);
-    }
+    std::pair<double, double> discont_variables = compute_discont_variable_on_cell (n_q_points,
+                                                                                    scratch.concentr_values);
    
     for (unsigned int q=0; q<n_q_points; ++q)
     {
-      double theta = 1.0 - 2.0*avr_concentr_cell;
+      double theta = 1.0 - 2.0*discont_variables.first;
       if (parameters.is_density_stable_flow == true)
-        theta = 2.0*avr_concentr_cell - 1.0;
+        theta = 2.0*discont_variables.first - 1.0;
         
       double coeff_with_adv_term = 1.0 + theta*parameters.Atwood_number;
       double inv_coeff_with_adv_term = 1.0/coeff_with_adv_term;

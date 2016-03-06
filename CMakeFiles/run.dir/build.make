@@ -45,10 +45,10 @@ CMAKE_BINARY_DIR = /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixi
 # Include the progress variables for this target.
 include CMakeFiles/run.dir/progress.make
 
-CMakeFiles/run: mismix_p4est
+CMakeFiles/run: ../test/mismix_p4est
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Run mismix_p4est with Release configuration"
-	mpirun -np 1 mismix_p4est
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Run ../test/mismix_p4est with Release configuration"
+	mpirun -np 1 ../test/mismix_p4est
 
 run: CMakeFiles/run
 run: CMakeFiles/run.dir/build.make

@@ -47,7 +47,7 @@ include CMakeFiles/sign.dir/progress.make
 
 CMakeFiles/sign:
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Digitally signing mismix_p4est"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Digitally signing ../test/mismix_p4est"
 	/Users/miranus/shy/cmake-3.2/bin/cmake -E echo '' && /Users/miranus/shy/cmake-3.2/bin/cmake -E echo '***************************************************************************' && /Users/miranus/shy/cmake-3.2/bin/cmake -E echo '** Error: No Mac OSX developer certificate specified' && /Users/miranus/shy/cmake-3.2/bin/cmake -E echo '** Please reconfigure with -DOSX_CERTIFICATE_NAME="<...>"' && /Users/miranus/shy/cmake-3.2/bin/cmake -E echo '***************************************************************************' && /Users/miranus/shy/cmake-3.2/bin/cmake -E echo ''
 
 sign: CMakeFiles/sign

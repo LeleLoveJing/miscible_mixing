@@ -102,6 +102,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named ../test/mismix_p4est
+
+# Build rule for target.
+../test/mismix_p4est: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ../test/mismix_p4est
+.PHONY : ../test/mismix_p4est
+
+# fast build rule for target.
+../test/mismix_p4est/fast:
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/build
+.PHONY : ../test/mismix_p4est/fast
+
+#=============================================================================
 # Target rules for targets named debug
 
 # Build rule for target.
@@ -139,19 +152,6 @@ info: cmake_check_build_system
 info/fast:
 	$(MAKE) -f CMakeFiles/info.dir/build.make CMakeFiles/info.dir/build
 .PHONY : info/fast
-
-#=============================================================================
-# Target rules for targets named mismix_p4est
-
-# Build rule for target.
-mismix_p4est: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mismix_p4est
-.PHONY : mismix_p4est
-
-# fast build rule for target.
-mismix_p4est/fast:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/build
-.PHONY : mismix_p4est/fast
 
 #=============================================================================
 # Target rules for targets named release
@@ -223,7 +223,7 @@ source/AMR/amr.o: source/AMR/amr.cc.o
 
 # target to build an object file
 source/AMR/amr.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/AMR/amr.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o
 .PHONY : source/AMR/amr.cc.o
 
 source/AMR/amr.i: source/AMR/amr.cc.i
@@ -231,7 +231,7 @@ source/AMR/amr.i: source/AMR/amr.cc.i
 
 # target to preprocess a source file
 source/AMR/amr.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/AMR/amr.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.i
 .PHONY : source/AMR/amr.cc.i
 
 source/AMR/amr.s: source/AMR/amr.cc.s
@@ -239,7 +239,7 @@ source/AMR/amr.s: source/AMR/amr.cc.s
 
 # target to generate assembly for a file
 source/AMR/amr.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/AMR/amr.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.s
 .PHONY : source/AMR/amr.cc.s
 
 source/Main/main.o: source/Main/main.cc.o
@@ -247,7 +247,7 @@ source/Main/main.o: source/Main/main.cc.o
 
 # target to build an object file
 source/Main/main.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Main/main.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o
 .PHONY : source/Main/main.cc.o
 
 source/Main/main.i: source/Main/main.cc.i
@@ -255,7 +255,7 @@ source/Main/main.i: source/Main/main.cc.i
 
 # target to preprocess a source file
 source/Main/main.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Main/main.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.i
 .PHONY : source/Main/main.cc.i
 
 source/Main/main.s: source/Main/main.cc.s
@@ -263,7 +263,7 @@ source/Main/main.s: source/Main/main.cc.s
 
 # target to generate assembly for a file
 source/Main/main.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Main/main.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.s
 .PHONY : source/Main/main.cc.s
 
 source/Main/run.o: source/Main/run.cc.o
@@ -271,7 +271,7 @@ source/Main/run.o: source/Main/run.cc.o
 
 # target to build an object file
 source/Main/run.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Main/run.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o
 .PHONY : source/Main/run.cc.o
 
 source/Main/run.i: source/Main/run.cc.i
@@ -279,7 +279,7 @@ source/Main/run.i: source/Main/run.cc.i
 
 # target to preprocess a source file
 source/Main/run.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Main/run.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.i
 .PHONY : source/Main/run.cc.i
 
 source/Main/run.s: source/Main/run.cc.s
@@ -287,7 +287,7 @@ source/Main/run.s: source/Main/run.cc.s
 
 # target to generate assembly for a file
 source/Main/run.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Main/run.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.s
 .PHONY : source/Main/run.cc.s
 
 source/Post_Processing/extract_data.o: source/Post_Processing/extract_data.cc.o
@@ -295,7 +295,7 @@ source/Post_Processing/extract_data.o: source/Post_Processing/extract_data.cc.o
 
 # target to build an object file
 source/Post_Processing/extract_data.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o
 .PHONY : source/Post_Processing/extract_data.cc.o
 
 source/Post_Processing/extract_data.i: source/Post_Processing/extract_data.cc.i
@@ -303,7 +303,7 @@ source/Post_Processing/extract_data.i: source/Post_Processing/extract_data.cc.i
 
 # target to preprocess a source file
 source/Post_Processing/extract_data.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Post_Processing/extract_data.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.i
 .PHONY : source/Post_Processing/extract_data.cc.i
 
 source/Post_Processing/extract_data.s: source/Post_Processing/extract_data.cc.s
@@ -311,7 +311,7 @@ source/Post_Processing/extract_data.s: source/Post_Processing/extract_data.cc.s
 
 # target to generate assembly for a file
 source/Post_Processing/extract_data.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Post_Processing/extract_data.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.s
 .PHONY : source/Post_Processing/extract_data.cc.s
 
 source/Post_Processing/post_processing.o: source/Post_Processing/post_processing.cc.o
@@ -319,7 +319,7 @@ source/Post_Processing/post_processing.o: source/Post_Processing/post_processing
 
 # target to build an object file
 source/Post_Processing/post_processing.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o
 .PHONY : source/Post_Processing/post_processing.cc.o
 
 source/Post_Processing/post_processing.i: source/Post_Processing/post_processing.cc.i
@@ -327,7 +327,7 @@ source/Post_Processing/post_processing.i: source/Post_Processing/post_processing
 
 # target to preprocess a source file
 source/Post_Processing/post_processing.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Post_Processing/post_processing.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.i
 .PHONY : source/Post_Processing/post_processing.cc.i
 
 source/Post_Processing/post_processing.s: source/Post_Processing/post_processing.cc.s
@@ -335,7 +335,7 @@ source/Post_Processing/post_processing.s: source/Post_Processing/post_processing
 
 # target to generate assembly for a file
 source/Post_Processing/post_processing.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Post_Processing/post_processing.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.s
 .PHONY : source/Post_Processing/post_processing.cc.s
 
 source/Pre_Processing/mesh_in.o: source/Pre_Processing/mesh_in.cc.o
@@ -343,7 +343,7 @@ source/Pre_Processing/mesh_in.o: source/Pre_Processing/mesh_in.cc.o
 
 # target to build an object file
 source/Pre_Processing/mesh_in.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o
 .PHONY : source/Pre_Processing/mesh_in.cc.o
 
 source/Pre_Processing/mesh_in.i: source/Pre_Processing/mesh_in.cc.i
@@ -351,7 +351,7 @@ source/Pre_Processing/mesh_in.i: source/Pre_Processing/mesh_in.cc.i
 
 # target to preprocess a source file
 source/Pre_Processing/mesh_in.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.i
 .PHONY : source/Pre_Processing/mesh_in.cc.i
 
 source/Pre_Processing/mesh_in.s: source/Pre_Processing/mesh_in.cc.s
@@ -359,7 +359,7 @@ source/Pre_Processing/mesh_in.s: source/Pre_Processing/mesh_in.cc.s
 
 # target to generate assembly for a file
 source/Pre_Processing/mesh_in.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.s
 .PHONY : source/Pre_Processing/mesh_in.cc.s
 
 source/Pre_Processing/read_and_write.o: source/Pre_Processing/read_and_write.cc.o
@@ -367,7 +367,7 @@ source/Pre_Processing/read_and_write.o: source/Pre_Processing/read_and_write.cc.
 
 # target to build an object file
 source/Pre_Processing/read_and_write.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o
 .PHONY : source/Pre_Processing/read_and_write.cc.o
 
 source/Pre_Processing/read_and_write.i: source/Pre_Processing/read_and_write.cc.i
@@ -375,7 +375,7 @@ source/Pre_Processing/read_and_write.i: source/Pre_Processing/read_and_write.cc.
 
 # target to preprocess a source file
 source/Pre_Processing/read_and_write.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.i
 .PHONY : source/Pre_Processing/read_and_write.cc.i
 
 source/Pre_Processing/read_and_write.s: source/Pre_Processing/read_and_write.cc.s
@@ -383,7 +383,7 @@ source/Pre_Processing/read_and_write.s: source/Pre_Processing/read_and_write.cc.
 
 # target to generate assembly for a file
 source/Pre_Processing/read_and_write.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.s
 .PHONY : source/Pre_Processing/read_and_write.cc.s
 
 source/Solver/constructor.o: source/Solver/constructor.cc.o
@@ -391,7 +391,7 @@ source/Solver/constructor.o: source/Solver/constructor.cc.o
 
 # target to build an object file
 source/Solver/constructor.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/constructor.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o
 .PHONY : source/Solver/constructor.cc.o
 
 source/Solver/constructor.i: source/Solver/constructor.cc.i
@@ -399,7 +399,7 @@ source/Solver/constructor.i: source/Solver/constructor.cc.i
 
 # target to preprocess a source file
 source/Solver/constructor.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/constructor.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.i
 .PHONY : source/Solver/constructor.cc.i
 
 source/Solver/constructor.s: source/Solver/constructor.cc.s
@@ -407,7 +407,7 @@ source/Solver/constructor.s: source/Solver/constructor.cc.s
 
 # target to generate assembly for a file
 source/Solver/constructor.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/constructor.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.s
 .PHONY : source/Solver/constructor.cc.s
 
 source/Solver/projection_for_div_velocity.o: source/Solver/projection_for_div_velocity.cc.o
@@ -415,7 +415,7 @@ source/Solver/projection_for_div_velocity.o: source/Solver/projection_for_div_ve
 
 # target to build an object file
 source/Solver/projection_for_div_velocity.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o
 .PHONY : source/Solver/projection_for_div_velocity.cc.o
 
 source/Solver/projection_for_div_velocity.i: source/Solver/projection_for_div_velocity.cc.i
@@ -423,7 +423,7 @@ source/Solver/projection_for_div_velocity.i: source/Solver/projection_for_div_ve
 
 # target to preprocess a source file
 source/Solver/projection_for_div_velocity.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.i
 .PHONY : source/Solver/projection_for_div_velocity.cc.i
 
 source/Solver/projection_for_div_velocity.s: source/Solver/projection_for_div_velocity.cc.s
@@ -431,7 +431,7 @@ source/Solver/projection_for_div_velocity.s: source/Solver/projection_for_div_ve
 
 # target to generate assembly for a file
 source/Solver/projection_for_div_velocity.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.s
 .PHONY : source/Solver/projection_for_div_velocity.cc.s
 
 source/Solver/setup_dofs.o: source/Solver/setup_dofs.cc.o
@@ -439,7 +439,7 @@ source/Solver/setup_dofs.o: source/Solver/setup_dofs.cc.o
 
 # target to build an object file
 source/Solver/setup_dofs.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/setup_dofs.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o
 .PHONY : source/Solver/setup_dofs.cc.o
 
 source/Solver/setup_dofs.i: source/Solver/setup_dofs.cc.i
@@ -447,7 +447,7 @@ source/Solver/setup_dofs.i: source/Solver/setup_dofs.cc.i
 
 # target to preprocess a source file
 source/Solver/setup_dofs.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/setup_dofs.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.i
 .PHONY : source/Solver/setup_dofs.cc.i
 
 source/Solver/setup_dofs.s: source/Solver/setup_dofs.cc.s
@@ -455,7 +455,7 @@ source/Solver/setup_dofs.s: source/Solver/setup_dofs.cc.s
 
 # target to generate assembly for a file
 source/Solver/setup_dofs.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/setup_dofs.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.s
 .PHONY : source/Solver/setup_dofs.cc.s
 
 source/Solver/solve_hyperbolic_equation.o: source/Solver/solve_hyperbolic_equation.cc.o
@@ -463,7 +463,7 @@ source/Solver/solve_hyperbolic_equation.o: source/Solver/solve_hyperbolic_equati
 
 # target to build an object file
 source/Solver/solve_hyperbolic_equation.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o
 .PHONY : source/Solver/solve_hyperbolic_equation.cc.o
 
 source/Solver/solve_hyperbolic_equation.i: source/Solver/solve_hyperbolic_equation.cc.i
@@ -471,7 +471,7 @@ source/Solver/solve_hyperbolic_equation.i: source/Solver/solve_hyperbolic_equati
 
 # target to preprocess a source file
 source/Solver/solve_hyperbolic_equation.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.i
 .PHONY : source/Solver/solve_hyperbolic_equation.cc.i
 
 source/Solver/solve_hyperbolic_equation.s: source/Solver/solve_hyperbolic_equation.cc.s
@@ -479,7 +479,7 @@ source/Solver/solve_hyperbolic_equation.s: source/Solver/solve_hyperbolic_equati
 
 # target to generate assembly for a file
 source/Solver/solve_hyperbolic_equation.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.s
 .PHONY : source/Solver/solve_hyperbolic_equation.cc.s
 
 source/Solver/solve_ns_equation.o: source/Solver/solve_ns_equation.cc.o
@@ -487,7 +487,7 @@ source/Solver/solve_ns_equation.o: source/Solver/solve_ns_equation.cc.o
 
 # target to build an object file
 source/Solver/solve_ns_equation.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o
 .PHONY : source/Solver/solve_ns_equation.cc.o
 
 source/Solver/solve_ns_equation.i: source/Solver/solve_ns_equation.cc.i
@@ -495,7 +495,7 @@ source/Solver/solve_ns_equation.i: source/Solver/solve_ns_equation.cc.i
 
 # target to preprocess a source file
 source/Solver/solve_ns_equation.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.i
 .PHONY : source/Solver/solve_ns_equation.cc.i
 
 source/Solver/solve_ns_equation.s: source/Solver/solve_ns_equation.cc.s
@@ -503,7 +503,7 @@ source/Solver/solve_ns_equation.s: source/Solver/solve_ns_equation.cc.s
 
 # target to generate assembly for a file
 source/Solver/solve_ns_equation.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.s
 .PHONY : source/Solver/solve_ns_equation.cc.s
 
 source/Support/utilities.o: source/Support/utilities.cc.o
@@ -511,7 +511,7 @@ source/Support/utilities.o: source/Support/utilities.cc.o
 
 # target to build an object file
 source/Support/utilities.cc.o:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Support/utilities.cc.o
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o
 .PHONY : source/Support/utilities.cc.o
 
 source/Support/utilities.i: source/Support/utilities.cc.i
@@ -519,7 +519,7 @@ source/Support/utilities.i: source/Support/utilities.cc.i
 
 # target to preprocess a source file
 source/Support/utilities.cc.i:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Support/utilities.cc.i
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.i
 .PHONY : source/Support/utilities.cc.i
 
 source/Support/utilities.s: source/Support/utilities.cc.s
@@ -527,7 +527,7 @@ source/Support/utilities.s: source/Support/utilities.cc.s
 
 # target to generate assembly for a file
 source/Support/utilities.cc.s:
-	$(MAKE) -f CMakeFiles/mismix_p4est.dir/build.make CMakeFiles/mismix_p4est.dir/source/Support/utilities.cc.s
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.s
 .PHONY : source/Support/utilities.cc.s
 
 # Help Target
@@ -536,11 +536,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... ../test/mismix_p4est"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... runclean"
 	@echo "... sign"
-	@echo "... mismix_p4est"
 	@echo "... strip_comments"
 	@echo "... run"
 	@echo "... info"
