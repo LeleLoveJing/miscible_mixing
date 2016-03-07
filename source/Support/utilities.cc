@@ -20,10 +20,8 @@
       pcout << "- Reynolds Number = " << parameters.Reynolds_number << ", " << parameters.reference_velocity <<  std::endl;
       pcout << "- Froude Number = " << parameters.Froude_number << std::endl;
       pcout << "- Atwood Number = " << parameters.Atwood_number << std::endl;
-      pcout << "- Viscosity Ratio = " << parameters.viscosity_ratio << std::endl;
-      pcout << "- Shear Thinning Fluid  = " << parameters.is_shear_thinn << std::endl;
-      pcout << "- Shear Thinning Fluid K  = " << parameters.k_shear_thinn << std::endl;
-      pcout << "- Shear Thinning Fluid N  = " << parameters.n_shear_thinn << std::endl;
+      pcout << "- Shear Thinning Fluid K  = " << parameters.ratio_pow_law << std::endl;
+      pcout << "- Shear Thinning Fluid N  = " << parameters.n_pow_law << std::endl;
       pcout << "- CFL Number = " << parameters.CFL_number << std::endl;
       pcout << "- Time Interval = " << computed_time_step << std::endl;
       if (parameters.is_density_stable_flow)
@@ -60,10 +58,8 @@
       out_get_global_values << "- Reynolds Number = " << parameters.Reynolds_number << ", " << parameters.reference_velocity <<  std::endl;
       out_get_global_values << "- Froude Number = " << parameters.Froude_number << std::endl;
       out_get_global_values << "- Atwood Number = " << parameters.Atwood_number << std::endl;
-      out_get_global_values << "- Viscosity Ratio = " << parameters.viscosity_ratio << std::endl;
-      out_get_global_values << "- Shear Thinning Fluid  = " << parameters.is_shear_thinn << std::endl;
-      out_get_global_values << "- Shear Thinning Fluid K  = " << parameters.k_shear_thinn << std::endl;
-      out_get_global_values << "- Shear Thinning Fluid N  = " << parameters.n_shear_thinn << std::endl;
+      out_get_global_values << "- Shear Thinning Fluid K  = " << parameters.ratio_pow_law << std::endl;
+      out_get_global_values << "- Shear Thinning Fluid N  = " << parameters.n_pow_law << std::endl;
       out_get_global_values << "- Time Interval = " << parameters.computed_time_step << std::endl;
       if (parameters.is_density_stable_flow)
         out_get_global_values << "- Density Stable Flow.." << std::endl;
@@ -79,9 +75,9 @@
       out_get_global_values << "- Kay (cotB/theta = 2VvcosB/V0) = " << 2*viscous_vel_scale*std::cos(parameters.inclined_angle*numbers::PI/180)
                                       /parameters.reference_velocity << std::endl; 
       out_get_global_values << "- PolyNormial Order = "
-                << parameters.degree_of_velocity << " | "
-                << parameters.degree_of_pressure << " | "
-                << parameters.degree_of_concentr << std::endl;   
+                            << parameters.degree_of_velocity << " | "
+                            << parameters.degree_of_pressure << " | "
+                            << parameters.degree_of_concentr << std::endl;
       out_get_global_values << "- Init. Gate Valve = " << parameters.init_sep_x << ", " 
                             << parameters.init_sep_x*parameters.reference_length
                             << std::endl;
@@ -550,23 +546,64 @@
   
   template <int dim>
   std::pair<double,double>
-  UBC_mis_mixing<dim>::compute_discont_variable_on_cell (unsigned int            number_of_data,
-                                                         std::vector<double>     &data)
+  UBC_mis_mixing<dim>::compute_discont_variable_on_cell (unsigned int                         number_of_data,
+                                                         std::vector<double>                  &data,
+                                                         std::vector<Tensor<2,dim> >          &tensor_data)
   {
     std::pair<double, double> local_value;
 
+    /* Average for density over quadrature points */
     for (unsigned int qq=0; qq<number_of_data; ++qq)
     {
       double b = data[qq];
       if (b>1.0) data[qq] = 1.0;
       if (b<0.0) data[qq] = 0.0;
-
       local_value.first += b/double(number_of_data);
     }
 
-    local_value.second = (1.0-local_value.second)*parameters.fluid1_viscosity +
-                         local_value.second*parameters.fluid2_viscosity;
+    /* Average for viscosity with pow-law model over quadrature points */
+    double fluid1_viscosity = parameters.mean_viscosity;
+    double fluid2_viscosity = parameters.mean_viscosity;
 
+    /* Set the viscosity of the fluid with pow-law model */
+    std::list<double> list;
+
+    for (unsigned int m=0; m<number_of_data; ++m)
+    {
+      double sum_shear_rate_at_data = 0.0;
+      for (unsigned int i=0; i<dim; ++i)
+      for (unsigned int j=0; j<dim; ++j)
+      {
+        double shear_rate_at_data = tensor_data[m][i][j] +tensor_data[m][j][i];
+
+        sum_shear_rate_at_data += std::sqrt(0.5*shear_rate_at_data*shear_rate_at_data);
+      }
+      list.push_back (sum_shear_rate_at_data);
+    }
+
+    assert (!list.empty());
+    assert (list.size() == number_of_data);
+
+    double average_shear_rate = std::accumulate(list.begin(), list.end(), 0.0) / list.size();
+
+    if (std::abs(average_shear_rate) > 1e-4)
+    {
+      fluid2_viscosity = parameters.ratio_pow_law *
+                         std::pow(average_shear_rate, parameters.n_pow_law);
+    }
+    else if (std::abs(average_shear_rate) < 1e-4 || (parameters.n_pow_law - 1.0) < 1e-4)
+    {
+      if (parameters.ratio_pow_law > 1.0)
+      { fluid2_viscosity = parameters.ratio_pow_law * parameters.mean_viscosity;}
+      else if (parameters.ratio_pow_law <= 1.0)
+      { fluid1_viscosity = parameters.ratio_pow_law * parameters.mean_viscosity;}
+    }
+
+    /* Determine the viscosity */
+    local_value.second = (1.0-local_value.first)*fluid1_viscosity +
+                         local_value.first*fluid2_viscosity;
+
+    /* Return */
     return std::make_pair (local_value.first, local_value.second);
   }
 

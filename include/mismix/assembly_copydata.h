@@ -54,6 +54,8 @@
         std::vector<double>           pre_n_values;
        
         std::vector<double>           concentr_values;
+        std::vector<SymmetricTensor<2,dim> >  symm_grads_vel_star;
+
     
       };  
       
@@ -109,7 +111,8 @@
         aux_n_minus_1_values      (quadrature.size()),
         pre_n_values              (quadrature.size()),
      
-        concentr_values           (quadrature.size())
+        concentr_values           (quadrature.size()),
+        symm_grads_vel_star       (quadrature.size())
       {}
       
       template <int dim>
@@ -155,7 +158,8 @@
         aux_n_minus_1_values      (scratch.aux_n_minus_1_values),
         pre_n_values              (scratch.pre_n_values),
      
-        concentr_values           (scratch.concentr_values)
+        concentr_values           (scratch.concentr_values),
+        symm_grads_vel_star       (scratch.symm_grads_vel_star)
       {}
 
       //------------ Scratch::relaxation_div_velocity_step ---------------------------
@@ -363,11 +367,12 @@
         FEValues<dim>    fe_velocity_values;
         FEValues<dim>    concentr_fe_values;
 
-        std::vector<double>         phi_p;
-        std::vector<double>         aux_sol_values;
-        std::vector<double>         pre_sol_values;
-        std::vector<Tensor<2,dim> > grad_vel_sol_values;
-        std::vector<double>         concentr_values;
+        std::vector<double>                  phi_p;
+        std::vector<double>                  aux_sol_values;
+        std::vector<double>                  pre_sol_values;
+        std::vector<Tensor<2,dim> >          grad_vel_sol_values;
+        std::vector<double>                  concentr_values;
+        std::vector<SymmetricTensor<2,dim> > symm_grads_vel_sol;
       };  
       
       template <int dim>
@@ -402,7 +407,8 @@
         aux_sol_values      (quadrature.size()),
         pre_sol_values      (quadrature.size()),
         grad_vel_sol_values (quadrature.size()),
-        concentr_values     (quadrature.size())
+        concentr_values     (quadrature.size()),
+        symm_grads_vel_sol  (quadrature.size())
       {}
       
       template <int dim>
@@ -428,7 +434,8 @@
         aux_sol_values      (scratch.aux_sol_values),
         pre_sol_values      (scratch.pre_sol_values),
         grad_vel_sol_values (scratch.grad_vel_sol_values),
-        concentr_values     (scratch.concentr_values)
+        concentr_values     (scratch.concentr_values),
+        symm_grads_vel_sol  (scratch.symm_grads_vel_sol)
       {}
       
       //------------Scratch::Concentration Matrix ---------------------------

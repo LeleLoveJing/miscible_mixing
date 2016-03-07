@@ -211,7 +211,8 @@
 //    std::vector<Tensor<2, dim> > grad_vel_energy_values (n_q_points);
 
     std::pair<double, double> discont_variables = compute_discont_variable_on_cell (n_q_points,
-                                                                                    scratch.concentr_values);
+                                                                                    scratch.concentr_values,
+                                                                                    scratch.grad_vel_star_values);
  
     std::vector<Tensor<1, dim> > div_vel_values (n_q_points);
     std::vector<Tensor<1, dim> > projected_grad_pressure_values (n_q_points);
@@ -256,6 +257,7 @@
     {
       entropy_viscosity_for_ns [error_local_dof_indices[k]] = entropy_pair.second;
       energy_norm_for_ns       [error_local_dof_indices[k]] = entropy_pair.first;
+      viscosity_distribution   [error_local_dof_indices[k]] = discont_variables.second;
     }
 
     for (unsigned int q=0; q<n_q_points; ++q)
@@ -481,8 +483,10 @@
     scratch.concentr_fe_values.get_function_values (concentr_solution, scratch.concentr_values);
 
     std::pair<double, double> discont_variables
-                              = compute_discont_variable_on_cell (n_q_points, scratch.concentr_values);
-   
+                              = compute_discont_variable_on_cell (n_q_points,
+                                                                  scratch.concentr_values,
+                                                                  scratch.grad_vel_sol_values);
+//    viscosity_distribution
     for (unsigned int q=0; q<n_q_points; ++q)
     {
 

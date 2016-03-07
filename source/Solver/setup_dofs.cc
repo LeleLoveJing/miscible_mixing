@@ -409,6 +409,7 @@
 
     entropy_viscosity_for_ns.reinit (partitioning, MPI_COMM_WORLD);
     energy_norm_for_ns.reinit       (partitioning, MPI_COMM_WORLD);
+    viscosity_distribution.reinit   (partitioning, MPI_COMM_WORLD);
 
   }
 // Explicit instantiations

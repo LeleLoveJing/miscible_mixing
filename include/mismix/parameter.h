@@ -88,12 +88,17 @@
      prm.declare_entry ("Initial Separation" , "0.0" , Patterns::Double(0.0, 1.0));
      prm.declare_entry ("Inclined Angle" , "0.0" , Patterns::Double(0, 100000));
      prm.declare_entry ("Atwood Number" , "1.0" , Patterns::Double(-100000, 100000));
-     prm.declare_entry ("Mean Viscosity" , "1.0" , Patterns::Double(0.0, 100000));
-     prm.declare_entry ("Viscosity Ratio" , "1.0" , Patterns::Double(0.0, 100000));
      prm.declare_entry ("Mean Flow Velocity" , "1.0" , Patterns::Double(0, 100000));
      prm.declare_entry ("Degree of Velocity", "1", Patterns::Integer (0, 10));
      prm.declare_entry ("Degree of Pressure", "1", Patterns::Integer (0, 10));
      prm.declare_entry ("Degree of Concentration", "2", Patterns::Integer (0, 10));
+   prm.leave_subsection ();
+
+   prm.enter_subsection ("Constitutive Model");
+     prm.declare_entry ("Mean Viscosity" , "1.0" , Patterns::Double(0.0, 100000));
+     prm.declare_entry ("Viscosity Ratio" , "1.0" , Patterns::Double(0.0, 100000));
+     prm.declare_entry ("Coefficient for Pow-Law Fluid", "1.0", Patterns::Double(0.0, 100000));
+     prm.declare_entry ("Multiplier for Pow-Law Fluid", "0.0", Patterns::Double(-100000, 100000));
    prm.leave_subsection ();
 
    prm.enter_subsection ("Output");
@@ -180,13 +185,17 @@
      inclined_angle = prm.get_double ("Inclined Angle");
      Atwood_number = prm.get_double ("Atwood Number");
      mean_velocity_inlet = prm.get_double ("Mean Flow Velocity");
-     mean_viscosity = prm.get_double ("Mean Viscosity");
-     viscosity_ratio = prm.get_double ("Viscosity Ratio");
      degree_of_velocity = prm.get_integer ("Degree of Velocity");
      degree_of_pressure = prm.get_integer ("Degree of Pressure");
      degree_of_concentr = prm.get_integer ("Degree of Concentration");
    prm.leave_subsection ();
    
+   prm.enter_subsection ("Constitutive Model");
+     mean_viscosity  = prm.get_double ("Mean Viscosity");
+     ratio_pow_law   = prm.get_double ("Coefficient for Pow-Law Fluid");
+     n_pow_law       = prm.get_double ("Multiplier for Pow-Law Fluid");
+   prm.leave_subsection ();
+
    if (dim == 2) {flow_direction  = 0; latitude_direction = 1;}
    if (dim == 3) {depth_direction = 0; latitude_direction = 1; flow_direction = 2;}
   
@@ -220,13 +229,6 @@
     
    output_fac_vtu = output_fac_vtu*std::pow(2.0, static_cast<double>(max_grid_level));
    output_fac_data = output_fac_data*std::pow(2.0, static_cast<double>(max_grid_level));
-    
-   fluid1_viscosity = mean_viscosity;
-   fluid2_viscosity = mean_viscosity;
-   if (viscosity_ratio > 1)
-     fluid2_viscosity = std::abs(viscosity_ratio)*fluid2_viscosity;
-   else if (viscosity_ratio < 1)
-     fluid1_viscosity = std::abs(viscosity_ratio)*fluid1_viscosity;
     
    reference_length = EquationData::pipe_diameter;
    reference_velocity = mean_velocity_inlet;
