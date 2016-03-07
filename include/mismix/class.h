@@ -113,7 +113,8 @@
     void compute_global_error_norm (std::ofstream &);
     
     std::pair<double,double> compute_discont_variable_on_cell (unsigned int,
-                                                               std::vector<double> &);
+                                                               std::vector<double> &,
+                                                               std::vector<Tensor<2,dim> > &);
 
   public :
     struct Parameters
@@ -193,13 +194,10 @@
       double       upstream_concentr;
       double       downstream_concentr;
         
+      // Constitutive Model
       double       mean_viscosity;
-      double       fluid1_viscosity;
-      double       fluid2_viscosity;
-        
-      double       k_shear_thinn;
-      double       n_shear_thinn;
-      bool         is_shear_thinn;
+      double       ratio_pow_law;
+      double       n_pow_law;
         
       Point<dim>   inclined_angle_vector;
         
@@ -287,6 +285,7 @@
     
     TrilinosWrappers::MPI::Vector            entropy_viscosity_for_ns;
     TrilinosWrappers::MPI::Vector            energy_norm_for_ns;
+    TrilinosWrappers::MPI::Vector            viscosity_distribution;
 
     double                         time_step;
     double                         old_time_step;

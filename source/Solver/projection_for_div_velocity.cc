@@ -121,8 +121,11 @@
     
     scratch.concentr_fe_values.get_function_values (concentr_solution, scratch.concentr_values);
  
+    std::vector<Tensor<2,dim> > dum;
     std::pair<double, double> discont_variables
-                              = compute_discont_variable_on_cell (n_q_points, scratch.concentr_values);
+                              = compute_discont_variable_on_cell (n_q_points,
+                                                                  scratch.concentr_values,
+                                                                  dum);
    
     for (unsigned int q=0; q<n_q_points; ++q)
     {
@@ -288,8 +291,11 @@
     scratch.concentr_fe_values.get_function_values (concentr_solution, scratch.concentr_values);
     scratch.fe_auxilary_values.get_function_values (aux_n_plus_1, scratch.div_vel_values);
  
+    std::vector<Tensor<2,dim> > dum (n_q_points);
+
     std::pair<double, double> discont_variables = compute_discont_variable_on_cell (n_q_points,
-                                                                                    scratch.concentr_values);
+                                                                                    scratch.concentr_values,
+                                                                                    dum);
    
     for (unsigned int q=0; q<n_q_points; ++q)
     {
@@ -317,16 +323,16 @@
       for (unsigned int i=0; i<dofs_per_cell; ++i)
       {
        data.local_rhs(i) += (1.5)*
-                               scratch.phi_p[i]*
-                      mm1*
-                               (1./time_step)*
-                      coeff_with_adv_term*
-                      scratch.fe_auxilary_values.JxW(q);
+                             scratch.phi_p[i]*
+                             mm1*
+                             (1./time_step)*
+                             coeff_with_adv_term*
+                             scratch.fe_auxilary_values.JxW(q);
      
        for (unsigned int j=0; j<dofs_per_cell; ++j)
         data.local_matrix(i,j) -= scratch.grads_phi_p[i]*
-                         scratch.grads_phi_p[j]*
-                         scratch.fe_auxilary_values.JxW(q);
+                                  scratch.grads_phi_p[j]*
+                                  scratch.fe_auxilary_values.JxW(q);
       }  
     }
   }

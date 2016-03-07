@@ -185,7 +185,7 @@
               else if (joint_fe.system_to_base_index(i).first.first == 4)
                 {
                   joint_solution(local_joint_dof_indices[i])
-                    = energy_norm_for_ns (local_error_dof_indices
+                    = viscosity_distribution (local_error_dof_indices
                          [joint_fe.system_to_base_index(i).second]);
                 }
           }
