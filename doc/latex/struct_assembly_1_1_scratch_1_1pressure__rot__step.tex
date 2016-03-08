@@ -1,0 +1,95 @@
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step}{}\section{Assembly\+:\+:Scratch\+:\+:pressure\+\_\+rot\+\_\+step$<$ dim $>$ Struct Template Reference}
+\label{struct_assembly_1_1_scratch_1_1pressure__rot__step}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step$<$ dim $>$@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step$<$ dim $>$}}
+
+
+{\ttfamily \#include $<$assembly\+\_\+copydata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_a9a782a85d4cfb0b5f50a0fcd76924d23}{pressure\+\_\+rot\+\_\+step} (const Finite\+Element$<$ dim $>$ \&fe\+\_\+pressure, const Mapping$<$ dim $>$ \&pressure\+\_\+mapping, const Quadrature$<$ dim $>$ \&quadrature, const Update\+Flags pressure\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&fe\+\_\+velocity, const Mapping$<$ dim $>$ \&velocity\+\_\+mapping, const Update\+Flags velocity\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&concentr\+\_\+fe, const Mapping$<$ dim $>$ \&concentr\+\_\+mapping, const Update\+Flags concentr\+\_\+update\+\_\+flags)
+\item 
+\hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_ad8ce0533193a2013774b98c0e7b81581}{pressure\+\_\+rot\+\_\+step} (const \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step}{pressure\+\_\+rot\+\_\+step} \&data)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_ac41f7bf5aa82b80e01ba8453c31e5fdd}{fe\+\_\+pressure\+\_\+values}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_af0e05e66de3967bf2736defbcee157d5}{fe\+\_\+velocity\+\_\+values}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_a897061bf69830b1212f797ff3af9d250}{concentr\+\_\+fe\+\_\+values}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_aeaca955234a85e889b5c71e912240025}{phi\+\_\+p}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_abd85718af16840d6abc3a01abe1fb6e3}{aux\+\_\+sol\+\_\+values}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_a9de7969f5b98cb8dfc629301647b5c3e}{pre\+\_\+sol\+\_\+values}
+\item 
+std\+::vector$<$ Tensor$<$ 2, dim $>$ $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_a8530984bbf6ea328b90cf347b748bdc6}{grad\+\_\+vel\+\_\+sol\+\_\+values}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_a80d0030ad6c786b9d1e7e5365497ac41}{concentr\+\_\+values}
+\item 
+std\+::vector$<$ Symmetric\+Tensor$<$ 2, dim $>$ $>$ \hyperlink{struct_assembly_1_1_scratch_1_1pressure__rot__step_a1bfe900ee774329a556f620ae765573b}{symm\+\_\+grads\+\_\+vel\+\_\+sol}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_a9a782a85d4cfb0b5f50a0fcd76924d23}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!pressure\+\_\+rot\+\_\+step@{pressure\+\_\+rot\+\_\+step}}
+\index{pressure\+\_\+rot\+\_\+step@{pressure\+\_\+rot\+\_\+step}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{pressure\+\_\+rot\+\_\+step(const Finite\+Element$<$ dim $>$ \&fe\+\_\+pressure, const Mapping$<$ dim $>$ \&pressure\+\_\+mapping, const Quadrature$<$ dim $>$ \&quadrature, const Update\+Flags pressure\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&fe\+\_\+velocity, const Mapping$<$ dim $>$ \&velocity\+\_\+mapping, const Update\+Flags velocity\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&concentr\+\_\+fe, const Mapping$<$ dim $>$ \&concentr\+\_\+mapping, const Update\+Flags concentr\+\_\+update\+\_\+flags)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::{\bf pressure\+\_\+rot\+\_\+step} (
+\begin{DoxyParamCaption}
+\item[{const Finite\+Element$<$ dim $>$ \&}]{fe\+\_\+pressure, }
+\item[{const Mapping$<$ dim $>$ \&}]{pressure\+\_\+mapping, }
+\item[{const Quadrature$<$ dim $>$ \&}]{quadrature, }
+\item[{const Update\+Flags}]{pressure\+\_\+update\+\_\+flags, }
+\item[{const Finite\+Element$<$ dim $>$ \&}]{fe\+\_\+velocity, }
+\item[{const Mapping$<$ dim $>$ \&}]{velocity\+\_\+mapping, }
+\item[{const Update\+Flags}]{velocity\+\_\+update\+\_\+flags, }
+\item[{const Finite\+Element$<$ dim $>$ \&}]{concentr\+\_\+fe, }
+\item[{const Mapping$<$ dim $>$ \&}]{concentr\+\_\+mapping, }
+\item[{const Update\+Flags}]{concentr\+\_\+update\+\_\+flags}
+\end{DoxyParamCaption}
+)}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_a9a782a85d4cfb0b5f50a0fcd76924d23}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_ad8ce0533193a2013774b98c0e7b81581}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!pressure\+\_\+rot\+\_\+step@{pressure\+\_\+rot\+\_\+step}}
+\index{pressure\+\_\+rot\+\_\+step@{pressure\+\_\+rot\+\_\+step}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{pressure\+\_\+rot\+\_\+step(const pressure\+\_\+rot\+\_\+step \&data)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::{\bf pressure\+\_\+rot\+\_\+step} (
+\begin{DoxyParamCaption}
+\item[{const {\bf pressure\+\_\+rot\+\_\+step}$<$ dim $>$ \&}]{data}
+\end{DoxyParamCaption}
+)}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_ad8ce0533193a2013774b98c0e7b81581}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_abd85718af16840d6abc3a01abe1fb6e3}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!aux\+\_\+sol\+\_\+values@{aux\+\_\+sol\+\_\+values}}
+\index{aux\+\_\+sol\+\_\+values@{aux\+\_\+sol\+\_\+values}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{aux\+\_\+sol\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::aux\+\_\+sol\+\_\+values}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_abd85718af16840d6abc3a01abe1fb6e3}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_a897061bf69830b1212f797ff3af9d250}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!concentr\+\_\+fe\+\_\+values@{concentr\+\_\+fe\+\_\+values}}
+\index{concentr\+\_\+fe\+\_\+values@{concentr\+\_\+fe\+\_\+values}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{concentr\+\_\+fe\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::concentr\+\_\+fe\+\_\+values}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_a897061bf69830b1212f797ff3af9d250}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_a80d0030ad6c786b9d1e7e5365497ac41}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!concentr\+\_\+values@{concentr\+\_\+values}}
+\index{concentr\+\_\+values@{concentr\+\_\+values}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{concentr\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::concentr\+\_\+values}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_a80d0030ad6c786b9d1e7e5365497ac41}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_ac41f7bf5aa82b80e01ba8453c31e5fdd}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!fe\+\_\+pressure\+\_\+values@{fe\+\_\+pressure\+\_\+values}}
+\index{fe\+\_\+pressure\+\_\+values@{fe\+\_\+pressure\+\_\+values}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{fe\+\_\+pressure\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::fe\+\_\+pressure\+\_\+values}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_ac41f7bf5aa82b80e01ba8453c31e5fdd}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_af0e05e66de3967bf2736defbcee157d5}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!fe\+\_\+velocity\+\_\+values@{fe\+\_\+velocity\+\_\+values}}
+\index{fe\+\_\+velocity\+\_\+values@{fe\+\_\+velocity\+\_\+values}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{fe\+\_\+velocity\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::fe\+\_\+velocity\+\_\+values}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_af0e05e66de3967bf2736defbcee157d5}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_a8530984bbf6ea328b90cf347b748bdc6}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!grad\+\_\+vel\+\_\+sol\+\_\+values@{grad\+\_\+vel\+\_\+sol\+\_\+values}}
+\index{grad\+\_\+vel\+\_\+sol\+\_\+values@{grad\+\_\+vel\+\_\+sol\+\_\+values}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{grad\+\_\+vel\+\_\+sol\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$Tensor$<$2,dim$>$ $>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::grad\+\_\+vel\+\_\+sol\+\_\+values}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_a8530984bbf6ea328b90cf347b748bdc6}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_aeaca955234a85e889b5c71e912240025}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!phi\+\_\+p@{phi\+\_\+p}}
+\index{phi\+\_\+p@{phi\+\_\+p}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{phi\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::phi\+\_\+p}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_aeaca955234a85e889b5c71e912240025}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_a9de7969f5b98cb8dfc629301647b5c3e}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!pre\+\_\+sol\+\_\+values@{pre\+\_\+sol\+\_\+values}}
+\index{pre\+\_\+sol\+\_\+values@{pre\+\_\+sol\+\_\+values}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{pre\+\_\+sol\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::pre\+\_\+sol\+\_\+values}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_a9de7969f5b98cb8dfc629301647b5c3e}
+\hypertarget{struct_assembly_1_1_scratch_1_1pressure__rot__step_a1bfe900ee774329a556f620ae765573b}{}\index{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}!symm\+\_\+grads\+\_\+vel\+\_\+sol@{symm\+\_\+grads\+\_\+vel\+\_\+sol}}
+\index{symm\+\_\+grads\+\_\+vel\+\_\+sol@{symm\+\_\+grads\+\_\+vel\+\_\+sol}!Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step@{Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}}
+\subsubsection[{symm\+\_\+grads\+\_\+vel\+\_\+sol}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$Symmetric\+Tensor$<$2,dim$>$ $>$ {\bf Assembly\+::\+Scratch\+::pressure\+\_\+rot\+\_\+step}$<$ dim $>$\+::symm\+\_\+grads\+\_\+vel\+\_\+sol}\label{struct_assembly_1_1_scratch_1_1pressure__rot__step_a1bfe900ee774329a556f620ae765573b}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/\hyperlink{assembly__copydata_8h}{assembly\+\_\+copydata.\+h}\end{DoxyCompactItemize}

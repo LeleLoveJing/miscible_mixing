@@ -1,0 +1,72 @@
+\hypertarget{class_u_b_c__mis__mixing_1_1_postprocessor}{}\section{U\+B\+C\+\_\+mis\+\_\+mixing$<$ dim $>$\+:\+:Postprocessor$<$ dim $>$ Class Template Reference}
+\label{class_u_b_c__mis__mixing_1_1_postprocessor}\index{U\+B\+C\+\_\+mis\+\_\+mixing$<$ dim $>$\+::\+Postprocessor$<$ dim $>$@{U\+B\+C\+\_\+mis\+\_\+mixing$<$ dim $>$\+::\+Postprocessor$<$ dim $>$}}
+Inheritance diagram for U\+B\+C\+\_\+mis\+\_\+mixing$<$ dim $>$\+:\+:Postprocessor$<$ dim $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_b_c__mis__mixing_1_1_postprocessor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_u_b_c__mis__mixing_1_1_postprocessor_ac74c98c423a4fe0dba8f9ef9279c0607}{Postprocessor} (const unsigned int partition)
+\item 
+virtual void \hyperlink{class_u_b_c__mis__mixing_1_1_postprocessor_ae5ca8f1ef4eb8c682f2c322e7d47b85c}{compute\+\_\+derived\+\_\+quantities\+\_\+vector} (const std\+::vector$<$ Vector$<$ double $>$ $>$ \&uh, const std\+::vector$<$ std\+::vector$<$ Tensor$<$ 1, dim $>$ $>$ $>$ \&duh, const std\+::vector$<$ std\+::vector$<$ Tensor$<$ 2, dim $>$ $>$ $>$ \&dduh, const std\+::vector$<$ Point$<$ dim $>$ $>$ \&normals, const std\+::vector$<$ Point$<$ dim $>$ $>$ \&evaluation\+\_\+points, std\+::vector$<$ Vector$<$ double $>$ $>$ \&computed\+\_\+quantities) const 
+\item 
+virtual std\+::vector$<$ std\+::string $>$ \hyperlink{class_u_b_c__mis__mixing_1_1_postprocessor_a05ee9a5d6d913c2fe41cb67f9f6f3893}{get\+\_\+names} () const 
+\item 
+virtual std\+::vector$<$ Data\+Component\+Interpretation\+::\+Data\+Component\+Interpretation $>$ \hyperlink{class_u_b_c__mis__mixing_1_1_postprocessor_a3038fa1744200de88fe27c335ded7a39}{get\+\_\+data\+\_\+component\+\_\+interpretation} () const 
+\item 
+virtual Update\+Flags \hyperlink{class_u_b_c__mis__mixing_1_1_postprocessor_a002ab5928ee9d405325b9804355ccb9c}{get\+\_\+needed\+\_\+update\+\_\+flags} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_u_b_c__mis__mixing_1_1_postprocessor_ac74c98c423a4fe0dba8f9ef9279c0607}{}\index{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}!Postprocessor@{Postprocessor}}
+\index{Postprocessor@{Postprocessor}!U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}}
+\subsubsection[{Postprocessor(const unsigned int partition)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ template$<$int dim$>$ {\bf U\+B\+C\+\_\+mis\+\_\+mixing}$<$ dim $>$\+::{\bf Postprocessor}$<$ dim $>$\+::{\bf Postprocessor} (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{partition}
+\end{DoxyParamCaption}
+)}\label{class_u_b_c__mis__mixing_1_1_postprocessor_ac74c98c423a4fe0dba8f9ef9279c0607}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_u_b_c__mis__mixing_1_1_postprocessor_ae5ca8f1ef4eb8c682f2c322e7d47b85c}{}\index{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}!compute\+\_\+derived\+\_\+quantities\+\_\+vector@{compute\+\_\+derived\+\_\+quantities\+\_\+vector}}
+\index{compute\+\_\+derived\+\_\+quantities\+\_\+vector@{compute\+\_\+derived\+\_\+quantities\+\_\+vector}!U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}}
+\subsubsection[{compute\+\_\+derived\+\_\+quantities\+\_\+vector(const std\+::vector$<$ Vector$<$ double $>$ $>$ \&uh, const std\+::vector$<$ std\+::vector$<$ Tensor$<$ 1, dim $>$ $>$ $>$ \&duh, const std\+::vector$<$ std\+::vector$<$ Tensor$<$ 2, dim $>$ $>$ $>$ \&dduh, const std\+::vector$<$ Point$<$ dim $>$ $>$ \&normals, const std\+::vector$<$ Point$<$ dim $>$ $>$ \&evaluation\+\_\+points, std\+::vector$<$ Vector$<$ double $>$ $>$ \&computed\+\_\+quantities) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ template$<$int dim$>$ void {\bf U\+B\+C\+\_\+mis\+\_\+mixing}$<$ dim $>$\+::{\bf Postprocessor}$<$ dim $>$\+::compute\+\_\+derived\+\_\+quantities\+\_\+vector (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ Vector$<$ double $>$ $>$ \&}]{uh, }
+\item[{const std\+::vector$<$ std\+::vector$<$ Tensor$<$ 1, dim $>$ $>$ $>$ \&}]{duh, }
+\item[{const std\+::vector$<$ std\+::vector$<$ Tensor$<$ 2, dim $>$ $>$ $>$ \&}]{dduh, }
+\item[{const std\+::vector$<$ Point$<$ dim $>$ $>$ \&}]{normals, }
+\item[{const std\+::vector$<$ Point$<$ dim $>$ $>$ \&}]{evaluation\+\_\+points, }
+\item[{std\+::vector$<$ Vector$<$ double $>$ $>$ \&}]{computed\+\_\+quantities}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_u_b_c__mis__mixing_1_1_postprocessor_ae5ca8f1ef4eb8c682f2c322e7d47b85c}
+\hypertarget{class_u_b_c__mis__mixing_1_1_postprocessor_a3038fa1744200de88fe27c335ded7a39}{}\index{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}!get\+\_\+data\+\_\+component\+\_\+interpretation@{get\+\_\+data\+\_\+component\+\_\+interpretation}}
+\index{get\+\_\+data\+\_\+component\+\_\+interpretation@{get\+\_\+data\+\_\+component\+\_\+interpretation}!U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}}
+\subsubsection[{get\+\_\+data\+\_\+component\+\_\+interpretation() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ template$<$int dim$>$ std\+::vector$<$ Data\+Component\+Interpretation\+::\+Data\+Component\+Interpretation $>$ {\bf U\+B\+C\+\_\+mis\+\_\+mixing}$<$ dim $>$\+::{\bf Postprocessor}$<$ dim $>$\+::get\+\_\+data\+\_\+component\+\_\+interpretation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_u_b_c__mis__mixing_1_1_postprocessor_a3038fa1744200de88fe27c335ded7a39}
+\hypertarget{class_u_b_c__mis__mixing_1_1_postprocessor_a05ee9a5d6d913c2fe41cb67f9f6f3893}{}\index{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}!get\+\_\+names@{get\+\_\+names}}
+\index{get\+\_\+names@{get\+\_\+names}!U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}}
+\subsubsection[{get\+\_\+names() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ template$<$int dim$>$ std\+::vector$<$ std\+::string $>$ {\bf U\+B\+C\+\_\+mis\+\_\+mixing}$<$ dim $>$\+::{\bf Postprocessor}$<$ dim $>$\+::get\+\_\+names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_u_b_c__mis__mixing_1_1_postprocessor_a05ee9a5d6d913c2fe41cb67f9f6f3893}
+\hypertarget{class_u_b_c__mis__mixing_1_1_postprocessor_a002ab5928ee9d405325b9804355ccb9c}{}\index{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}!get\+\_\+needed\+\_\+update\+\_\+flags@{get\+\_\+needed\+\_\+update\+\_\+flags}}
+\index{get\+\_\+needed\+\_\+update\+\_\+flags@{get\+\_\+needed\+\_\+update\+\_\+flags}!U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor@{U\+B\+C\+\_\+mis\+\_\+mixing\+::\+Postprocessor}}
+\subsubsection[{get\+\_\+needed\+\_\+update\+\_\+flags() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ template$<$int dim$>$ Update\+Flags {\bf U\+B\+C\+\_\+mis\+\_\+mixing}$<$ dim $>$\+::{\bf Postprocessor}$<$ dim $>$\+::get\+\_\+needed\+\_\+update\+\_\+flags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_u_b_c__mis__mixing_1_1_postprocessor_a002ab5928ee9d405325b9804355ccb9c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/\+Post\+\_\+\+Processing/\hyperlink{post__processing_8cc}{post\+\_\+processing.\+cc}\end{DoxyCompactItemize}

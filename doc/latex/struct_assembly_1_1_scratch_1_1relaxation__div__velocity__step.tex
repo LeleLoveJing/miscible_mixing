@@ -1,0 +1,85 @@
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step}{}\section{Assembly\+:\+:Scratch\+:\+:relaxation\+\_\+div\+\_\+velocity\+\_\+step$<$ dim $>$ Struct Template Reference}
+\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step$<$ dim $>$@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step$<$ dim $>$}}
+
+
+{\ttfamily \#include $<$assembly\+\_\+copydata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_ac3a5853ca83d9a9c1b5f9a14792369eb}{relaxation\+\_\+div\+\_\+velocity\+\_\+step} (const Finite\+Element$<$ dim $>$ \&fe\+\_\+auxilary, const Mapping$<$ dim $>$ \&auxilary\+\_\+mapping, const Quadrature$<$ dim $>$ \&quadrature, const Update\+Flags auxilary\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&fe\+\_\+velocity, const Mapping$<$ dim $>$ \&velocity\+\_\+mapping, const Update\+Flags velocity\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&concentr\+\_\+fe, const Mapping$<$ dim $>$ \&concentr\+\_\+mapping, const Update\+Flags concentr\+\_\+update\+\_\+flags)
+\item 
+\hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a5386826f18101deb13e7651062637a85}{relaxation\+\_\+div\+\_\+velocity\+\_\+step} (const \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step}{relaxation\+\_\+div\+\_\+velocity\+\_\+step} \&data)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a3ee5d28e551b9672965d42c6a6f7e8ac}{fe\+\_\+auxilary\+\_\+values}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_aff257091b62794122cf0a9f5ac2faafe}{fe\+\_\+velocity\+\_\+values}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a8c8792bcf1173a82f73e22ef1ef0dc02}{concentr\+\_\+fe\+\_\+values}
+\item 
+std\+::vector$<$ Tensor$<$ 1, dim $>$ $>$ \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a9fae0fc0a91b6c248c1f19bc7907a8cd}{grads\+\_\+phi\+\_\+p}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a62319566acffdbef4ff0b505bae37b01}{phi\+\_\+p}
+\item 
+std\+::vector$<$ Tensor$<$ 2, dim $>$ $>$ \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a8eb65ba7135f100ceadb24a86d5d32ae}{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_ae1f4407f45f1f05b5d69062f74f95425}{concentr\+\_\+values}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_ac3a5853ca83d9a9c1b5f9a14792369eb}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!relaxation\+\_\+div\+\_\+velocity\+\_\+step@{relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\index{relaxation\+\_\+div\+\_\+velocity\+\_\+step@{relaxation\+\_\+div\+\_\+velocity\+\_\+step}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{relaxation\+\_\+div\+\_\+velocity\+\_\+step(const Finite\+Element$<$ dim $>$ \&fe\+\_\+auxilary, const Mapping$<$ dim $>$ \&auxilary\+\_\+mapping, const Quadrature$<$ dim $>$ \&quadrature, const Update\+Flags auxilary\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&fe\+\_\+velocity, const Mapping$<$ dim $>$ \&velocity\+\_\+mapping, const Update\+Flags velocity\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&concentr\+\_\+fe, const Mapping$<$ dim $>$ \&concentr\+\_\+mapping, const Update\+Flags concentr\+\_\+update\+\_\+flags)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::{\bf relaxation\+\_\+div\+\_\+velocity\+\_\+step} (
+\begin{DoxyParamCaption}
+\item[{const Finite\+Element$<$ dim $>$ \&}]{fe\+\_\+auxilary, }
+\item[{const Mapping$<$ dim $>$ \&}]{auxilary\+\_\+mapping, }
+\item[{const Quadrature$<$ dim $>$ \&}]{quadrature, }
+\item[{const Update\+Flags}]{auxilary\+\_\+update\+\_\+flags, }
+\item[{const Finite\+Element$<$ dim $>$ \&}]{fe\+\_\+velocity, }
+\item[{const Mapping$<$ dim $>$ \&}]{velocity\+\_\+mapping, }
+\item[{const Update\+Flags}]{velocity\+\_\+update\+\_\+flags, }
+\item[{const Finite\+Element$<$ dim $>$ \&}]{concentr\+\_\+fe, }
+\item[{const Mapping$<$ dim $>$ \&}]{concentr\+\_\+mapping, }
+\item[{const Update\+Flags}]{concentr\+\_\+update\+\_\+flags}
+\end{DoxyParamCaption}
+)}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_ac3a5853ca83d9a9c1b5f9a14792369eb}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a5386826f18101deb13e7651062637a85}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!relaxation\+\_\+div\+\_\+velocity\+\_\+step@{relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\index{relaxation\+\_\+div\+\_\+velocity\+\_\+step@{relaxation\+\_\+div\+\_\+velocity\+\_\+step}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{relaxation\+\_\+div\+\_\+velocity\+\_\+step(const relaxation\+\_\+div\+\_\+velocity\+\_\+step \&data)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::{\bf relaxation\+\_\+div\+\_\+velocity\+\_\+step} (
+\begin{DoxyParamCaption}
+\item[{const {\bf relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$ \&}]{data}
+\end{DoxyParamCaption}
+)}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a5386826f18101deb13e7651062637a85}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a8c8792bcf1173a82f73e22ef1ef0dc02}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!concentr\+\_\+fe\+\_\+values@{concentr\+\_\+fe\+\_\+values}}
+\index{concentr\+\_\+fe\+\_\+values@{concentr\+\_\+fe\+\_\+values}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{concentr\+\_\+fe\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::concentr\+\_\+fe\+\_\+values}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a8c8792bcf1173a82f73e22ef1ef0dc02}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_ae1f4407f45f1f05b5d69062f74f95425}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!concentr\+\_\+values@{concentr\+\_\+values}}
+\index{concentr\+\_\+values@{concentr\+\_\+values}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{concentr\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::concentr\+\_\+values}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_ae1f4407f45f1f05b5d69062f74f95425}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a3ee5d28e551b9672965d42c6a6f7e8ac}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!fe\+\_\+auxilary\+\_\+values@{fe\+\_\+auxilary\+\_\+values}}
+\index{fe\+\_\+auxilary\+\_\+values@{fe\+\_\+auxilary\+\_\+values}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{fe\+\_\+auxilary\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::fe\+\_\+auxilary\+\_\+values}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a3ee5d28e551b9672965d42c6a6f7e8ac}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_aff257091b62794122cf0a9f5ac2faafe}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!fe\+\_\+velocity\+\_\+values@{fe\+\_\+velocity\+\_\+values}}
+\index{fe\+\_\+velocity\+\_\+values@{fe\+\_\+velocity\+\_\+values}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{fe\+\_\+velocity\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::fe\+\_\+velocity\+\_\+values}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_aff257091b62794122cf0a9f5ac2faafe}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a8eb65ba7135f100ceadb24a86d5d32ae}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values@{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}}
+\index{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values@{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$Tensor$<$2,dim$>$ $>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a8eb65ba7135f100ceadb24a86d5d32ae}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a9fae0fc0a91b6c248c1f19bc7907a8cd}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!grads\+\_\+phi\+\_\+p@{grads\+\_\+phi\+\_\+p}}
+\index{grads\+\_\+phi\+\_\+p@{grads\+\_\+phi\+\_\+p}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{grads\+\_\+phi\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$Tensor$<$1,dim$>$ $>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::grads\+\_\+phi\+\_\+p}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a9fae0fc0a91b6c248c1f19bc7907a8cd}
+\hypertarget{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a62319566acffdbef4ff0b505bae37b01}{}\index{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}!phi\+\_\+p@{phi\+\_\+p}}
+\index{phi\+\_\+p@{phi\+\_\+p}!Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step@{Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}}
+\subsubsection[{phi\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::relaxation\+\_\+div\+\_\+velocity\+\_\+step}$<$ dim $>$\+::phi\+\_\+p}\label{struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step_a62319566acffdbef4ff0b505bae37b01}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/\hyperlink{assembly__copydata_8h}{assembly\+\_\+copydata.\+h}\end{DoxyCompactItemize}

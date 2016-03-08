@@ -1,0 +1,90 @@
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step}{}\section{Assembly\+:\+:Scratch\+:\+:projection\+\_\+step$<$ dim $>$ Struct Template Reference}
+\label{struct_assembly_1_1_scratch_1_1projection__step}\index{Assembly\+::\+Scratch\+::projection\+\_\+step$<$ dim $>$@{Assembly\+::\+Scratch\+::projection\+\_\+step$<$ dim $>$}}
+
+
+{\ttfamily \#include $<$assembly\+\_\+copydata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_assembly_1_1_scratch_1_1projection__step_ab68aa92ddfce17896f9bb3088cd707fc}{projection\+\_\+step} (const Finite\+Element$<$ dim $>$ \&fe\+\_\+auxilary, const Mapping$<$ dim $>$ \&auxilary\+\_\+mapping, const Quadrature$<$ dim $>$ \&quadrature, const Update\+Flags auxilary\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&fe\+\_\+velocity, const Mapping$<$ dim $>$ \&velocity\+\_\+mapping, const Update\+Flags velocity\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&concentr\+\_\+fe, const Mapping$<$ dim $>$ \&concentr\+\_\+mapping, const Update\+Flags concentr\+\_\+update\+\_\+flags)
+\item 
+\hyperlink{struct_assembly_1_1_scratch_1_1projection__step_aadd897036cbaca7f3a37e3c0b0289bbc}{projection\+\_\+step} (const \hyperlink{struct_assembly_1_1_scratch_1_1projection__step}{projection\+\_\+step} \&data)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_a3b5a0afe1eaf675d173af8ffd7663e29}{fe\+\_\+auxilary\+\_\+values}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_af91b8e433a9a308d66f5cbdbc2dd5a7b}{fe\+\_\+velocity\+\_\+values}
+\item 
+F\+E\+Values$<$ dim $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_afeebd89eb59befac5386d69841c490b0}{concentr\+\_\+fe\+\_\+values}
+\item 
+std\+::vector$<$ Tensor$<$ 1, dim $>$ $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_a75ecf1c6d8aa564824cc3b3376ca08f9}{grads\+\_\+phi\+\_\+p}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_a766727128326d33ecd414c713f186540}{phi\+\_\+p}
+\item 
+std\+::vector$<$ Tensor$<$ 2, dim $>$ $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_abc3d9d363dff0cc1bbf8631afc2c777a}{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_a7907e0ef2eddf65f20a86cc8afff9b66}{concentr\+\_\+values}
+\item 
+std\+::vector$<$ double $>$ \hyperlink{struct_assembly_1_1_scratch_1_1projection__step_a65701cc9156422035628e7a65783587f}{div\+\_\+vel\+\_\+values}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_ab68aa92ddfce17896f9bb3088cd707fc}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!projection\+\_\+step@{projection\+\_\+step}}
+\index{projection\+\_\+step@{projection\+\_\+step}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{projection\+\_\+step(const Finite\+Element$<$ dim $>$ \&fe\+\_\+auxilary, const Mapping$<$ dim $>$ \&auxilary\+\_\+mapping, const Quadrature$<$ dim $>$ \&quadrature, const Update\+Flags auxilary\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&fe\+\_\+velocity, const Mapping$<$ dim $>$ \&velocity\+\_\+mapping, const Update\+Flags velocity\+\_\+update\+\_\+flags, const Finite\+Element$<$ dim $>$ \&concentr\+\_\+fe, const Mapping$<$ dim $>$ \&concentr\+\_\+mapping, const Update\+Flags concentr\+\_\+update\+\_\+flags)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::{\bf projection\+\_\+step} (
+\begin{DoxyParamCaption}
+\item[{const Finite\+Element$<$ dim $>$ \&}]{fe\+\_\+auxilary, }
+\item[{const Mapping$<$ dim $>$ \&}]{auxilary\+\_\+mapping, }
+\item[{const Quadrature$<$ dim $>$ \&}]{quadrature, }
+\item[{const Update\+Flags}]{auxilary\+\_\+update\+\_\+flags, }
+\item[{const Finite\+Element$<$ dim $>$ \&}]{fe\+\_\+velocity, }
+\item[{const Mapping$<$ dim $>$ \&}]{velocity\+\_\+mapping, }
+\item[{const Update\+Flags}]{velocity\+\_\+update\+\_\+flags, }
+\item[{const Finite\+Element$<$ dim $>$ \&}]{concentr\+\_\+fe, }
+\item[{const Mapping$<$ dim $>$ \&}]{concentr\+\_\+mapping, }
+\item[{const Update\+Flags}]{concentr\+\_\+update\+\_\+flags}
+\end{DoxyParamCaption}
+)}\label{struct_assembly_1_1_scratch_1_1projection__step_ab68aa92ddfce17896f9bb3088cd707fc}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_aadd897036cbaca7f3a37e3c0b0289bbc}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!projection\+\_\+step@{projection\+\_\+step}}
+\index{projection\+\_\+step@{projection\+\_\+step}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{projection\+\_\+step(const projection\+\_\+step \&data)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::{\bf projection\+\_\+step} (
+\begin{DoxyParamCaption}
+\item[{const {\bf projection\+\_\+step}$<$ dim $>$ \&}]{data}
+\end{DoxyParamCaption}
+)}\label{struct_assembly_1_1_scratch_1_1projection__step_aadd897036cbaca7f3a37e3c0b0289bbc}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_afeebd89eb59befac5386d69841c490b0}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!concentr\+\_\+fe\+\_\+values@{concentr\+\_\+fe\+\_\+values}}
+\index{concentr\+\_\+fe\+\_\+values@{concentr\+\_\+fe\+\_\+values}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{concentr\+\_\+fe\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::concentr\+\_\+fe\+\_\+values}\label{struct_assembly_1_1_scratch_1_1projection__step_afeebd89eb59befac5386d69841c490b0}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_a7907e0ef2eddf65f20a86cc8afff9b66}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!concentr\+\_\+values@{concentr\+\_\+values}}
+\index{concentr\+\_\+values@{concentr\+\_\+values}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{concentr\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::concentr\+\_\+values}\label{struct_assembly_1_1_scratch_1_1projection__step_a7907e0ef2eddf65f20a86cc8afff9b66}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_a65701cc9156422035628e7a65783587f}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!div\+\_\+vel\+\_\+values@{div\+\_\+vel\+\_\+values}}
+\index{div\+\_\+vel\+\_\+values@{div\+\_\+vel\+\_\+values}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{div\+\_\+vel\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::div\+\_\+vel\+\_\+values}\label{struct_assembly_1_1_scratch_1_1projection__step_a65701cc9156422035628e7a65783587f}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_a3b5a0afe1eaf675d173af8ffd7663e29}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!fe\+\_\+auxilary\+\_\+values@{fe\+\_\+auxilary\+\_\+values}}
+\index{fe\+\_\+auxilary\+\_\+values@{fe\+\_\+auxilary\+\_\+values}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{fe\+\_\+auxilary\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::fe\+\_\+auxilary\+\_\+values}\label{struct_assembly_1_1_scratch_1_1projection__step_a3b5a0afe1eaf675d173af8ffd7663e29}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_af91b8e433a9a308d66f5cbdbc2dd5a7b}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!fe\+\_\+velocity\+\_\+values@{fe\+\_\+velocity\+\_\+values}}
+\index{fe\+\_\+velocity\+\_\+values@{fe\+\_\+velocity\+\_\+values}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{fe\+\_\+velocity\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ F\+E\+Values$<$dim$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::fe\+\_\+velocity\+\_\+values}\label{struct_assembly_1_1_scratch_1_1projection__step_af91b8e433a9a308d66f5cbdbc2dd5a7b}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_abc3d9d363dff0cc1bbf8631afc2c777a}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values@{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}}
+\index{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values@{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$Tensor$<$2,dim$>$ $>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::grad\+\_\+vel\+\_\+n\+\_\+plus\+\_\+1\+\_\+values}\label{struct_assembly_1_1_scratch_1_1projection__step_abc3d9d363dff0cc1bbf8631afc2c777a}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_a75ecf1c6d8aa564824cc3b3376ca08f9}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!grads\+\_\+phi\+\_\+p@{grads\+\_\+phi\+\_\+p}}
+\index{grads\+\_\+phi\+\_\+p@{grads\+\_\+phi\+\_\+p}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{grads\+\_\+phi\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$Tensor$<$1,dim$>$ $>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::grads\+\_\+phi\+\_\+p}\label{struct_assembly_1_1_scratch_1_1projection__step_a75ecf1c6d8aa564824cc3b3376ca08f9}
+\hypertarget{struct_assembly_1_1_scratch_1_1projection__step_a766727128326d33ecd414c713f186540}{}\index{Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}!phi\+\_\+p@{phi\+\_\+p}}
+\index{phi\+\_\+p@{phi\+\_\+p}!Assembly\+::\+Scratch\+::projection\+\_\+step@{Assembly\+::\+Scratch\+::projection\+\_\+step}}
+\subsubsection[{phi\+\_\+p}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ std\+::vector$<$double$>$ {\bf Assembly\+::\+Scratch\+::projection\+\_\+step}$<$ dim $>$\+::phi\+\_\+p}\label{struct_assembly_1_1_scratch_1_1projection__step_a766727128326d33ecd414c713f186540}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/\hyperlink{assembly__copydata_8h}{assembly\+\_\+copydata.\+h}\end{DoxyCompactItemize}
