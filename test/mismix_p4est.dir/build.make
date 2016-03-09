@@ -49,337 +49,512 @@ include CMakeFiles/../test/mismix_p4est.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/../test/mismix_p4est.dir/flags.make
 
-CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o: source/AMR/amr.cc
+CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o: source/amr/amr.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/AMR/amr.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/amr/amr.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/AMR/amr.cc > CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/amr/amr.cc > CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/AMR/amr.cc -o CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/amr/amr.cc -o CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o: source/Main/main.cc
+CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o: source/main/main.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Main/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/main/main.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Main/main.cc > CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/main/main.cc > CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Main/main.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/main/main.cc -o CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o: source/Main/run.cc
+CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o: source/main/run.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Main/run.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/main/run.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Main/run.cc > CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/main/run.cc > CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Main/run.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/main/run.cc -o CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o: source/Pre_Processing/mesh_in.cc
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o: source/pre_process/constructor.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Pre_Processing/mesh_in.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/constructor.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Pre_Processing/mesh_in.cc > CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/constructor.cc > CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Pre_Processing/mesh_in.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/constructor.cc -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o: source/Pre_Processing/read_and_write.cc
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o: source/pre_process/mesh_in.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Pre_Processing/read_and_write.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/mesh_in.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Pre_Processing/read_and_write.cc > CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/mesh_in.cc > CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Pre_Processing/read_and_write.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/mesh_in.cc -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o: source/Support/utilities.cc
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o: source/pre_process/read_and_write.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Support/utilities.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/read_and_write.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Support/utilities.cc > CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/read_and_write.cc > CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Support/utilities.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/read_and_write.cc -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o: source/Post_Processing/extract_data.cc
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o: source/pre_process/setup_dofs.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Post_Processing/extract_data.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/setup_dofs.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Post_Processing/extract_data.cc > CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/setup_dofs.cc > CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Post_Processing/extract_data.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/pre_process/setup_dofs.cc -o CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o: source/Post_Processing/post_processing.cc
+CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o: source/support/utilities.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Post_Processing/post_processing.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/support/utilities.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Post_Processing/post_processing.cc > CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/support/utilities.cc > CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Post_Processing/post_processing.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/support/utilities.cc -o CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o: source/Solver/constructor.cc
+CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o: source/constitutive_model/consti_model.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/constructor.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/constitutive_model/consti_model.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/constructor.cc > CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/constitutive_model/consti_model.cc > CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/constructor.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/constitutive_model/consti_model.cc -o CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o: source/Solver/projection_for_div_velocity.cc
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o: source/post_process/extract_data.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/projection_for_div_velocity.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/post_process/extract_data.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/projection_for_div_velocity.cc > CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/post_process/extract_data.cc > CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/projection_for_div_velocity.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/post_process/extract_data.cc -o CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o: source/Solver/setup_dofs.cc
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o: source/post_process/post_processing.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/setup_dofs.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/post_process/post_processing.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/setup_dofs.cc > CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/post_process/post_processing.cc > CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/setup_dofs.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/post_process/post_processing.cc -o CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o: source/Solver/solve_hyperbolic_equation.cc
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o: source/solver/phase/levelset.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/solve_hyperbolic_equation.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/phase/levelset.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/solve_hyperbolic_equation.cc > CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/phase/levelset.cc > CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/solve_hyperbolic_equation.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/phase/levelset.cc -o CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o: source/Solver/solve_ns_equation.cc
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o: source/solver/phase/solve_hyperbolic_equation.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/solve_ns_equation.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/phase/solve_hyperbolic_equation.cc
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.i"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/solve_ns_equation.cc > CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.i
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/phase/solve_hyperbolic_equation.cc > CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.i
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.s"
-	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/Solver/solve_ns_equation.cc -o CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.s
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/phase/solve_hyperbolic_equation.cc -o CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.s
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.requires:
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.requires
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.requires
-	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.provides.build
-.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.provides
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.provides
 
-CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o
+CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o: source/particle/generator.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/generator.cc
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/generator.cc > CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.i
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/generator.cc -o CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.s
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.requires
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.provides
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o: source/particle/integrator.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/integrator.cc
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/integrator.cc > CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.i
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/integrator.cc -o CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.s
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.requires
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.provides
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o: source/particle/output.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/output.cc
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/output.cc > CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.i
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/output.cc -o CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.s
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.requires
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.provides
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o: source/particle/particle.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/particle.cc
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/particle.cc > CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.i
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/particle/particle.cc -o CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.s
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.requires
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.provides
+
+CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o: source/solver/navier_stokes/control.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/control.cc
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/control.cc > CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.i
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/control.cc -o CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.s
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.requires
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.provides
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o: source/solver/navier_stokes/projection_for_div_velocity.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/projection_for_div_velocity.cc
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/projection_for_div_velocity.cc > CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.i
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/projection_for_div_velocity.cc -o CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.s
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.requires
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.provides
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o: CMakeFiles/../test/mismix_p4est.dir/flags.make
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o: source/solver/navier_stokes/solve_ns_equation.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o -c /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/solve_ns_equation.cc
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.i"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -E /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/solve_ns_equation.cc > CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.i
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.s"
+	/Applications/deal.II.app/Contents/Resources/opt/openmpi-1.6.5/bin/mpicxx  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/source/solver/navier_stokes/solve_ns_equation.cc -o CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.s
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.requires:
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.requires
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.provides: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.requires
+	$(MAKE) -f CMakeFiles/../test/mismix_p4est.dir/build.make CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.provides.build
+.PHONY : CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.provides
+
+CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.provides.build: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o
 
 # Object files for target ../test/mismix_p4est
 __/test/mismix_p4est_OBJECTS = \
-"CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o" \
-"CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o"
+"CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o" \
+"CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o"
 
 # External object files for target ../test/mismix_p4est
 __/test/mismix_p4est_EXTERNAL_OBJECTS =
 
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o
-../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o
+../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o
 ../test/mismix_p4est: CMakeFiles/../test/mismix_p4est.dir/build.make
 ../test/mismix_p4est: /Users/miranus/shy/dealii-pre/lib/libdeal_II.8.5.0-pre.dylib
 ../test/mismix_p4est: /usr/lib/libbz2.dylib
@@ -516,19 +691,26 @@ __/test/mismix_p4est_EXTERNAL_OBJECTS =
 CMakeFiles/../test/mismix_p4est.dir/build: ../test/mismix_p4est
 .PHONY : CMakeFiles/../test/mismix_p4est.dir/build
 
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/AMR/amr.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Main/main.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Main/run.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/mesh_in.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Pre_Processing/read_and_write.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Support/utilities.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/extract_data.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Post_Processing/post_processing.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Solver/constructor.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Solver/projection_for_div_velocity.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Solver/setup_dofs.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_hyperbolic_equation.cc.o.requires
-CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/Solver/solve_ns_equation.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/amr/amr.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/main/main.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/main/run.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/constructor.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/mesh_in.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/read_and_write.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/pre_process/setup_dofs.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/support/utilities.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/constitutive_model/consti_model.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/post_process/extract_data.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/post_process/post_processing.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/levelset.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/solver/phase/solve_hyperbolic_equation.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/particle/generator.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/particle/integrator.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/particle/output.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/particle/particle.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/control.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/projection_for_div_velocity.cc.o.requires
+CMakeFiles/../test/mismix_p4est.dir/requires: CMakeFiles/../test/mismix_p4est.dir/source/solver/navier_stokes/solve_ns_equation.cc.o.requires
 .PHONY : CMakeFiles/../test/mismix_p4est.dir/requires
 
 CMakeFiles/../test/mismix_p4est.dir/clean:

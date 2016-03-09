@@ -1,0 +1,327 @@
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Base\+Particle$<$ dim $>$ Class Template Reference}
+\label{classps__mmm_1_1_particle_1_1_base_particle}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle$<$ dim $>$@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle$<$ dim $>$}}
+
+
+Base class of particles -\/ represents a particle with position, velocity, and an I\+D number.  
+
+
+
+
+{\ttfamily \#include $<$particle.\+h$>$}
+
+Inheritance diagram for ps\+\_\+mmm\+:\+:Particle\+:\+:Base\+Particle$<$ dim $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classps__mmm_1_1_particle_1_1_base_particle}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_base_particle_a79477d4c34fac56cd9dadeeb5442e3f6}{Base\+Particle} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor for \hyperlink{classps__mmm_1_1_particle_1_1_base_particle}{Base\+Particle}, creates a particle at the origin with zero velocity. \end{DoxyCompactList}\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_base_particle_aa0ed5ffa5b37e832150acd4b5e1739ba}{Base\+Particle} (const Point$<$ dim $>$ \&new\+\_\+loc, const double \&new\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classps__mmm_1_1_particle_1_1_base_particle}{Base\+Particle}, creates a particle with the specified I\+D at the specified location with zero velocity. \end{DoxyCompactList}\item 
+virtual \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_afd0a5b9a268811e882b414ce9fb9b4aa}{$\sim$\+Base\+Particle} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \hyperlink{classps__mmm_1_1_particle_1_1_base_particle}{Base\+Particle}. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_a0f9e2660b33720e1b844065f550cdeb6}{read\+\_\+data} (const std\+::vector$<$ double $>$ \&data, const unsigned int \&pos)
+\begin{DoxyCompactList}\small\item\em Read the particle data from the specified vector of doubles. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_adf914588cac73912da61672d00917224}{write\+\_\+data} (std\+::vector$<$ double $>$ \&data) const 
+\begin{DoxyCompactList}\small\item\em Write particle data to a vector of doubles. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_a84ddee6f2cd7a2f8094513953adcf1fc}{set\+\_\+location} (const Point$<$ dim $>$ \&new\+\_\+loc)
+\begin{DoxyCompactList}\small\item\em Set the location of this particle. \end{DoxyCompactList}\item 
+Point$<$ dim $>$ \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_a2086a9d119060b588d558e61cc085b95}{get\+\_\+location} () const 
+\begin{DoxyCompactList}\small\item\em Get the location of this particle. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_adf4700c3b7a61aa772eca1798acd189d}{set\+\_\+velocity} (Point$<$ dim $>$ new\+\_\+vel)
+\begin{DoxyCompactList}\small\item\em Set the velocity of this particle. \end{DoxyCompactList}\item 
+Point$<$ dim $>$ \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_accb1b8ec80dc4a843b9f4b56f4fb0999}{get\+\_\+velocity} () const 
+\begin{DoxyCompactList}\small\item\em Get the velocity of this particle. \end{DoxyCompactList}\item 
+double \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_aeb34af650645b0ea82ccaa44f87e70e5}{get\+\_\+id} () const 
+\begin{DoxyCompactList}\small\item\em Get the I\+D number of this particle. \end{DoxyCompactList}\item 
+bool \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_ac5cf041fb75d56259a3bc62760abf5b5}{local} () const 
+\begin{DoxyCompactList}\small\item\em Check whether the particle is marked as being local to this subdomain. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_af368f68aeee1f5f66a52e8338bb3f90d}{set\+\_\+local} (bool new\+\_\+local)
+\begin{DoxyCompactList}\small\item\em Mark the particle as being local of not. \end{DoxyCompactList}\item 
+bool \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_aab49d59001b9679f06fc7638364c3dac}{vel\+\_\+check} () const 
+\begin{DoxyCompactList}\small\item\em Whether to check the particle velocity at its current location. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_a40e7fa8899bc18bfad5a0e1c47fee143}{set\+\_\+vel\+\_\+check} (bool new\+\_\+vel\+\_\+check)
+\begin{DoxyCompactList}\small\item\em Mark whether to check the particle velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_a75ff7fdc7b6a8060c5d86008a10f53d7}{data\+\_\+len} ()
+\begin{DoxyCompactList}\small\item\em Get the number of doubles required to represent this particle for communication. \end{DoxyCompactList}\item 
+static void \hyperlink{classps__mmm_1_1_particle_1_1_base_particle_adf3cdd24dc6c7980eaf170e228d26d27}{add\+\_\+mpi\+\_\+types} (std\+::vector$<$ \hyperlink{classps__mmm_1_1_particle_1_1_m_p_i_data_info}{M\+P\+I\+Data\+Info} $>$ \&data\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Add the M\+P\+I data description for this particle type to the vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$int dim$>$class ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle$<$ dim $>$}
+
+Base class of particles -\/ represents a particle with position, velocity, and an I\+D number. 
+
+This class can be extended to include data related to a particle. An example of this is shown in the \hyperlink{classps__mmm_1_1_particle_1_1_data_particle}{Data\+Particle} class. 
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_a79477d4c34fac56cd9dadeeb5442e3f6}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!Base\+Particle@{Base\+Particle}}
+\index{Base\+Particle@{Base\+Particle}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{Base\+Particle()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::{\bf Base\+Particle} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_base_particle_a79477d4c34fac56cd9dadeeb5442e3f6}
+
+
+Empty constructor for \hyperlink{classps__mmm_1_1_particle_1_1_base_particle}{Base\+Particle}, creates a particle at the origin with zero velocity. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_aa0ed5ffa5b37e832150acd4b5e1739ba}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!Base\+Particle@{Base\+Particle}}
+\index{Base\+Particle@{Base\+Particle}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{Base\+Particle(const Point$<$ dim $>$ \&new\+\_\+loc, const double \&new\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::{\bf Base\+Particle} (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{new\+\_\+loc, }
+\item[{const double \&}]{new\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_base_particle_aa0ed5ffa5b37e832150acd4b5e1739ba}
+
+
+Constructor for \hyperlink{classps__mmm_1_1_particle_1_1_base_particle}{Base\+Particle}, creates a particle with the specified I\+D at the specified location with zero velocity. 
+
+Note that \hyperlink{namespaceps__mmm}{ps\+\_\+mmm} does not check for duplicate particle I\+Ds so the user must be sure the I\+Ds are unique over all processes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+loc} & Initial location of particle. \\
+\hline
+\mbox{\tt in}  & {\em new\+\_\+id} & Globally unique I\+D number of particle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_afd0a5b9a268811e882b414ce9fb9b4aa}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!````~Base\+Particle@{$\sim$\+Base\+Particle}}
+\index{````~Base\+Particle@{$\sim$\+Base\+Particle}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{$\sim$\+Base\+Particle()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::$\sim${\bf Base\+Particle} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_base_particle_afd0a5b9a268811e882b414ce9fb9b4aa}
+
+
+Destructor for \hyperlink{classps__mmm_1_1_particle_1_1_base_particle}{Base\+Particle}. 
+
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_adf3cdd24dc6c7980eaf170e228d26d27}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!add\+\_\+mpi\+\_\+types@{add\+\_\+mpi\+\_\+types}}
+\index{add\+\_\+mpi\+\_\+types@{add\+\_\+mpi\+\_\+types}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{add\+\_\+mpi\+\_\+types(std\+::vector$<$ M\+P\+I\+Data\+Info $>$ \&data\+\_\+info)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::add\+\_\+mpi\+\_\+types (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf M\+P\+I\+Data\+Info} $>$ \&}]{data\+\_\+info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classps__mmm_1_1_particle_1_1_base_particle_adf3cdd24dc6c7980eaf170e228d26d27}
+
+
+Add the M\+P\+I data description for this particle type to the vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em data\+\_\+info} & Vector to which M\+P\+I data description is appended. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_a75ff7fdc7b6a8060c5d86008a10f53d7}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!data\+\_\+len@{data\+\_\+len}}
+\index{data\+\_\+len@{data\+\_\+len}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{data\+\_\+len()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ unsigned int {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::data\+\_\+len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classps__mmm_1_1_particle_1_1_base_particle_a75ff7fdc7b6a8060c5d86008a10f53d7}
+
+
+Get the number of doubles required to represent this particle for communication. 
+
+\begin{DoxyReturn}{Returns}
+Number of doubles required to represent this particle 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_aeb34af650645b0ea82ccaa44f87e70e5}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!get\+\_\+id@{get\+\_\+id}}
+\index{get\+\_\+id@{get\+\_\+id}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{get\+\_\+id() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ double {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::get\+\_\+id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classps__mmm_1_1_particle_1_1_base_particle_aeb34af650645b0ea82ccaa44f87e70e5}
+
+
+Get the I\+D number of this particle. 
+
+\begin{DoxyReturn}{Returns}
+The id of this particle. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_a2086a9d119060b588d558e61cc085b95}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!get\+\_\+location@{get\+\_\+location}}
+\index{get\+\_\+location@{get\+\_\+location}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{get\+\_\+location() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Point$<$ dim $>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::get\+\_\+location (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classps__mmm_1_1_particle_1_1_base_particle_a2086a9d119060b588d558e61cc085b95}
+
+
+Get the location of this particle. 
+
+\begin{DoxyReturn}{Returns}
+The location of this particle. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_accb1b8ec80dc4a843b9f4b56f4fb0999}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!get\+\_\+velocity@{get\+\_\+velocity}}
+\index{get\+\_\+velocity@{get\+\_\+velocity}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{get\+\_\+velocity() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ Point$<$ dim $>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::get\+\_\+velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classps__mmm_1_1_particle_1_1_base_particle_accb1b8ec80dc4a843b9f4b56f4fb0999}
+
+
+Get the velocity of this particle. 
+
+\begin{DoxyReturn}{Returns}
+The velocity of this particle. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_ac5cf041fb75d56259a3bc62760abf5b5}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!local@{local}}
+\index{local@{local}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{local() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ bool {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::local (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classps__mmm_1_1_particle_1_1_base_particle_ac5cf041fb75d56259a3bc62760abf5b5}
+
+
+Check whether the particle is marked as being local to this subdomain. 
+
+Note that this function does not actually perform the check for locality.
+
+\begin{DoxyReturn}{Returns}
+Whether the particle is marked as local. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_a0f9e2660b33720e1b844065f550cdeb6}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!read\+\_\+data@{read\+\_\+data}}
+\index{read\+\_\+data@{read\+\_\+data}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{read\+\_\+data(const std\+::vector$<$ double $>$ \&data, const unsigned int \&pos)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ unsigned int {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::read\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ double $>$ \&}]{data, }
+\item[{const unsigned int \&}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_base_particle_a0f9e2660b33720e1b844065f550cdeb6}
+
+
+Read the particle data from the specified vector of doubles. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The vector of double data to read from. \\
+\hline
+\mbox{\tt in}  & {\em pos} & The position in the data vector to start reading from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position in the vector of the next unread double. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_af368f68aeee1f5f66a52e8338bb3f90d}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!set\+\_\+local@{set\+\_\+local}}
+\index{set\+\_\+local@{set\+\_\+local}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{set\+\_\+local(bool new\+\_\+local)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::set\+\_\+local (
+\begin{DoxyParamCaption}
+\item[{bool}]{new\+\_\+local}
+\end{DoxyParamCaption}
+)}\label{classps__mmm_1_1_particle_1_1_base_particle_af368f68aeee1f5f66a52e8338bb3f90d}
+
+
+Mark the particle as being local of not. 
+
+Note that this function does not perform the check for locality.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+local} & Whether to mark the particle as local. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_a84ddee6f2cd7a2f8094513953adcf1fc}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!set\+\_\+location@{set\+\_\+location}}
+\index{set\+\_\+location@{set\+\_\+location}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{set\+\_\+location(const Point$<$ dim $>$ \&new\+\_\+loc)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::set\+\_\+location (
+\begin{DoxyParamCaption}
+\item[{const Point$<$ dim $>$ \&}]{new\+\_\+loc}
+\end{DoxyParamCaption}
+)}\label{classps__mmm_1_1_particle_1_1_base_particle_a84ddee6f2cd7a2f8094513953adcf1fc}
+
+
+Set the location of this particle. 
+
+Note that this does not check whether this is a valid location in the simulation domain.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+loc} & The new location for this particle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_a40e7fa8899bc18bfad5a0e1c47fee143}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!set\+\_\+vel\+\_\+check@{set\+\_\+vel\+\_\+check}}
+\index{set\+\_\+vel\+\_\+check@{set\+\_\+vel\+\_\+check}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{set\+\_\+vel\+\_\+check(bool new\+\_\+vel\+\_\+check)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::set\+\_\+vel\+\_\+check (
+\begin{DoxyParamCaption}
+\item[{bool}]{new\+\_\+vel\+\_\+check}
+\end{DoxyParamCaption}
+)}\label{classps__mmm_1_1_particle_1_1_base_particle_a40e7fa8899bc18bfad5a0e1c47fee143}
+
+
+Mark whether to check the particle velocity. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+vel\+\_\+check} & Whether to check the particle velocity. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_adf4700c3b7a61aa772eca1798acd189d}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!set\+\_\+velocity@{set\+\_\+velocity}}
+\index{set\+\_\+velocity@{set\+\_\+velocity}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{set\+\_\+velocity(\+Point$<$ dim $>$ new\+\_\+vel)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::set\+\_\+velocity (
+\begin{DoxyParamCaption}
+\item[{Point$<$ dim $>$}]{new\+\_\+vel}
+\end{DoxyParamCaption}
+)}\label{classps__mmm_1_1_particle_1_1_base_particle_adf4700c3b7a61aa772eca1798acd189d}
+
+
+Set the velocity of this particle. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+vel} & The new velocity for this particle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_aab49d59001b9679f06fc7638364c3dac}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!vel\+\_\+check@{vel\+\_\+check}}
+\index{vel\+\_\+check@{vel\+\_\+check}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{vel\+\_\+check() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ bool {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::vel\+\_\+check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{classps__mmm_1_1_particle_1_1_base_particle_aab49d59001b9679f06fc7638364c3dac}
+
+
+Whether to check the particle velocity at its current location. 
+
+This is used for integrators where the particle velocity may not need to be checked every step.
+
+\begin{DoxyReturn}{Returns}
+Whether to check the particle velocity 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_base_particle_adf914588cac73912da61672d00917224}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}!write\+\_\+data@{write\+\_\+data}}
+\index{write\+\_\+data@{write\+\_\+data}!ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle@{ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}}
+\paragraph[{write\+\_\+data(std\+::vector$<$ double $>$ \&data) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Base\+Particle}$<$ dim $>$\+::write\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$ \&}]{data}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_base_particle_adf914588cac73912da61672d00917224}
+
+
+Write particle data to a vector of doubles. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em data} & The vector of doubles to write integrator data into. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/particle/\hyperlink{particle_8h}{particle.\+h}\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/\hyperlink{particle_8cc}{particle.\+cc}\end{DoxyCompactItemize}

@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['fe_5fauxilary_5fvalues',['fe_auxilary_values',['../struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step.html#a3ee5d28e551b9672965d42c6a6f7e8ac',1,'Assembly::Scratch::relaxation_div_velocity_step::fe_auxilary_values()'],['../struct_assembly_1_1_scratch_1_1projection__step.html#a3b5a0afe1eaf675d173af8ffd7663e29',1,'Assembly::Scratch::projection_step::fe_auxilary_values()']]],
-  ['fe_5fpressure_5fvalues',['fe_pressure_values',['../struct_assembly_1_1_scratch_1_1diffusion__step.html#a8ae6347dd8bec8156be7f56235d7a10f',1,'Assembly::Scratch::diffusion_step::fe_pressure_values()'],['../struct_assembly_1_1_scratch_1_1pressure__rot__step.html#ac41f7bf5aa82b80e01ba8453c31e5fdd',1,'Assembly::Scratch::pressure_rot_step::fe_pressure_values()']]],
-  ['fe_5fvelocity_5fvalues',['fe_velocity_values',['../struct_assembly_1_1_scratch_1_1diffusion__step.html#abc801170e70dc1174e7570a16a9c9cef',1,'Assembly::Scratch::diffusion_step::fe_velocity_values()'],['../struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step.html#aff257091b62794122cf0a9f5ac2faafe',1,'Assembly::Scratch::relaxation_div_velocity_step::fe_velocity_values()'],['../struct_assembly_1_1_scratch_1_1projection__step.html#af91b8e433a9a308d66f5cbdbc2dd5a7b',1,'Assembly::Scratch::projection_step::fe_velocity_values()'],['../struct_assembly_1_1_scratch_1_1pressure__rot__step.html#af0e05e66de3967bf2736defbcee157d5',1,'Assembly::Scratch::pressure_rot_step::fe_velocity_values()'],['../struct_assembly_1_1_scratch_1_1concentr_r_h_s.html#ad2de28d5b653c8ee22e96ea33c32c55a',1,'Assembly::Scratch::concentrRHS::fe_velocity_values()']]],
-  ['flow_5fdirection',['flow_direction',['../struct_u_b_c__mis__mixing_1_1_parameters.html#a5a6ccb735b9c9aa71b1a9f85fc255315',1,'UBC_mis_mixing::Parameters']]],
-  ['froude_5fnumber',['Froude_number',['../struct_u_b_c__mis__mixing_1_1_parameters.html#a83dc42fae26cde2af3c525e1eedc2f2a',1,'UBC_mis_mixing::Parameters::Froude_number()'],['../class_equation_data_1_1_outflow___pressure.html#acf53b90f3e6cc7f39883c415ff15c67e',1,'EquationData::Outflow_Pressure::Froude_number()']]]
+  ['eps_5fc',['eps_c',['../struct_u_b_c__mis__mixing_1_1_parameters.html#a1d20b15ac5ae8fb61fab2027e003b010',1,'UBC_mis_mixing::Parameters']]],
+  ['eps_5fns',['eps_ns',['../struct_u_b_c__mis__mixing_1_1_parameters.html#a59539a74b2a7b5ada31dbb529ff21d9f',1,'UBC_mis_mixing::Parameters']]],
+  ['eps_5fv_5fconcentr',['eps_v_concentr',['../struct_u_b_c__mis__mixing_1_1_parameters.html#af91b302127463e747b8a814c51889eae',1,'UBC_mis_mixing::Parameters']]],
+  ['equation_5fdata_2eh',['equation_data.h',['../equation__data_8h.html',1,'']]],
+  ['equationdata',['EquationData',['../namespace_equation_data.html',1,'']]],
+  ['error_5fthreshold',['error_threshold',['../struct_u_b_c__mis__mixing_1_1_parameters.html#a13ee78e31e67b8d1f2cdc298e55fcad9',1,'UBC_mis_mixing::Parameters']]],
+  ['eulerintegrator',['EulerIntegrator',['../classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator.html',1,'ps_mmm::Particle::Integrator']]],
+  ['exclude_5fdepth_5fdirection',['exclude_depth_direction',['../struct_u_b_c__mis__mixing_1_1_parameters.html#ae346c5f4dda04f8404da70094270f079',1,'UBC_mis_mixing::Parameters']]],
+  ['extract_5fdata_2ecc',['extract_data.cc',['../extract__data_8cc.html',1,'']]]
 ];

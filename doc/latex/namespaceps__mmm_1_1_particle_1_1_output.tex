@@ -1,0 +1,61 @@
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_output}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Output Namespace Reference}
+\label{namespaceps__mmm_1_1_particle_1_1_output}\index{ps\+\_\+mmm\+::\+Particle\+::\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output}}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_a_s_c_i_i_output}{A\+S\+C\+I\+I\+Output}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output}{H\+D\+F5\+Output}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_interface}{Interface}
+\begin{DoxyCompactList}\small\item\em Abstract base class used for classes that generate particle output. \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_null_output}{Null\+Output}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_v_t_u_output}{V\+T\+U\+Output}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int dim, class T $>$ }\\\hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_interface}{Interface}$<$ dim, T $>$ $\ast$ \hyperlink{namespaceps__mmm_1_1_particle_1_1_output_afd11a0d7eafa19b5279e3bd953b915c4}{create\+\_\+output\+\_\+object} (const std\+::string \&data\+\_\+format\+\_\+name, const std\+::string \&output\+\_\+directory, const M\+P\+I\+\_\+\+Comm communicator)
+\begin{DoxyCompactList}\small\item\em Create an output object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceps__mmm_1_1_particle_1_1_output_ad648ebb9d2718d0d82e2a76a2565ca9a}{output\+\_\+object\+\_\+names} ()
+\begin{DoxyCompactList}\small\item\em Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible writers of graphical output formats for particle data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_output_afd11a0d7eafa19b5279e3bd953b915c4}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output}!create\+\_\+output\+\_\+object@{create\+\_\+output\+\_\+object}}
+\index{create\+\_\+output\+\_\+object@{create\+\_\+output\+\_\+object}!ps\+\_\+mmm\+::\+Particle\+::\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output}}
+\paragraph[{create\+\_\+output\+\_\+object(const std\+::string \&data\+\_\+format\+\_\+name, const std\+::string \&output\+\_\+directory, const M\+P\+I\+\_\+\+Comm communicator)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ {\bf Interface}$<$ dim, T $>$ $\ast$ ps\+\_\+mmm\+::\+Particle\+::\+Output\+::create\+\_\+output\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{data\+\_\+format\+\_\+name, }
+\item[{const std\+::string \&}]{output\+\_\+directory, }
+\item[{const M\+P\+I\+\_\+\+Comm}]{communicator}
+\end{DoxyParamCaption}
+)}\label{namespaceps__mmm_1_1_particle_1_1_output_afd11a0d7eafa19b5279e3bd953b915c4}
+
+
+Create an output object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data\+\_\+format\+\_\+name} & Name of the format in which the created output writer should produce its files \\
+\hline
+\mbox{\tt in}  & {\em output\+\_\+directory} & Directory into which to put the data files \\
+\hline
+\mbox{\tt in}  & {\em communicator} & M\+P\+I communicator object that describes this simulation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to an output object, needs to be deleted by the caller. 
+\end{DoxyReturn}
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_output_ad648ebb9d2718d0d82e2a76a2565ca9a}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output}!output\+\_\+object\+\_\+names@{output\+\_\+object\+\_\+names}}
+\index{output\+\_\+object\+\_\+names@{output\+\_\+object\+\_\+names}!ps\+\_\+mmm\+::\+Particle\+::\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output}}
+\paragraph[{output\+\_\+object\+\_\+names()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string ps\+\_\+mmm\+::\+Particle\+::\+Output\+::output\+\_\+object\+\_\+names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespaceps__mmm_1_1_particle_1_1_output_ad648ebb9d2718d0d82e2a76a2565ca9a}
+
+
+Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible writers of graphical output formats for particle data. 
+

@@ -4,21 +4,7 @@
 #include <mismix/class.h>
 #include <mismix/parameter.h>
 
-  template <int dim>
-  void
-  UBC_mis_mixing<dim>::solve_fluid_equation(double increase_dimless_vel)
-  {
-    diffusion_step (increase_dimless_vel);
-    
-    if (std::abs(parameters.coeff_relax_div_velocity) > 1e-8)
-      relaxation_div_velocity_step ();
   
-    projection_step ();
-    pressure_rot_step ();
-    extrapolation_step ();    
-  }
-  
-
   template <int dim>
   void 
   UBC_mis_mixing<dim>::extrapolation_step ()

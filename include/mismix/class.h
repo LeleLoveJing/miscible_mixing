@@ -14,10 +14,6 @@
   template <int dim>
   class UBC_mis_mixing
   {
-  public :
-    struct Parameters;
-    UBC_mis_mixing (Parameters &parameters);
-    void run ();
     
   private :
     void print_input_parameters (); 
@@ -115,6 +111,10 @@
     std::pair<double,double> compute_discont_variable_on_cell (unsigned int,
                                                                std::vector<double> &,
                                                                std::vector<Tensor<2,dim> > &);
+  public :
+    struct Parameters;
+    UBC_mis_mixing (Parameters &parameters);
+    void run ();
 
   public :
     struct Parameters

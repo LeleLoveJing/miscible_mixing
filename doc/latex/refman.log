@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 MAR 2016 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 MAR 2016 04:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,20 +6,19 @@ entering extended mode
 (./refman.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -34,15 +33,15 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count88
-\calc@Bcount=\count89
+\calc@Acount=\count87
+\calc@Bcount=\count88
 \calc@Adimen=\dimen103
 \calc@Bdimen=\dimen104
 \calc@Askip=\skip43
 \calc@Bskip=\skip44
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count90
+\calc@Ccount=\count89
 \calc@Cskip=\skip45
 ) (./doxygen.sty
 Package: doxygen 
@@ -60,7 +59,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count91
+\c@float@type=\count90
 \float@exts=\toks15
 \float@box=\box26
 \@float@everytoks=\toks16
@@ -92,14 +91,14 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count92
+\Gread@gobject=\count91
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks19
 \minrowclearance=\skip48
 )
-\rownum=\count93
+\rownum=\count92
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -112,18 +111,18 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/xtab/xtab.sty
 Package: xtab 2011/07/31 v2.3f Extended supertabular package
-\c@tracingst=\count94
+\c@tracingst=\count93
 \PWSTcapht=\dimen107
 \ST@wd=\dimen108
 \ST@rightskip=\skip49
 \ST@leftskip=\skip50
 \ST@parfillskip=\skip51
-\c@PWSTtable=\count95
-\PWSTlastpage=\count96
-\PWSTpenultimate=\count97
-\PWSTcurpage=\count98
-\PWSTtempc=\count99
-\PWSTlines=\count100
+\c@PWSTtable=\count94
+\PWSTlastpage=\count95
+\PWSTpenultimate=\count96
+\PWSTcurpage=\count97
+\PWSTtempc=\count98
+\PWSTlines=\count99
 \PWST@lastht=\dimen109
 \PWST@generalht=\dimen110
 \PWST@ht=\dimen111
@@ -155,7 +154,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@tempa@toks=\toks21
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count101
+\XKV@depth=\count100
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -202,12 +201,12 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count102
+\c@checkoddpage=\count101
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box31
-\sift@deathcycles=\count103
+\sift@deathcycles=\count102
 \@vwid@loff=\dimen132
 \@vwid@roff=\dimen133
 ))
@@ -433,14 +432,14 @@ Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
-\c@tracingmulticols=\count104
+\c@tracingmulticols=\count103
 \mult@box=\box32
 \multicol@leftmargin=\dimen134
-\c@unbalance=\count105
-\c@collectmore=\count106
-\doublecol@number=\count107
-\multicoltolerance=\count108
-\multicolpretolerance=\count109
+\c@unbalance=\count104
+\c@collectmore=\count105
+\doublecol@number=\count106
+\multicoltolerance=\count107
+\multicolpretolerance=\count108
 \full@width=\dimen135
 \page@free=\dimen136
 \premulticols=\dimen137
@@ -471,14 +470,14 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \@tempa=\box53
 \@tempa=\box54
 \@tempa=\box55
-\c@columnbadness=\count110
-\c@finalcolumnbadness=\count111
+\c@columnbadness=\count109
+\c@finalcolumnbadness=\count110
 \last@try=\dimen140
 \multicolovershoot=\dimen141
 \multicolundershoot=\dimen142
 \mult@nat@firstbox=\box56
 \colbreak@box=\box57
-\mc@col@check@num=\count112
+\mc@col@check@num=\count111
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen143
@@ -687,9 +686,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count113
-\Gm@cntv=\count114
-\c@Gm@tempcnt=\count115
+\Gm@cnth=\count112
+\Gm@cntv=\count113
+\c@Gm@tempcnt=\count114
 \Gm@bindingoffset=\dimen144
 \Gm@wd@mp=\dimen145
 \Gm@odd@mp=\dimen146
@@ -716,47 +715,44 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip65
 \bibsep=\skip66
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count116
+\c@NAT@ctr=\count115
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 44.
+Package tocloft Info: The document has section divisions on input line 44.
 \cftparskip=\skip67
 \cftbeforetoctitleskip=\skip68
 \cftaftertoctitleskip=\skip69
 \cftbeforepartskip=\skip70
 \cftpartnumwidth=\skip71
 \cftpartindent=\skip72
-\cftbeforechapskip=\skip73
-\cftchapindent=\skip74
-\cftchapnumwidth=\skip75
-\cftbeforesecskip=\skip76
-\cftsecindent=\skip77
-\cftsecnumwidth=\skip78
-\cftbeforesubsecskip=\skip79
-\cftsubsecindent=\skip80
-\cftsubsecnumwidth=\skip81
-\cftbeforesubsubsecskip=\skip82
-\cftsubsubsecindent=\skip83
-\cftsubsubsecnumwidth=\skip84
-\cftbeforeparaskip=\skip85
-\cftparaindent=\skip86
-\cftparanumwidth=\skip87
-\cftbeforesubparaskip=\skip88
-\cftsubparaindent=\skip89
-\cftsubparanumwidth=\skip90
-\cftbeforeloftitleskip=\skip91
-\cftafterloftitleskip=\skip92
-\cftbeforefigskip=\skip93
-\cftfigindent=\skip94
-\cftfignumwidth=\skip95
-\c@lofdepth=\count117
-\c@lotdepth=\count118
-\cftbeforelottitleskip=\skip96
-\cftafterlottitleskip=\skip97
-\cftbeforetabskip=\skip98
-\cfttabindent=\skip99
-\cfttabnumwidth=\skip100
+\cftbeforesecskip=\skip73
+\cftsecindent=\skip74
+\cftsecnumwidth=\skip75
+\cftbeforesubsecskip=\skip76
+\cftsubsecindent=\skip77
+\cftsubsecnumwidth=\skip78
+\cftbeforesubsubsecskip=\skip79
+\cftsubsubsecindent=\skip80
+\cftsubsubsecnumwidth=\skip81
+\cftbeforeparaskip=\skip82
+\cftparaindent=\skip83
+\cftparanumwidth=\skip84
+\cftbeforesubparaskip=\skip85
+\cftsubparaindent=\skip86
+\cftsubparanumwidth=\skip87
+\cftbeforeloftitleskip=\skip88
+\cftafterloftitleskip=\skip89
+\cftbeforefigskip=\skip90
+\cftfigindent=\skip91
+\cftfignumwidth=\skip92
+\c@lofdepth=\count116
+\c@lotdepth=\count117
+\cftbeforelottitleskip=\skip93
+\cftafterlottitleskip=\skip94
+\cftbeforetabskip=\skip95
+\cfttabindent=\skip96
+\cfttabnumwidth=\skip97
 )
 \@indexfile=\write3
 \openout3 = `refman.idx'.
@@ -816,15 +812,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen152
-\Hy@linkcounter=\count119
-\Hy@pagecounter=\count120
+\Hy@linkcounter=\count118
+\Hy@pagecounter=\count119
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count121
+\Hy@SavedSpaceFactor=\count120
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -845,7 +841,7 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count122
+\c@Hy@tempcnt=\count121
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
@@ -853,7 +849,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen153
-\Fld@menulength=\count123
+\Fld@menulength=\count122
 \Field@Width=\dimen154
 \Fld@charsize=\dimen155
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -865,21 +861,21 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count124
-\c@Item=\count125
-\c@Hfootnote=\count126
+\Hy@abspage=\count123
+\c@Item=\count124
+\c@Hfootnote=\count125
 )
 
 Package hyperref Message: Driver: hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count127
-\c@bookmark@seq@number=\count128
-\Hy@SectionHShift=\skip101
+\Fld@listcount=\count126
+\c@bookmark@seq@number=\count127
+\Hy@SectionHShift=\skip98
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 105.
-Package hyperref Info: Option `unicode' set `true' on input line 105.
+Package hyperref Info: Option `colorlinks' set `true' on input line 102.
+Package hyperref Info: Option `unicode' set `true' on input line 102.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
@@ -888,49 +884,49 @@ Now handling font encoding PU ...
 ) (./refman.aux)
 \openout1 = `refman.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 112.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 115.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 112.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 115.
+(Font)              scaled to size 8.99994pt on input line 112.
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
+\scratchcounter=\count128
 \scratchdimen=\dimen156
 \scratchbox=\box58
-\nofMPsegments=\count130
-\nofMParguments=\count131
+\nofMPsegments=\count129
+\nofMParguments=\count130
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count132
+\MPscratchCnt=\count131
 \MPscratchDim=\dimen157
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
 \everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -963,13 +959,13 @@ e
 * \textheight=702.78308pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-31.2056pt
+* \topmargin=-38.1381pt
 * \headheight=12.0pt
-* \headsep=18.06749pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
-* \marginparsep=7.0pt
+* \footskip=30.0pt
+* \marginparwidth=121.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -982,250 +978,300 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box59
-Package backref Info: ** backref set up for natbib ** on input line 115.
-Package hyperref Info: Link coloring ON on input line 115.
+Package backref Info: ** backref set up for natbib ** on input line 112.
+Package hyperref Info: Link coloring ON on input line 112.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count135
+\c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 115.
-LaTeX Info: Redefining \pageref on input line 115.
-LaTeX Info: Redefining \nameref on input line 115.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
 
 (./refman.out) (./refman.out)
 \@outlinefile=\write4
 \openout4 = `refman.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 122.
+Package hyperref Info: Option `pageanchor' set `false' on input line 119.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 122.
+(hyperref)                setting the option has no effect on input line 119.
 
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 122.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 119.
 
-Package hyperref Info: Option `unicode' set `true' on input line 122.
+Package hyperref Info: Option `unicode' set `true' on input line 119.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 127.
+(Font)              scaled to size 12.9599pt on input line 124.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 127.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 127.
+(Font)              scaled to size 6.29996pt on input line 124.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 124.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+LaTeX Font Info:    Try loading font information for U+msa on input line 124.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 127.
+LaTeX Font Info:    Try loading font information for U+msb on input line 124.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 129.
+(Font)              scaled to size 10.79993pt on input line 126.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 131.
+(Font)              scaled to size 8.09995pt on input line 128.
  [1
 
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
-
-]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 135.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 131.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 135.
+(Font)              scaled to size 12.9599pt on input line 131.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 22.39185pt on input line 135.
+(Font)              scaled to size 12.9599pt on input line 131.
  (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 1.
-
-[3
-
-]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 67.
- [4] [5] [6] [7] [8]
-Underfull \hbox (badness 824) in paragraph at lines 238--238
- \T1/phv/m/n/10 dim $\OML/cmm/m/it/10 >$ \T1/phv/m/n/10 &pressure[]_[]mapping, 
-const Quadrature$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 dim $\OML/cmm/m/it/10 >$ \T
-1/phv/m/n/10 &quadra-ture, const 
- []
+(Font)              scaled to size 6.29996pt on input line 73.
 
-
-Underfull \hbox (badness 1033) in paragraph at lines 238--238
- \T1/phv/m/n/10 const Mapping$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 dim $\OML/cmm/
-m/it/10 >$ \T1/phv/m/n/10 &velocity[]_[]mapping, const Update[]Flags velocity[]
-_[] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-Underfull \hbox (badness 2126) in paragraph at lines 273--273
- \T1/phv/m/n/10 ture, const Update[]Flags auxilary[]_[]update[]_[]flags, const 
-Finite[]Element$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 dim 
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
+[2] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
 ]series/miscible[]_[]mixing/include/mismix/assembly[]_[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
+Underfull \hbox (badness 10000) in paragraph at lines 470--470
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
 ]series/miscible[]_[]mixing/include/mismix/equation[]_[]data.h 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--300
+Underfull \hbox (badness 10000) in paragraph at lines 471--471
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
 ]series/miscible[]_[]mixing/include/mismix/include.h File 
  []
 
 
-Underfull \hbox (badness 812) in paragraph at lines 306--306
+Underfull \hbox (badness 10000) in paragraph at lines 475--475
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Main/run.cc File Ref-er- 
+]series/miscible[]_[]mixing/include/mismix/particle/output.h 
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 477--477
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/include/mismix/particle/world.h 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--308
+Underfull \hbox (badness 812) in paragraph at lines 483--483
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Post[]_[][]Processing/post[] 
+]series/miscible[]_[]mixing/source/main/run.cc File Ref-er- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Pre[]_[][]Processing/read[] 
+]series/miscible[]_[]mixing/source/particle/generator.cc 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--311
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Solver/constructor.cc 
+]series/miscible[]_[]mixing/source/particle/integrator.cc 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--312
+Underfull \hbox (badness 10000) in paragraph at lines 486--486
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Solver/projection[]_[]for[]_[] 
+]series/miscible[]_[]mixing/source/particle/output.cc File 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--313
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Solver/setup[]_[]dofs.cc 
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 315--315
- [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Solver/solve[]_[]ns[]_[] 
+]series/miscible[]_[]mixing/source/particle/particle.cc File 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 488--488
  [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
-]series/miscible[]_[]mixing/source/[]Support/utilities.cc File 
+]series/miscible[]_[]mixing/source/post[]_[]process/extract[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--489
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/post[]_[]process/post[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 491--491
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/pre[]_[]process/mesh[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/pre[]_[]process/read[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--493
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/pre[]_[]process/setup[]_[] 
+ []
+
+
+Overfull \hbox (25.55733pt too wide) in paragraph at lines 494--494
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/solver/navier[]_[]stokes/control.cc 
+ []
+
+
+Overfull \hbox (35.04277pt too wide) in paragraph at lines 495--495
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/solver/navier[]_[]stokes/projection[] 
+ []
+
+
+Overfull \hbox (16.80923pt too wide) in paragraph at lines 496--496
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/solver/navier[]_[]stokes/solve[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/solver/phase/solve[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--498
+ [][] [][][]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[
+]series/miscible[]_[]mixing/source/support/utilities.cc File 
  []
 
 )
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [12]
-Package hyperref Info: Option `pageanchor' set `true' on input line 138.
-
-Chapter 1.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 18.66588pt on input line 141.
-(./namespaces.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+Package hyperref Info: Option `pageanchor' set `true' on input line 133.
+ (./namespaces.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
+(Font)              scaled to size 10.79993pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 12.9599pt on input line 1.
-) [1
-
-
-] [2
-
-]
-Chapter 2.
-(./hierarchy.tex) [3] [4
-
-]
-Chapter 3.
-(./annotated.tex) [5] [6
-
-]
-Chapter 4.
+(Font)              scaled to size 10.79993pt on input line 1.
+ [1]) (./hierarchy.tex [2]) (./annotated.tex [3] [4])
 (./files.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--11
- [][] \T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
-s/miscible[]_[]mixing/source/[]Post[]_[][]Processing/[][]extract[]_[] 
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/include/mismix/[][]assembly[]_[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--12
- [][] \T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
-s/miscible[]_[]mixing/source/[]Post[]_[][]Processing/[][]post[]_[] 
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/include/mismix/[][]equation[]_[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
- [][] \T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
-s/miscible[]_[]mixing/source/[]Pre[]_[][]Processing/[][]read[]_[]and[]_[] 
+Overfull \hbox (26.73843pt too wide) in paragraph at lines 8--8
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/include/mismix/particle/[][]generator.[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--16
- [][] \T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
-s/miscible[]_[]mixing/source/[]Solver/[][]projection[]_[]for[]_[]div[]_[] 
+Overfull \hbox (27.14337pt too wide) in paragraph at lines 9--9
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/include/mismix/particle/[][]integrator.[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
- [][] \T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
-s/miscible[]_[]mixing/source/[]Solver/[][]solve[]_[]hyperbolic[]_[] 
+Overfull \hbox (17.87338pt too wide) in paragraph at lines 11--11
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/include/mismix/particle/[][]particle.[] 
  []
 
-) [7] [8
 
-]
-Chapter 5.
-(./namespace_assembly.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 3.
+Overfull \hbox (24.17393pt too wide) in paragraph at lines 14--14
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/constitutive[]_[]model/[][]consti[] 
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/post[]_[]process/[][]post[]_[] 
+ []
+
+
+Overfull \hbox (20.96103pt too wide) in paragraph at lines 23--23
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/pre[]_[]process/[][]constructor.[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/pre[]_[]process/[][]mesh[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/pre[]_[]process/[][]read[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/pre[]_[]process/[][]setup[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/solver/navier[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/solver/navier[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/solver/navier[]_[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+ [][] \T1/phv/b/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]serie
+s/miscible[]_[]mixing/source/solver/phase/[][]solve[]_[] 
+ []
+
+) (./namespace_assembly.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 3.
+(Font)              scaled to size 8.99994pt on input line 3.
 LaTeX Font Info:    Try loading font information for TS1+phv on input line 6.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ts1phv.fd
@@ -1237,33 +1283,188 @@ LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (./namespace_assembly_1_1_copy_data.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 1.
-) (./namespace_assembly_1_1_scratch.tex) (./namespace_equation_data.tex [9]
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 32.
-) [10]
-Chapter 6.
-(./class_equation_data_1_1concentr_initial_values.tex
+) (./namespace_assembly_1_1_scratch.tex
+[6]) (./namespace_equation_data.tex) (./namespaceps__mmm.tex)
+(./namespaceps__mmm_1_1_particle.tex
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 16.
+ [7])
+(./namespaceps__mmm_1_1_particle_1_1_generator.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 13.
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 16.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 16.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 26.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 26.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 26.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 6.29996pt on input line 26.
+ [8]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 33.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-<class_equation_data_1_1concentr_initial_values.pdf, id=1918, 501.875pt x 153.8
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 33.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 33.
+
+Underfull \hbox (badness 10000) detected at line 36
+[][][]
+ []
+
+) (./namespaceps__mmm_1_1_particle_1_1_integrator.tex
+Underfull \hbox (badness 10000) detected at line 42
+[][][]
+ []
+
+) (./namespaceps__mmm_1_1_particle_1_1_output.tex [9]
+Underfull \hbox (badness 1127) in paragraph at lines 19--20
+[][]\T1/phv/m/n/10 Interface[][]$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 dim, T $\OM
+L/cmm/m/it/10 >$ $\OMS/cmsy/m/n/10 ^^C$ [][]\T1/phv/m/n/10 create[]_[]output[]_
+[]object[][] (const std[]::string &data[]_[]format[]_[]name, const std[]::strin
+g
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 48
+[][][]
+ []
+
+) (./classps__mmm_1_1_particle_1_1_output_1_1_a_s_c_i_i_output.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_output_1_1_a_s_c_i_i_output.pdf, id=1338, 501.87
+5pt x 137.03195pt>
+File: classps__mmm_1_1_particle_1_1_output_1_1_a_s_c_i_i_output.pdf Graphic fil
+e (type pdf)
+
+<use classps__mmm_1_1_particle_1_1_output_1_1_a_s_c_i_i_output.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_output_1_1_a_s_c_i_i_out
+put.pdf used on input line 6.
+(pdftex.def)             Requested size: 208.41208pt x 56.9055pt.
+ [10 <./classps__mmm_1_1_particle_1_1_output_1_1_a_s_c_i_i_output.pdf>]
+Underfull \hbox (badness 1033) in paragraph at lines 14--15
+[]\T1/phv/m/n/10 virtual std[]::string [][]output[]_[]particle[]_[]data[][] (co
+nst std[]::multimap$\OML/cmm/m/it/10 <$ [][]\T1/phv/m/n/10 Level[]Ind[][], T $\
+OML/cmm/m/it/10 >$ \T1/phv/m/n/10 &par-ti-cles, const dou-ble
+ []
+
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 27.
+
+
+Underfull \hbox (badness 10000) detected at line 63
+[][][]
+ []
+
+) (./classps__mmm_1_1_particle_1_1_base_particle.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_base_particle.pdf, id=1361, 501.875pt x 137.0319
+5pt>
+File: classps__mmm_1_1_particle_1_1_base_particle.pdf Graphic file (type pdf)
+ <use classps__mmm_1_1_particle_1_1_base_particle.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_base_particle.pdf used o
+n input line 15.
+(pdftex.def)             Requested size: 208.41208pt x 56.9055pt.
+ [11] [12 <./classps__mmm_1_1_particle_1_1_base_particle.pdf>]
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 167
+[][][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) detected at line 181
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 197
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 219
+[][][]
+ []
+
+[14]
+Underfull \hbox (badness 10000) detected at line 303
+[][][]
+ []
+
+) (./class_equation_data_1_1concentr_initial_values.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<class_equation_data_1_1concentr_initial_values.pdf, id=1452, 501.875pt x 153.8
 3472pt>
 File: class_equation_data_1_1concentr_initial_values.pdf Graphic file (type pdf
 )
@@ -1271,135 +1472,12 @@ File: class_equation_data_1_1concentr_initial_values.pdf Graphic file (type pdf
 Package pdftex.def Info: class_equation_data_1_1concentr_initial_values.pdf use
 d on input line 10.
 (pdftex.def)             Requested size: 185.65254pt x 56.9055pt.
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 38.
-LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 38.
-
+ [15 <./class_equation_data_1_1concentr_initial_values.pdf>]
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/it' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 49.
+(Font)              using `T1/pcr/bc/n' instead on input line 49.
 
-
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 65.
-
-[11
-
- <./class_equation_data_1_1concentr_initial_values.pdf>])
-(./class_equation_data_1_1concentr_inlet_values.tex
+) (./class_equation_data_1_1concentr_inlet_values.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1417,63 +1495,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-<class_equation_data_1_1concentr_inlet_values.pdf, id=1946, 501.875pt x 157.448
+<class_equation_data_1_1concentr_inlet_values.pdf, id=1480, 501.875pt x 157.448
 23pt>
 File: class_equation_data_1_1concentr_inlet_values.pdf Graphic file (type pdf)
  <use class_equation_data_1_1concentr_inlet_values.pdf>
 Package pdftex.def Info: class_equation_data_1_1concentr_inlet_values.pdf used 
 on input line 10.
 (pdftex.def)             Requested size: 181.38704pt x 56.9055pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 42.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 42.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 42.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 42.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 50.
-
-) (./struct_assembly_1_1_scratch_1_1concentr_matrix.tex
+)
+(./struct_assembly_1_1_scratch_1_1concentr_matrix.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1490,61 +1520,59 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[12 <./class_equation_data_1_1concentr_inlet_values.pdf>]
-LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 6.29996pt on input line 34.
+[16 <./class_equation_data_1_1concentr_inlet_values.pdf>])
+(./struct_assembly_1_1_copy_data_1_1concentr_matrix.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
+
+[17]) (./struct_assembly_1_1_scratch_1_1concentr_r_h_s.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
+
+[18]) (./struct_assembly_1_1_copy_data_1_1concentr_r_h_s.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
+(hyperref)                removing `math shift' on input line 1.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 34.
-
-) (./struct_assembly_1_1_copy_data_1_1concentr_matrix.tex
+[19]) (./classps__mmm_1_1_particle_1_1_data_particle.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1562,22 +1590,50 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
+<classps__mmm_1_1_particle_1_1_data_particle.pdf, id=1627, 501.875pt x 137.0319
+5pt>
+File: classps__mmm_1_1_particle_1_1_data_particle.pdf Graphic file (type pdf)
+ <use classps__mmm_1_1_particle_1_1_data_particle.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_data_particle.pdf used o
+n input line 15.
+(pdftex.def)             Requested size: 208.41208pt x 56.9055pt.
+)
+(./struct_assembly_1_1_scratch_1_1diffusion__step.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
+(hyperref)                removing `math shift' on input line 1.
 
-[13]) (./struct_assembly_1_1_scratch_1_1concentr_r_h_s.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[20 <./classps__mmm_1_1_particle_1_1_data_particle.pdf>] [21])
+(./struct_assembly_1_1_copy_data_1_1diffusion__step.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[22]) (./classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1595,70 +1651,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
+<classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator.pdf, id=1743, 50
+1.875pt x 123.54155pt>
+File: classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator.pdf Graphic
+ file (type pdf)
+
+<use classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_integrator_1_1_euler_int
+egrator.pdf used on input line 11.
+(pdftex.def)             Requested size: 231.17162pt x 56.9055pt.
+
+[23 <./classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator.pdf>]
+Underfull \hbox (badness 10000) detected at line 70
+[][][]
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
 
+[24] [25]
+Underfull \hbox (badness 10000) detected at line 127
+[][][]
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 57.
-
-[14]) (./struct_assembly_1_1_copy_data_1_1concentr_r_h_s.tex
+) (./classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1676,152 +1694,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-[15]) (./struct_assembly_1_1_scratch_1_1diffusion__step.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-[16]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 81.
-
-[17]) (./struct_assembly_1_1_copy_data_1_1diffusion__step.tex
+<classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output.pdf, id=1800, 501.875pt
+ x 136.5602pt>
+File: classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output.pdf Graphic file (
+type pdf)
+
+<use classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output
+.pdf used on input line 6.
+(pdftex.def)             Requested size: 209.13193pt x 56.9055pt.
+
+Underfull \hbox (badness 1033) in paragraph at lines 14--15
+[]\T1/phv/m/n/10 virtual std[]::string [][]output[]_[]particle[]_[]data[][] (co
+nst std[]::multimap$\OML/cmm/m/it/10 <$ [][]\T1/phv/m/n/10 Level[]Ind[][], T $\
+OML/cmm/m/it/10 >$ \T1/phv/m/n/10 &par-ti-cles, const dou-ble
+ []
+
+[26 <./classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output.pdf>]
+Underfull \hbox (badness 10000) detected at line 63
+[][][]
+ []
+
+) (./classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_integrator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1839,22 +1733,36 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
+<classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_integrator.pdf, id=1827, 5
+01.875pt x 120.57045pt>
+File: classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_integrator.pdf Graphi
+c file (type pdf)
+
+<use classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_integrator.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_in
+tegrator.pdf used on input line 11.
+(pdftex.def)             Requested size: 236.86916pt x 56.9055pt.
+
+[27 <./classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_integrator.pdf>]
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+[28]
+Underfull \hbox (badness 10000) detected at line 110
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+) (./class_equation_data_1_1_inflow___velocity.tex
+
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
+(hyperref)                removing `math shift' on input line 1.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-[18]) (./class_equation_data_1_1_inflow___velocity.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1868,132 +1776,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-<class_equation_data_1_1_inflow___velocity.pdf, id=2139, 501.875pt x 175.32501p
+<class_equation_data_1_1_inflow___velocity.pdf, id=1869, 501.875pt x 175.32501p
 t>
 File: class_equation_data_1_1_inflow___velocity.pdf Graphic file (type pdf)
  <use class_equation_data_1_1_inflow___velocity.pdf>
 Package pdftex.def Info: class_equation_data_1_1_inflow___velocity.pdf used on 
 input line 10.
 (pdftex.def)             Requested size: 162.893pt x 56.9055pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-[19 <./class_equation_data_1_1_inflow___velocity.pdf>])
-(./class_equation_data_1_1_outflow___pressure.tex
+ [29 <./class_equation_data_1_1_inflow___velocity.pdf>])
+(./classps__mmm_1_1_particle_1_1_output_1_1_interface.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2011,127 +1802,155 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-<class_equation_data_1_1_outflow___pressure.pdf, id=2166, 501.875pt x 164.54472
+<classps__mmm_1_1_particle_1_1_output_1_1_interface.pdf, id=1892, 501.875pt x 3
+4.13754pt>
+File: classps__mmm_1_1_particle_1_1_output_1_1_interface.pdf Graphic file (type
+ pdf)
+ <use classps__mmm_1_1_particle_1_1_output_1_1_interface.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_output_1_1_interface.pdf
+ used on input line 15.
+(pdftex.def)             Requested size: 398.38373pt x 27.09775pt.
+
+Underfull \hbox (badness 1033) in paragraph at lines 25--26
+[]\T1/phv/m/n/10 virtual std[]::string [][]output[]_[]particle[]_[]data[][] (co
+nst std[]::multimap$\OML/cmm/m/it/10 <$ [][]\T1/phv/m/n/10 Level[]Ind[][], T $\
+OML/cmm/m/it/10 >$ \T1/phv/m/n/10 &par-ti-cles, const dou-ble
+ []
+
+[30 <./classps__mmm_1_1_particle_1_1_output_1_1_interface.pdf>] [31]
+Underfull \hbox (badness 10000) detected at line 100
+[][][]
+ []
+
+) (./classps__mmm_1_1_particle_1_1_generator_1_1_interface.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_generator_1_1_interface.pdf, id=1943, 501.875pt 
+x 103.21562pt>
+File: classps__mmm_1_1_particle_1_1_generator_1_1_interface.pdf Graphic file (t
+ype pdf)
+ <use classps__mmm_1_1_particle_1_1_generator_1_1_interface.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_generator_1_1_interface.
+pdf used on input line 15.
+(pdftex.def)             Requested size: 276.69833pt x 56.9055pt.
+
+[32 <./classps__mmm_1_1_particle_1_1_generator_1_1_interface.pdf>])
+(./classps__mmm_1_1_particle_1_1_integrator_1_1_interface.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_integrator_1_1_interface.pdf, id=1973, 501.875pt
+ x 30.14261pt>
+File: classps__mmm_1_1_particle_1_1_integrator_1_1_interface.pdf Graphic file (
+type pdf)
+
+<use classps__mmm_1_1_particle_1_1_integrator_1_1_interface.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_integrator_1_1_interface
+.pdf used on input line 15.
+(pdftex.def)             Requested size: 398.36076pt x 23.92409pt.
+ [33 <./classps__mmm_1_1_particle_1_1_integrator_1_1_interface.pdf>] [34]
+Underfull \hbox (badness 10000) detected at line 101
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 129
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 158
+[][][]
+ []
+
+[35]) (./classps__mmm_1_1_particle_1_1_m_p_i_data_info.tex)
+(./classps__mmm_1_1_particle_1_1_output_1_1_null_output.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_output_1_1_null_output.pdf, id=2059, 501.875pt x
+ 141.87003pt>
+File: classps__mmm_1_1_particle_1_1_output_1_1_null_output.pdf Graphic file (ty
+pe pdf)
+ <use classps__mmm_1_1_particle_1_1_output_1_1_null_output.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_output_1_1_null_output.p
+df used on input line 6.
+(pdftex.def)             Requested size: 201.30547pt x 56.9055pt.
+
+[36 <./classps__mmm_1_1_particle_1_1_output_1_1_null_output.pdf>]
+Underfull \hbox (badness 10000) detected at line 63
+[][][]
+ []
+
+) (./class_equation_data_1_1_outflow___pressure.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<class_equation_data_1_1_outflow___pressure.pdf, id=2089, 501.875pt x 164.54472
 pt>
 File: class_equation_data_1_1_outflow___pressure.pdf Graphic file (type pdf)
  <use class_equation_data_1_1_outflow___pressure.pdf>
 Package pdftex.def Info: class_equation_data_1_1_outflow___pressure.pdf used on
  input line 10.
 (pdftex.def)             Requested size: 173.56058pt x 56.9055pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 52.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 60.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
-
-[20 <./class_equation_data_1_1_outflow___pressure.pdf>])
+ [37 <./class_equation_data_1_1_outflow___pressure.pdf>])
 (./struct_u_b_c__mis__mixing_1_1_parameters.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2149,7 +1968,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[21] [22] [23] [24] [25]) (./class_u_b_c__mis__mixing_1_1_postprocessor.tex
+[38] [39] [40]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42])
+(./class_u_b_c__mis__mixing_1_1_postprocessor.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2183,240 +2009,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 
-<class_u_b_c__mis__mixing_1_1_postprocessor.pdf, id=2383, 501.875pt x 140.87631
+<class_u_b_c__mis__mixing_1_1_postprocessor.pdf, id=2390, 501.875pt x 140.87631
 pt>
 File: class_u_b_c__mis__mixing_1_1_postprocessor.pdf Graphic file (type pdf)
  <use class_u_b_c__mis__mixing_1_1_postprocessor.pdf>
 Package pdftex.def Info: class_u_b_c__mis__mixing_1_1_postprocessor.pdf used on
  input line 6.
 (pdftex.def)             Requested size: 202.7222pt x 56.9055pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 46.
-
-[26 <./class_u_b_c__mis__mixing_1_1_postprocessor.pdf>])
-(./struct_assembly_1_1_copy_data_1_1pressure__rot__step.tex
+ [43 <./class_u_b_c__mis__mixing_1_1_postprocessor.pdf>])
+(./struct_assembly_1_1_scratch_1_1pressure__rot__step.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2433,23 +2034,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-) (./struct_assembly_1_1_scratch_1_1pressure__rot__step.tex
+[44]) (./struct_assembly_1_1_copy_data_1_1pressure__rot__step.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2466,118 +2051,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[27]
+) (./struct_assembly_1_1_copy_data_1_1projection__step.tex [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 53.
+(hyperref)                removing `math shift' on input line 1.
 
 ) (./struct_assembly_1_1_scratch_1_1projection__step.tex
 
@@ -2596,120 +2085,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[28]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 51.
-
-) (./struct_assembly_1_1_copy_data_1_1projection__step.tex
+[46])
+(./classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2726,24 +2103,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[29]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
+<classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator.pdf, id=2
+534, 501.875pt x 103.21562pt>
+File: classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator.pdf 
+Graphic file (type pdf)
 
+<use classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_generator_1_1_random_uni
+form_generator.pdf used on input line 6.
+(pdftex.def)             Requested size: 276.69833pt x 56.9055pt.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-) (./struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step.tex
+[47 <./classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator.pdf
+>]) (./struct_assembly_1_1_copy_data_1_1relaxation__div__velocity__step.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2760,120 +2132,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[30]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
-
-) (./struct_assembly_1_1_copy_data_1_1relaxation__div__velocity__step.tex
+[48]) (./struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -2890,22 +2149,89 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[31]
+[49]) (./classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
+(hyperref)                removing `math shift' on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 32.
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator.pdf, id=2623, 501
+.875pt x 126.26172pt>
+File: classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator.pdf Graphic 
+file (type pdf)
+
+<use classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_inte
+grator.pdf used on input line 11.
+(pdftex.def)             Requested size: 226.19392pt x 56.9055pt.
+ [50 <./classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator.pdf>]
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+[51]
+Underfull \hbox (badness 10000) detected at line 110
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+) (./classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator.pdf, id=2667, 501
+.875pt x 126.26172pt>
+File: classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator.pdf Graphic 
+file (type pdf)
+
+<use classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_inte
+grator.pdf used on input line 11.
+(pdftex.def)             Requested size: 226.19392pt x 56.9055pt.
+ [52 <./classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator.pdf>]
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+[53]
+Underfull \hbox (badness 10000) detected at line 110
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
 
 ) (./class_u_b_c__mis__mixing.tex
 
@@ -2924,32 +2250,124 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
-scible[]_[]mixing/source/[]Pre[]_[][]Processing/[][]read[]_[]and[]_[]
+scible[]_[]mixing/source/constitutive[]_[]model/[][]consti[]_[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
-scible[]_[]mixing/source/[]Solver/[][]projection[]_[]for[]_[]div[]_[]
+scible[]_[]mixing/source/solver/navier[]_[]stokes/[][]projection[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
-scible[]_[]mixing/source/[]Solver/[][]solve[]_[]hyperbolic[]_[]
+scible[]_[]mixing/source/solver/navier[]_[]stokes/[][]solve[]_[]ns[]
  []
 
-) [33] [34
 
-]
-Chapter 7.
-(./assembly__copydata_8h.tex
-Overfull \hbox (52.26897pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/include/mismix/assembly[]
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]_[]mixing/source/solver/phase/[][]solve[]_[]hyperbolic[]
+ []
+
+) (./classps__mmm_1_1_particle_1_1_output_1_1_v_t_u_output.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+<classps__mmm_1_1_particle_1_1_output_1_1_v_t_u_output.pdf, id=2731, 501.875pt 
+x 140.87631pt>
+File: classps__mmm_1_1_particle_1_1_output_1_1_v_t_u_output.pdf Graphic file (t
+ype pdf)
+ <use classps__mmm_1_1_particle_1_1_output_1_1_v_t_u_output.pdf>
+Package pdftex.def Info: classps__mmm_1_1_particle_1_1_output_1_1_v_t_u_output.
+pdf used on input line 6.
+(pdftex.def)             Requested size: 202.7222pt x 56.9055pt.
+
+Underfull \hbox (badness 1033) in paragraph at lines 14--15
+[]\T1/phv/m/n/10 virtual std[]::string [][]output[]_[]particle[]_[]data[][] (co
+nst std[]::multimap$\OML/cmm/m/it/10 <$ [][]\T1/phv/m/n/10 Level[]Ind[][], T $\
+OML/cmm/m/it/10 >$ \T1/phv/m/n/10 &par-ti-cles, const dou-ble
+ []
+
+[55 <./classps__mmm_1_1_particle_1_1_output_1_1_v_t_u_output.pdf>]
+Underfull \hbox (badness 10000) detected at line 63
+[][][]
+ []
+
+) (./classps__mmm_1_1_particle_1_1_world.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+[56] [57]
+Underfull \hbox (badness 10000) detected at line 166
+[][][]
+ []
+
+[58]
+Underfull \hbox (badness 10000) detected at line 191
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 207
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 221
+[][][]
+ []
+
+[59]
+Underfull \hbox (badness 10000) detected at line 275
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 289
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 332
+[][][]
+ []
+
+[60]) (./assembly__copydata_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/include/mismix/assembly[]_[]
  []
 
 
@@ -2957,21 +2375,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./class_8h.tex
-Overfull \hbox (30.92384pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/include/mismix/class.h
- []
-
-
+[61]) (./class_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--11
 
  []
 
-[35]) (./equation__data_8h.tex
-Overfull \hbox (48.34192pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/include/mismix/equation[]
+) (./equation__data_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/include/mismix/equation[]_[]data.h
  []
 
 
@@ -2979,35 +2391,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./include_8h.tex
-Overfull \hbox (41.74481pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/include/mismix/include.h
- []
+[62]) (./include_8h.tex) (./parameter_8h.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) (./parameter_8h.tex [36]
-Overfull \hbox (55.28801pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/include/mismix/parameter.h
- []
 
-) (./amr_8cc.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.16548pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]A[]M[]
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/include/mismix/parameter.h File
  []
 
-) (./main_8cc.tex
-Overfull \hbox (19.88232pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Main/main.cc
+) (./generator_8h.tex
+Underfull \vbox (badness 5119) has occurred while \output is active []
+
+ [64]
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+) (./integrator_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.16548pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]) (./output_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/include/mismix/particle/output.h
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+) (./particle_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/include/mismix/particle/particle.h
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[66]) (./world_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/include/mismix/particle/world.h
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+) (./amr_8cc.tex) (./consti__model_8cc.tex) (./main_8cc.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.16548pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+Underfull \hbox (badness 2293) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/main/main.cc File Ref-er-
  []
 
 
@@ -3015,28 +2477,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 23.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 23.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 23.
-
-) (./run_8cc.tex) (./extract__data_8cc.tex [38]
+) (./run_8cc.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Post[]_[][]
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/main/run.cc File Ref-er-
+ []
+
+) (./generator_8cc.tex
+Underfull \hbox (badness 5460) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/particle/generator.cc File
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
+[68]) (./integrator_8cc.tex
+Underfull \hbox (badness 4366) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/particle/integrator.cc File
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+) (./output_8cc.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/particle/output.cc File
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.16548pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[69]) (./particle_8cc.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/particle/particle.cc File
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+) (./extract__data_8cc.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/post[]_[]process/extract[]_[]
  []
 
 ) (./post__processing_8cc.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Post[]_[][]
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/post[]_[]process/post[]_[]
  []
 
 
@@ -3044,78 +2550,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-) (./mesh__in_8cc.tex
+[70]) (./constructor_8cc.tex) (./mesh__in_8cc.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Pre[]_[][]
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/pre[]_[]process/mesh[]_[]in.cc
  []
 
 ) (./read__and__write_8cc.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Pre[]_[][]
- []
-
-) (./constructor_8cc.tex
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 34.16548pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[39]
-Overfull \hbox (67.69049pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Solver/constructor.cc
- []
-
-) (./projection__for__div__velocity_8cc.tex
-Overfull \hbox (54.6535pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Solver/projection[]
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/pre[]_[]process/read[]_[]and[]_[]
  []
 
 ) (./setup__dofs_8cc.tex
-Overfull \hbox (31.8187pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Solver/setup[]
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/pre[]_[]process/setup[]_[]
  []
 
-) (./solve__hyperbolic__equation_8cc.tex
-Overfull \hbox (30.65228pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Solver/solve[]
+) (./control_8cc.tex
+Overfull \hbox (22.1357pt too wide) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/solver/navier[]_[]stokes/control.cc
  []
 
-) (./solve__ns__equation_8cc.tex
-Overfull \hbox (30.65228pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Solver/solve[]
- []
-
-) (./utilities_8cc.tex [40]
-Overfull \hbox (54.92485pt too wide) in paragraph at lines 1--1
-[]\T1/phv/bc/n/14.4 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series
-/miscible[]_[]mixing/source/[]Support/utilities.cc
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 3--194
-
- []
-
+) (./projection__for__div__velocity_8cc.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 22.16548pt.
+ Make it at least 33.97194pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41] [42
+[71]
+Overfull \hbox (31.60313pt too wide) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/solver/navier[]_[]stokes/projection[]
+ []
 
-] (./refman.ind
+) (./solve__ns__equation_8cc.tex) (./solve__hyperbolic__equation_8cc.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/solver/phase/solve[]_[]
+ []
+
+) (./utilities_8cc.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/12 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/m
+iscible[]_[]mixing/source/support/utilities.cc File
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 3--221
+
+ []
+
+[72] (./refman.ind
 Overfull \hbox (20.75153pt too wide) in paragraph at lines 3--5
-[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
-scible[]
+\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/misc
+ible[]
  []
 
 
@@ -3149,9 +2641,19 @@ scible[]
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+\T1/phv/m/n/10 _[]mixing/include/mismix/particle/generator.[]h,
+ []
+
+
 Overfull \hbox (20.75153pt too wide) in paragraph at lines 15--17
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
 scible[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+\T1/phv/m/n/10 _[]mixing/include/mismix/particle/integrator.[]h,
  []
 
 
@@ -3167,30 +2669,15 @@ scible[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
-\T1/phv/m/n/10 _[]mixing/source/[]Post[]_[][]Processing/extract[]_[]
- []
-
-
 Overfull \hbox (20.75153pt too wide) in paragraph at lines 21--23
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
 scible[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--23
-\T1/phv/m/n/10 _[]mixing/source/[]Post[]_[][]Processing/post[]_[]
- []
-
-
 Overfull \hbox (20.75153pt too wide) in paragraph at lines 23--25
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
 scible[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-\T1/phv/m/n/10 _[]mixing/source/[]Pre[]_[][]Processing/mesh[]_[]in.[]cc,
  []
 
 
@@ -3201,7 +2688,7 @@ scible[]
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
-\T1/phv/m/n/10 _[]mixing/source/[]Pre[]_[][]Processing/read[]_[]and[]_[]
+\T1/phv/m/n/10 _[]mixing/source/constitutive[]_[]model/consti[]_[]
  []
 
 
@@ -3217,11 +2704,6 @@ scible[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
-\T1/phv/m/n/10 _[]mixing/source/[]Solver/projection[]_[]for[]_[]div[]_[]
- []
-
-
 Overfull \hbox (20.75153pt too wide) in paragraph at lines 31--33
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
 scible[]
@@ -3234,19 +2716,9 @@ scible[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-\T1/phv/m/n/10 _[]mixing/source/[]Solver/solve[]_[]hyperbolic[]_[]
- []
-
-
 Overfull \hbox (20.75153pt too wide) in paragraph at lines 35--37
 []\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
 scible[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
-\T1/phv/m/n/10 _[]mixing/source/[]Solver/solve[]_[]ns[]_[]equation.[]cc,
  []
 
 
@@ -3256,132 +2728,259 @@ scible[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 39--41
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
+\T1/phv/m/n/10 _[]mixing/source/post[]_[]process/extract[]_[]data.[]cc,
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 41--43
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 43--45
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--45
+\T1/phv/m/n/10 _[]mixing/source/pre[]_[]process/constructor.[]cc,
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 45--47
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 47--49
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+\T1/phv/m/n/10 _[]mixing/source/pre[]_[]process/read[]_[]and[]_[]
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 49--51
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+\T1/phv/m/n/10 _[]mixing/source/pre[]_[]process/setup[]_[]dofs.[]cc,
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 51--53
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 53--55
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 55--57
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+\T1/phv/m/n/10 _[]mixing/source/solver/navier[]_[]stokes/solve[]_[]
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 57--59
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+
+Overfull \hbox (20.75153pt too wide) in paragraph at lines 59--61
+[]\T1/phv/m/n/10 /[]Users/miranus/work/[]Devs/miscible[]_[]mixing[]_[]series/mi
+scible[]
+ []
+
+[73
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 []\T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[]_
 []step$\OML/cmm/m/it/10 <$
  []
 
-[43
 
-
-]
-Underfull \hbox (badness 7397) in paragraph at lines 182--184
+Underfull \hbox (badness 7397) in paragraph at lines 236--238
 []\T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[]s
 tep$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 dim
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 308--310
 []| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
 ]step,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
 []| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
 ]step,
  []
 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
-[]| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
-]step,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 393--395
-[]| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
-]step,
- []
-
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 441--443
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 461--463
 []| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
 ]step,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 452--454
+Underfull \hbox (badness 10000) in paragraph at lines 477--479
 []| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
 ]step,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--554
-[]| \T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[
-]_[]
+Underfull \hbox (badness 10000) in paragraph at lines 502--504
+[]| \T1/phv/m/n/10 ps[]_[]mmm[]::[]Particle[]::[]Generator[]::[]Random[]Uniform
+[]
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 564--566
-[]| \T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[
-]_[]
+[]| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
+]step,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 575--577
-[]| \T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[
-]_[]
- []
-
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 690--692
 []| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
 ]step,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 735--737
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 711--713
 []| \T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[
 ]_[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--739
+Underfull \hbox (badness 10000) in paragraph at lines 723--725
+[]| \T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[
+]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 734--736
+[]| \T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[
+]_[]
+ []
+
+[77]
+Underfull \hbox (badness 10000) in paragraph at lines 885--887
 []| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
 ]step,
  []
 
-[47] [48] [49
+[78]
+Underfull \hbox (badness 10000) in paragraph at lines 945--946
+[]\T1/phv/m/n/10 ps[]_[]mmm[]::[]Particle[]::[]Generator[]::[]Random[]Uniform[]
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 950--952
+[]\T1/phv/m/n/10 ps[]_[]mmm[]::[]Particle[]::[]Generator[]::[]Random[]Uniform[]
+
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 961--963
+[]\T1/phv/m/n/10 ps[]_[]mmm[]::[]Particle[]::[]Integrator[]::[]Euler[]Integrato
+r$\OML/cmm/m/it/10 <$ \T1/phv/m/n/10 dim, T
+ []
+
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1081
+[]| \T1/phv/m/n/10 ps[]_[]mmm[]::[]Particle[]::[]Generator[]::[]Random[]Uniform
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1112
+[]| \T1/phv/m/n/10 Assembly[]::[]Copy[]Data[]::relaxation[]_[]div[]_[]velocity[
+]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1114
+[]| \T1/phv/m/n/10 Assembly[]::[]Scratch[]::relaxation[]_[]div[]_[]velocity[]_[
+]step,
+ []
+
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1290
+[]| \T1/phv/m/n/10 ps[]_[]mmm[]::[]Particle[]::[]Generator[]::[]Random[]Uniform
+[]
+ []
+
+[81])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 069089FE7EE99DAA3EE07142C861D3C1;100417.
-
+(rerunfilecheck)             Checksum: FF9F461F14340128E220AF2FE4835C28;62114.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  ) 
 Here is how much of TeX's memory you used:
- 14308 strings out of 493089
- 235507 string characters out of 6134842
- 359610 words of memory out of 5000000
- 16796 multiletter control sequences out of 15000+600000
- 58360 words of font info for 70 fonts, out of 8000000 for 9000
+ 14915 strings out of 493089
+ 262341 string characters out of 6134842
+ 365071 words of memory out of 5000000
+ 16901 multiletter control sequences out of 15000+600000
+ 62519 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,16n,43p,4679b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,16n,43p,4671b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2015/texmf-dist/fonts
-/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (61 pages, 285444 bytes).
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/urw/helvetic/uhvb8ac.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
+w/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helve
+tic/uhvro8a.pfb>
+Output written on refman.pdf (86 pages, 474296 bytes).
 PDF statistics:
- 3329 PDF objects out of 3580 (max. 8388607)
- 3213 compressed objects within 33 object streams
- 679 named destinations out of 1000 (max. 500000)
- 2562 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4080 PDF objects out of 4296 (max. 8388607)
+ 3901 compressed objects within 40 object streams
+ 1100 named destinations out of 1200 (max. 500000)
+ 1480 words of extra memory for PDF output out of 10000 (max. 10000000)
 

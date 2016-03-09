@@ -1,0 +1,55 @@
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_integrator}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Integrator Namespace Reference}
+\label{namespaceps__mmm_1_1_particle_1_1_integrator}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator}}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator}{Euler\+Integrator}
+\begin{DoxyCompactList}\small\item\em Euler scheme integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt $\ast$ v(y\+\_\+n). \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_integrator}{Hybrid\+Integrator}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator}{Integrator} which chooses Euler, R\+K2 or R\+K4 depending on characteristics of the cell a particle is in. \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface}{Interface}
+\begin{DoxyCompactList}\small\item\em An abstract class defining virtual methods for performing integration of particle paths through the simulation velocity field. \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator}{R\+K2\+Integrator}
+\begin{DoxyCompactList}\small\item\em Runge Kutta second order integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt$\ast$v(0.\+5$\ast$k\+\_\+1), k\+\_\+1 = dt$\ast$v(y\+\_\+n). \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator}{R\+K4\+Integrator}
+\begin{DoxyCompactList}\small\item\em Runge Kutta fourth order integrator, where y\+\_\+\{n+1\} = y\+\_\+n + (1/6)$\ast$k1 + (1/3)$\ast$k2 + (1/3)$\ast$k3 + (1/6)$\ast$k4 and k1, k2, k3, k4 are defined as usual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int dim, class T $>$ }\\\hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface}{Interface}$<$ dim, T $>$ $\ast$ \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator_aff9038919a8d3a7325a41f9e049172e0}{create\+\_\+integrator\+\_\+object} (const std\+::string \&integrator\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Create an integrator object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator_ad2d14aa5e78e1ee56a8f9511bb4055d8}{integrator\+\_\+object\+\_\+names} ()
+\begin{DoxyCompactList}\small\item\em Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible integrator classes for particles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_integrator_aff9038919a8d3a7325a41f9e049172e0}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator}!create\+\_\+integrator\+\_\+object@{create\+\_\+integrator\+\_\+object}}
+\index{create\+\_\+integrator\+\_\+object@{create\+\_\+integrator\+\_\+object}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator}}
+\paragraph[{create\+\_\+integrator\+\_\+object(const std\+::string \&integrator\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ {\bf Interface}$<$ dim, T $>$ $\ast$ ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::create\+\_\+integrator\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{integrator\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{namespaceps__mmm_1_1_particle_1_1_integrator_aff9038919a8d3a7325a41f9e049172e0}
+
+
+Create an integrator object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em integrator\+\_\+name} & Name of the type of integrator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to instantiated generator object 
+\end{DoxyReturn}
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_integrator_ad2d14aa5e78e1ee56a8f9511bb4055d8}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator}!integrator\+\_\+object\+\_\+names@{integrator\+\_\+object\+\_\+names}}
+\index{integrator\+\_\+object\+\_\+names@{integrator\+\_\+object\+\_\+names}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator}}
+\paragraph[{integrator\+\_\+object\+\_\+names()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::integrator\+\_\+object\+\_\+names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespaceps__mmm_1_1_particle_1_1_integrator_ad2d14aa5e78e1ee56a8f9511bb4055d8}
+
+
+Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible integrator classes for particles. 
+

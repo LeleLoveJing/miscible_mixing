@@ -1,0 +1,25 @@
+\hypertarget{integrator_8h}{}\subsection{/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/particle/integrator.h File Reference}
+\label{integrator_8h}\index{/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/particle/integrator.\+h@{/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/particle/integrator.\+h}}
+{\ttfamily \#include $<$mismix/particle/world.\+h$>$}\\*
+{\ttfamily \#include $<$deal.\+I\+I/numerics/fe\+\_\+field\+\_\+function.\+h$>$}\\*
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}
+\begin{DoxyCompactList}\small\item\em An abstract class defining virtual methods for performing integration of particle paths through the simulation velocity field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceps__mmm}{ps\+\_\+mmm}
+\item 
+ \hyperlink{namespaceps__mmm_1_1_particle}{ps\+\_\+mmm\+::\+Particle}
+\item 
+ \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int dim, class T $>$ }\\Interface$<$ dim, T $>$ $\ast$ \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator_aff9038919a8d3a7325a41f9e049172e0}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::create\+\_\+integrator\+\_\+object} (const std\+::string \&integrator\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Create an integrator object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator_ad2d14aa5e78e1ee56a8f9511bb4055d8}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::integrator\+\_\+object\+\_\+names} ()
+\begin{DoxyCompactList}\small\item\em Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible integrator classes for particles. \end{DoxyCompactList}\end{DoxyCompactItemize}

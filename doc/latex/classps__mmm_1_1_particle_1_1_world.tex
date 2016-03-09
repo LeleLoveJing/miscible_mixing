@@ -1,0 +1,458 @@
+\hypertarget{classps__mmm_1_1_particle_1_1_world}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:World$<$ dim, T $>$ Class Template Reference}
+\label{classps__mmm_1_1_particle_1_1_world}\index{ps\+\_\+mmm\+::\+Particle\+::\+World$<$ dim, T $>$@{ps\+\_\+mmm\+::\+Particle\+::\+World$<$ dim, T $>$}}
+
+
+{\ttfamily \#include $<$world.\+h$>$}
+
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_world_a81dc003d0de8d71028a80bf27ff651e6}{World} ()
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classps__mmm_1_1_particle_1_1_world}{World} constructor. \end{DoxyCompactList}\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_world_a3bad0dbb53eebc492f4f778083d79a97}{$\sim$\+World} ()
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classps__mmm_1_1_particle_1_1_world}{World} destructor, deallocates all relevant arrays and structures. \end{DoxyCompactList}\item 
+const Mapping$<$ dim $>$ $\ast$ \hyperlink{classps__mmm_1_1_particle_1_1_world_a01a471e7660f9a740216567d9f476b08}{get\+\_\+mapping} () const 
+\begin{DoxyCompactList}\small\item\em Get the deal.\+I\+I Mapping associated with this particle world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a774c564058f9242522ccb57c5a78ab0e}{set\+\_\+mapping} (const Mapping$<$ dim $>$ $\ast$new\+\_\+mapping)
+\begin{DoxyCompactList}\small\item\em Set the deal.\+I\+I Mapping associated with this particle world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_acf86b29a2e09482e7c37420909f98fa2}{set\+\_\+triangulation} (const parallel\+::distributed\+::\+Triangulation$<$ dim $>$ $\ast$new\+\_\+tria)
+\begin{DoxyCompactList}\small\item\em Set the deal.\+I\+I Triangulation associated with this particle world and connects relevant listener for mesh changes. \end{DoxyCompactList}\item 
+const parallel\+::distributed\+::\+Triangulation$<$ dim $>$ $\ast$ \hyperlink{classps__mmm_1_1_particle_1_1_world_a3c4b7875ed3c1dbd3f81ab87a60e6e45}{get\+\_\+triangulation} ()
+\begin{DoxyCompactList}\small\item\em Get the deal.\+I\+I Triangulation associated with this particle world. \end{DoxyCompactList}\item 
+const Do\+F\+Handler$<$ dim $>$ $\ast$ \hyperlink{classps__mmm_1_1_particle_1_1_world_a2ebc92b736106d71fd09e02ac2369279}{get\+\_\+dof\+\_\+handler} () const 
+\begin{DoxyCompactList}\small\item\em Get the deal.\+I\+I Do\+F\+Handler associated with this particle world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a118531edd5310425da8b7dc27b73425f}{set\+\_\+dof\+\_\+handler} (const Do\+F\+Handler$<$ dim $>$ $\ast$new\+\_\+dh)
+\begin{DoxyCompactList}\small\item\em Set the deal.\+I\+I Do\+F\+Handler associated with this particle world. \end{DoxyCompactList}\item 
+const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector $\ast$ \hyperlink{classps__mmm_1_1_particle_1_1_world_afe9e737c5bbbacdc4fcaf38944c16b5b}{get\+\_\+solution} () const 
+\begin{DoxyCompactList}\small\item\em Get the deal.\+I\+I Block\+Vector solution associated with this particle world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_ab71f6d70811eba002383d01ecc0db655}{set\+\_\+solution} (const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector $\ast$new\+\_\+solution)
+\begin{DoxyCompactList}\small\item\em Set the deal.\+I\+I Block\+Vector solution associated with this particle world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a8691db977a9abb4065a2ada2eb3e7564}{set\+\_\+integrator} (\hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface}{Integrator\+::\+Interface}$<$ dim, T $>$ $\ast$new\+\_\+integrator)
+\begin{DoxyCompactList}\small\item\em Set the particle \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator}{Integrator} scheme for this particle world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_ae43fddb56235b7800829fd13784a898a}{set\+\_\+mpi\+\_\+comm} (const M\+P\+I\+\_\+\+Comm new\+\_\+comm\+\_\+world)
+\begin{DoxyCompactList}\small\item\em Set the M\+P\+I communicator for this world. \end{DoxyCompactList}\item 
+M\+P\+I\+\_\+\+Comm \hyperlink{classps__mmm_1_1_particle_1_1_world_a6800e7acbb19148a3dc64665497b2753}{mpi\+\_\+comm} ()
+\begin{DoxyCompactList}\small\item\em Get the M\+P\+I communicator associated with this particle world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_ac6b5165bb1cdff3106b7e1f1a5822bfd}{finished\+\_\+adding\+\_\+particles} ()
+\begin{DoxyCompactList}\small\item\em All processes must call this function when finished adding particles to the world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a85e0fa133b26216193d45d988aacb9f9}{add\+\_\+particle} (const T \&particle, const \hyperlink{namespaceps__mmm_1_1_particle_a475174140997ceb63cc9e801b6c0c4b8}{Level\+Ind} \&cell)
+\begin{DoxyCompactList}\small\item\em Add a particle to this world. \end{DoxyCompactList}\item 
+std\+::multimap$<$ \hyperlink{namespaceps__mmm_1_1_particle_a475174140997ceb63cc9e801b6c0c4b8}{Level\+Ind}, T $>$ \& \hyperlink{classps__mmm_1_1_particle_1_1_world_a5d6070289c4f84978f4577dfafc1bbd1}{get\+\_\+particles} ()
+\begin{DoxyCompactList}\small\item\em Access to particles in this world. \end{DoxyCompactList}\item 
+const std\+::multimap$<$ \hyperlink{namespaceps__mmm_1_1_particle_a475174140997ceb63cc9e801b6c0c4b8}{Level\+Ind}, T $>$ \& \hyperlink{classps__mmm_1_1_particle_1_1_world_a27f16128b40b4645ccebac61e4181d8a}{get\+\_\+particles} () const 
+\begin{DoxyCompactList}\small\item\em Const access to particles in this world. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a01461b9dc0afe272511be2bc63456bda}{init} ()
+\begin{DoxyCompactList}\small\item\em Initialize the particle world by creating appropriate M\+P\+I data types for transferring particles, and allocating memory for M\+P\+I related functions. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a0610b2299ee449bf9ba13207c80d39b4}{find\+\_\+all\+\_\+cells} ()
+\begin{DoxyCompactList}\small\item\em Calculate the cells containing each particle for all particles. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_ad49f2b38ad1863083c1a5653ac4bbaec}{advance\+\_\+timestep} (const double timestep, const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector \&solution)
+\begin{DoxyCompactList}\small\item\em Advance particles by the specified timestep using the current integration scheme. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a344ae5e1fb098dceb2eee132e27ee49b}{move\+\_\+particles\+\_\+back\+\_\+in\+\_\+mesh} ()
+\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a2ce89d57244a0eb9534b926ab81ac2b5}{mark\+\_\+particles\+\_\+for\+\_\+check} ()
+\begin{DoxyCompactList}\small\item\em Mark all particles to be checked for velocity at their current position. \end{DoxyCompactList}\item 
+\hyperlink{namespaceps__mmm_1_1_particle_a475174140997ceb63cc9e801b6c0c4b8}{Level\+Ind} \hyperlink{classps__mmm_1_1_particle_1_1_world_a830d70de69cc6d8051bb3369a151f0f6}{find\+\_\+cell} (T \&particle, const \hyperlink{namespaceps__mmm_1_1_particle_a475174140997ceb63cc9e801b6c0c4b8}{Level\+Ind} \&cur\+\_\+cell)
+\begin{DoxyCompactList}\small\item\em Finds the cell the particle is contained in and returns the appropriate cell level/index. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a7dd44b277bed2ef78643f137f9aca824}{send\+\_\+recv\+\_\+particles} ()
+\begin{DoxyCompactList}\small\item\em Transfer particles that have crossed subdomain boundaries to other processors. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a6050b826fa0e9a84cbd341d67894c17c}{get\+\_\+particle\+\_\+velocities} (const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector \&solution)
+\begin{DoxyCompactList}\small\item\em Calculates the velocities for each particle at its location given the input solution velocity field. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classps__mmm_1_1_particle_1_1_world_aecc4283ffe7f467e6908e19462165d14}{get\+\_\+global\+\_\+particle\+\_\+count} ()
+\begin{DoxyCompactList}\small\item\em Calculates the global sum of particles over all processes. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_world_a9e8972fc81009612354d5720bb4e9cd6}{check\+\_\+particle\+\_\+count} ()
+\begin{DoxyCompactList}\small\item\em Checks that the number of particles in the simulation has not unexpectedly changed. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classps__mmm_1_1_particle_1_1_world_af865e7ffc56986f8686f7cee87a06c8d}{serialize} (Archive \&ar, const unsigned int version)
+\begin{DoxyCompactList}\small\item\em Read or write the data of this object for serialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a81dc003d0de8d71028a80bf27ff651e6}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!World@{World}}
+\index{World@{World}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{World()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::{\bf World} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a81dc003d0de8d71028a80bf27ff651e6}
+
+
+Default \hyperlink{classps__mmm_1_1_particle_1_1_world}{World} constructor. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a3bad0dbb53eebc492f4f778083d79a97}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!````~World@{$\sim$\+World}}
+\index{````~World@{$\sim$\+World}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{$\sim$\+World()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::$\sim${\bf World} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a3bad0dbb53eebc492f4f778083d79a97}
+
+
+Default \hyperlink{classps__mmm_1_1_particle_1_1_world}{World} destructor, deallocates all relevant arrays and structures. 
+
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a85e0fa133b26216193d45d988aacb9f9}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!add\+\_\+particle@{add\+\_\+particle}}
+\index{add\+\_\+particle@{add\+\_\+particle}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{add\+\_\+particle(const T \&particle, const Level\+Ind \&cell)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::add\+\_\+particle (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{particle, }
+\item[{const {\bf Level\+Ind} \&}]{cell}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a85e0fa133b26216193d45d988aacb9f9}
+
+
+Add a particle to this world. 
+
+If the specified cell does not exist in the local subdomain an exception will be thrown. \hypertarget{classps__mmm_1_1_particle_1_1_world_ad49f2b38ad1863083c1a5653ac4bbaec}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!advance\+\_\+timestep@{advance\+\_\+timestep}}
+\index{advance\+\_\+timestep@{advance\+\_\+timestep}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{advance\+\_\+timestep(const double timestep, const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector \&solution)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::advance\+\_\+timestep (
+\begin{DoxyParamCaption}
+\item[{const double}]{timestep, }
+\item[{const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector \&}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_ad49f2b38ad1863083c1a5653ac4bbaec}
+
+
+Advance particles by the specified timestep using the current integration scheme. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em timestep} & Length of timestep to integrate particle movement \\
+\hline
+\mbox{\tt in}  & {\em solution} & Current Aspect solution vector \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a9e8972fc81009612354d5720bb4e9cd6}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!check\+\_\+particle\+\_\+count@{check\+\_\+particle\+\_\+count}}
+\index{check\+\_\+particle\+\_\+count@{check\+\_\+particle\+\_\+count}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{check\+\_\+particle\+\_\+count()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::check\+\_\+particle\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a9e8972fc81009612354d5720bb4e9cd6}
+
+
+Checks that the number of particles in the simulation has not unexpectedly changed. 
+
+If the particle count changes then the simulation will be aborted. \hypertarget{classps__mmm_1_1_particle_1_1_world_a0610b2299ee449bf9ba13207c80d39b4}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!find\+\_\+all\+\_\+cells@{find\+\_\+all\+\_\+cells}}
+\index{find\+\_\+all\+\_\+cells@{find\+\_\+all\+\_\+cells}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{find\+\_\+all\+\_\+cells()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::find\+\_\+all\+\_\+cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a0610b2299ee449bf9ba13207c80d39b4}
+
+
+Calculate the cells containing each particle for all particles. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a830d70de69cc6d8051bb3369a151f0f6}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!find\+\_\+cell@{find\+\_\+cell}}
+\index{find\+\_\+cell@{find\+\_\+cell}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{find\+\_\+cell(\+T \&particle, const Level\+Ind \&cur\+\_\+cell)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ {\bf Level\+Ind} {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::find\+\_\+cell (
+\begin{DoxyParamCaption}
+\item[{T \&}]{particle, }
+\item[{const {\bf Level\+Ind} \&}]{cur\+\_\+cell}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a830d70de69cc6d8051bb3369a151f0f6}
+
+
+Finds the cell the particle is contained in and returns the appropriate cell level/index. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em particle} & The particle to find the cell for. This particle will be updated to indicate whether it is in the local subdomain or not. \\
+\hline
+\mbox{\tt in}  & {\em cur\+\_\+cell} & The current cell (level and index) being checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The level and index of the active cell the particle is in. If no cell was found to contain the particle, return the level/index (-\/1, -\/1) 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_ac6b5165bb1cdff3106b7e1f1a5822bfd}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!finished\+\_\+adding\+\_\+particles@{finished\+\_\+adding\+\_\+particles}}
+\index{finished\+\_\+adding\+\_\+particles@{finished\+\_\+adding\+\_\+particles}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{finished\+\_\+adding\+\_\+particles()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::finished\+\_\+adding\+\_\+particles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_ac6b5165bb1cdff3106b7e1f1a5822bfd}
+
+
+All processes must call this function when finished adding particles to the world. 
+
+This function will determine the total number of particles. \hypertarget{classps__mmm_1_1_particle_1_1_world_a2ebc92b736106d71fd09e02ac2369279}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+dof\+\_\+handler@{get\+\_\+dof\+\_\+handler}}
+\index{get\+\_\+dof\+\_\+handler@{get\+\_\+dof\+\_\+handler}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+dof\+\_\+handler() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ const Do\+F\+Handler$<$dim$>$$\ast$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+dof\+\_\+handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a2ebc92b736106d71fd09e02ac2369279}
+
+
+Get the deal.\+I\+I Do\+F\+Handler associated with this particle world. 
+
+\begin{DoxyReturn}{Returns}
+The Do\+F\+Handler for this world. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_aecc4283ffe7f467e6908e19462165d14}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+global\+\_\+particle\+\_\+count@{get\+\_\+global\+\_\+particle\+\_\+count}}
+\index{get\+\_\+global\+\_\+particle\+\_\+count@{get\+\_\+global\+\_\+particle\+\_\+count}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+global\+\_\+particle\+\_\+count()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ unsigned int {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+global\+\_\+particle\+\_\+count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_aecc4283ffe7f467e6908e19462165d14}
+
+
+Calculates the global sum of particles over all processes. 
+
+This is done to ensure no particles have fallen out of the simulation domain.
+
+\begin{DoxyReturn}{Returns}
+Total number of particles in simulation. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a01a471e7660f9a740216567d9f476b08}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+mapping@{get\+\_\+mapping}}
+\index{get\+\_\+mapping@{get\+\_\+mapping}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+mapping() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ const Mapping$<$dim$>$$\ast$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+mapping (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a01a471e7660f9a740216567d9f476b08}
+
+
+Get the deal.\+I\+I Mapping associated with this particle world. 
+
+\begin{DoxyReturn}{Returns}
+The Mapping for this world. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a6050b826fa0e9a84cbd341d67894c17c}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+particle\+\_\+velocities@{get\+\_\+particle\+\_\+velocities}}
+\index{get\+\_\+particle\+\_\+velocities@{get\+\_\+particle\+\_\+velocities}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+particle\+\_\+velocities(const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector \&solution)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+particle\+\_\+velocities (
+\begin{DoxyParamCaption}
+\item[{const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector \&}]{solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a6050b826fa0e9a84cbd341d67894c17c}
+
+
+Calculates the velocities for each particle at its location given the input solution velocity field. 
+
+The calculated velocities are stored in the \hyperlink{namespaceps__mmm_1_1_particle}{Particle} objects for this world.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em solution} & The current solution vector for this simulation. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a5d6070289c4f84978f4577dfafc1bbd1}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+particles@{get\+\_\+particles}}
+\index{get\+\_\+particles@{get\+\_\+particles}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+particles()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ std\+::multimap$<${\bf Level\+Ind}, T$>$\& {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+particles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a5d6070289c4f84978f4577dfafc1bbd1}
+
+
+Access to particles in this world. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a27f16128b40b4645ccebac61e4181d8a}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+particles@{get\+\_\+particles}}
+\index{get\+\_\+particles@{get\+\_\+particles}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+particles() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ const std\+::multimap$<${\bf Level\+Ind}, T$>$\& {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+particles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a27f16128b40b4645ccebac61e4181d8a}
+
+
+Const access to particles in this world. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_world_afe9e737c5bbbacdc4fcaf38944c16b5b}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+solution@{get\+\_\+solution}}
+\index{get\+\_\+solution@{get\+\_\+solution}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+solution() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector$\ast$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_afe9e737c5bbbacdc4fcaf38944c16b5b}
+
+
+Get the deal.\+I\+I Block\+Vector solution associated with this particle world. 
+
+\begin{DoxyReturn}{Returns}
+The Block\+Vector solution for this world. 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a3c4b7875ed3c1dbd3f81ab87a60e6e45}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!get\+\_\+triangulation@{get\+\_\+triangulation}}
+\index{get\+\_\+triangulation@{get\+\_\+triangulation}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{get\+\_\+triangulation()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ const parallel\+::distributed\+::\+Triangulation$<$dim$>$$\ast$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::get\+\_\+triangulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a3c4b7875ed3c1dbd3f81ab87a60e6e45}
+
+
+Get the deal.\+I\+I Triangulation associated with this particle world. 
+
+\begin{DoxyReturn}{Returns}
+const pointer to associated Triangulation 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a01461b9dc0afe272511be2bc63456bda}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!init@{init}}
+\index{init@{init}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{init()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a01461b9dc0afe272511be2bc63456bda}
+
+
+Initialize the particle world by creating appropriate M\+P\+I data types for transferring particles, and allocating memory for M\+P\+I related functions. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a2ce89d57244a0eb9534b926ab81ac2b5}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!mark\+\_\+particles\+\_\+for\+\_\+check@{mark\+\_\+particles\+\_\+for\+\_\+check}}
+\index{mark\+\_\+particles\+\_\+for\+\_\+check@{mark\+\_\+particles\+\_\+for\+\_\+check}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{mark\+\_\+particles\+\_\+for\+\_\+check()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::mark\+\_\+particles\+\_\+for\+\_\+check (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a2ce89d57244a0eb9534b926ab81ac2b5}
+
+
+Mark all particles to be checked for velocity at their current position. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a344ae5e1fb098dceb2eee132e27ee49b}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!move\+\_\+particles\+\_\+back\+\_\+in\+\_\+mesh@{move\+\_\+particles\+\_\+back\+\_\+in\+\_\+mesh}}
+\index{move\+\_\+particles\+\_\+back\+\_\+in\+\_\+mesh@{move\+\_\+particles\+\_\+back\+\_\+in\+\_\+mesh}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{move\+\_\+particles\+\_\+back\+\_\+in\+\_\+mesh()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::move\+\_\+particles\+\_\+back\+\_\+in\+\_\+mesh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a344ae5e1fb098dceb2eee132e27ee49b}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a6800e7acbb19148a3dc64665497b2753}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!mpi\+\_\+comm@{mpi\+\_\+comm}}
+\index{mpi\+\_\+comm@{mpi\+\_\+comm}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{mpi\+\_\+comm()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ M\+P\+I\+\_\+\+Comm {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::mpi\+\_\+comm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a6800e7acbb19148a3dc64665497b2753}
+
+
+Get the M\+P\+I communicator associated with this particle world. 
+
+\begin{DoxyReturn}{Returns}
+associated M\+P\+I\+\_\+\+Comm 
+\end{DoxyReturn}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a7dd44b277bed2ef78643f137f9aca824}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!send\+\_\+recv\+\_\+particles@{send\+\_\+recv\+\_\+particles}}
+\index{send\+\_\+recv\+\_\+particles@{send\+\_\+recv\+\_\+particles}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{send\+\_\+recv\+\_\+particles()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::send\+\_\+recv\+\_\+particles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a7dd44b277bed2ef78643f137f9aca824}
+
+
+Transfer particles that have crossed subdomain boundaries to other processors. 
+
+Because subdomains can change drastically during mesh refinement, particle transfer occurs as follows\+: -\/ Each subdomain finds the particles it owns which have fallen outside it -\/ For each particle outside the subdomain, send the particle to all subdomains and let them determine which one owns it. This assumes there is no overlap between subdomains. -\/ Each process determines which of the received particles is in its subdomain, keeps these and deletes the others -\/ T\+O\+D\+O\+: handle particles outside any domain -\/ T\+O\+D\+O\+: if we know the domain of a particle (e.\+g. bordering domains), send it only to that domain \hypertarget{classps__mmm_1_1_particle_1_1_world_af865e7ffc56986f8686f7cee87a06c8d}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!serialize@{serialize}}
+\index{serialize@{serialize}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{serialize(\+Archive \&ar, const unsigned int version)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ template$<$class Archive $>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_af865e7ffc56986f8686f7cee87a06c8d}
+
+
+Read or write the data of this object for serialization. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a118531edd5310425da8b7dc27b73425f}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!set\+\_\+dof\+\_\+handler@{set\+\_\+dof\+\_\+handler}}
+\index{set\+\_\+dof\+\_\+handler@{set\+\_\+dof\+\_\+handler}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{set\+\_\+dof\+\_\+handler(const Do\+F\+Handler$<$ dim $>$ $\ast$new\+\_\+dh)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::set\+\_\+dof\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{const Do\+F\+Handler$<$ dim $>$ $\ast$}]{new\+\_\+dh}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a118531edd5310425da8b7dc27b73425f}
+
+
+Set the deal.\+I\+I Do\+F\+Handler associated with this particle world. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+dh} & The new Do\+F\+Handler for this world. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a8691db977a9abb4065a2ada2eb3e7564}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!set\+\_\+integrator@{set\+\_\+integrator}}
+\index{set\+\_\+integrator@{set\+\_\+integrator}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{set\+\_\+integrator(\+Integrator\+::\+Interface$<$ dim, T $>$ $\ast$new\+\_\+integrator)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::set\+\_\+integrator (
+\begin{DoxyParamCaption}
+\item[{{\bf Integrator\+::\+Interface}$<$ dim, T $>$ $\ast$}]{new\+\_\+integrator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a8691db977a9abb4065a2ada2eb3e7564}
+
+
+Set the particle \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator}{Integrator} scheme for this particle world. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+integrator} & The new \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator}{Integrator} scheme for this world. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_a774c564058f9242522ccb57c5a78ab0e}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!set\+\_\+mapping@{set\+\_\+mapping}}
+\index{set\+\_\+mapping@{set\+\_\+mapping}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{set\+\_\+mapping(const Mapping$<$ dim $>$ $\ast$new\+\_\+mapping)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::set\+\_\+mapping (
+\begin{DoxyParamCaption}
+\item[{const Mapping$<$ dim $>$ $\ast$}]{new\+\_\+mapping}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_a774c564058f9242522ccb57c5a78ab0e}
+
+
+Set the deal.\+I\+I Mapping associated with this particle world. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+mapping} & The new Mapping for this world. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_ae43fddb56235b7800829fd13784a898a}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!set\+\_\+mpi\+\_\+comm@{set\+\_\+mpi\+\_\+comm}}
+\index{set\+\_\+mpi\+\_\+comm@{set\+\_\+mpi\+\_\+comm}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{set\+\_\+mpi\+\_\+comm(const M\+P\+I\+\_\+\+Comm new\+\_\+comm\+\_\+world)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::set\+\_\+mpi\+\_\+comm (
+\begin{DoxyParamCaption}
+\item[{const M\+P\+I\+\_\+\+Comm}]{new\+\_\+comm\+\_\+world}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_ae43fddb56235b7800829fd13784a898a}
+
+
+Set the M\+P\+I communicator for this world. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+comm\+\_\+world} & The new M\+P\+I\+\_\+\+Comm object for this world. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_ab71f6d70811eba002383d01ecc0db655}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!set\+\_\+solution@{set\+\_\+solution}}
+\index{set\+\_\+solution@{set\+\_\+solution}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{set\+\_\+solution(const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector $\ast$new\+\_\+solution)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::set\+\_\+solution (
+\begin{DoxyParamCaption}
+\item[{const Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector $\ast$}]{new\+\_\+solution}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_ab71f6d70811eba002383d01ecc0db655}
+
+
+Set the deal.\+I\+I Block\+Vector solution associated with this particle world. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+solution} & The new Trilinos\+Wrappers\+::\+M\+P\+I\+::\+Vector solution for this world. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classps__mmm_1_1_particle_1_1_world_acf86b29a2e09482e7c37420909f98fa2}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}!set\+\_\+triangulation@{set\+\_\+triangulation}}
+\index{set\+\_\+triangulation@{set\+\_\+triangulation}!ps\+\_\+mmm\+::\+Particle\+::\+World@{ps\+\_\+mmm\+::\+Particle\+::\+World}}
+\paragraph[{set\+\_\+triangulation(const parallel\+::distributed\+::\+Triangulation$<$ dim $>$ $\ast$new\+\_\+tria)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T$>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+World}$<$ dim, T $>$\+::set\+\_\+triangulation (
+\begin{DoxyParamCaption}
+\item[{const parallel\+::distributed\+::\+Triangulation$<$ dim $>$ $\ast$}]{new\+\_\+tria}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_world_acf86b29a2e09482e7c37420909f98fa2}
+
+
+Set the deal.\+I\+I Triangulation associated with this particle world and connects relevant listener for mesh changes. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em new\+\_\+tria} & The new Triangulation for this world. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/particle/\hyperlink{world_8h}{world.\+h}\end{DoxyCompactItemize}

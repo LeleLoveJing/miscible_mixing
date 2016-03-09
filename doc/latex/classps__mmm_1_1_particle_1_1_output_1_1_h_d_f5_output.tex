@@ -1,0 +1,74 @@
+\hypertarget{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Output\+:\+:H\+D\+F5\+Output$<$ dim, T $>$ Class Template Reference}
+\label{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output}\index{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output$<$ dim, T $>$@{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output$<$ dim, T $>$}}
+Inheritance diagram for ps\+\_\+mmm\+:\+:Particle\+:\+:Output\+:\+:H\+D\+F5\+Output$<$ dim, T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output_a93055d504bdcc9376d0adb72ce854158}{H\+D\+F5\+Output} (const std\+::string \&output\+\_\+directory, const M\+P\+I\+\_\+\+Comm \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_interface_ae3fcfd82092c40864ec09918f03b91d0}{communicator})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output_a7a60a4d5d9abcf5f2b8f652b69f4dbe1}{output\+\_\+particle\+\_\+data} (const std\+::multimap$<$ \hyperlink{namespaceps__mmm_1_1_particle_a475174140997ceb63cc9e801b6c0c4b8}{Level\+Ind}, T $>$ \&particles, const double \&current\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Write data about the particles specified in the first argument to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Additional Inherited Members}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output_a93055d504bdcc9376d0adb72ce854158}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output}!H\+D\+F5\+Output@{H\+D\+F5\+Output}}
+\index{H\+D\+F5\+Output@{H\+D\+F5\+Output}!ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output}}
+\paragraph[{H\+D\+F5\+Output(const std\+::string \&output\+\_\+directory, const M\+P\+I\+\_\+\+Comm communicator)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output}$<$ dim, T $>$\+::{\bf H\+D\+F5\+Output} (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{output\+\_\+directory, }
+\item[{const M\+P\+I\+\_\+\+Comm}]{communicator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output_a93055d504bdcc9376d0adb72ce854158}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em The} & directory into which output files shall be placed. \\
+\hline
+\mbox{\tt in}  & {\em The} & M\+P\+I communicator that describes this simulation. \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output_a7a60a4d5d9abcf5f2b8f652b69f4dbe1}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output}!output\+\_\+particle\+\_\+data@{output\+\_\+particle\+\_\+data}}
+\index{output\+\_\+particle\+\_\+data@{output\+\_\+particle\+\_\+data}!ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output@{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output}}
+\paragraph[{output\+\_\+particle\+\_\+data(const std\+::multimap$<$ Level\+Ind, T $>$ \&particles, const double \&current\+\_\+time)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual std\+::string {\bf ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+H\+D\+F5\+Output}$<$ dim, T $>$\+::output\+\_\+particle\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const std\+::multimap$<$ {\bf Level\+Ind}, T $>$ \&}]{particles, }
+\item[{const double \&}]{current\+\_\+time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_output_1_1_h_d_f5_output_a7a60a4d5d9abcf5f2b8f652b69f4dbe1}
+
+
+Write data about the particles specified in the first argument to a file. 
+
+If possible, encode the current simulation time into this file using the data provided in the second argument.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em particles} & The set of particles to generate a graphical representation for \\
+\hline
+\mbox{\tt in}  & {\em current\+\_\+time} & Current time of the simulation, given as either years or seconds, as selected in the input file. In other words, output writers do not need to know the units in which time is described. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The name of the file that was written, or any other information that describes what output was produced if for example multiple files were created. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_output_1_1_interface_a4ed5410d2d46dbb96073addd4b6f5310}{ps\+\_\+mmm\+::\+Particle\+::\+Output\+::\+Interface$<$ dim, T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/\hyperlink{output_8cc}{output.\+cc}\end{DoxyCompactItemize}

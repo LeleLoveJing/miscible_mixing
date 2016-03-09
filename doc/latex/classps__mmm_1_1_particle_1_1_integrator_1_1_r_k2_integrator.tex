@@ -1,0 +1,173 @@
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Integrator\+:\+:R\+K2\+Integrator$<$ dim, T $>$ Class Template Reference}
+\label{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator$<$ dim, T $>$@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator$<$ dim, T $>$}}
+
+
+Runge Kutta second order integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt$\ast$v(0.\+5$\ast$k\+\_\+1), k\+\_\+1 = dt$\ast$v(y\+\_\+n).  
+
+
+Inheritance diagram for ps\+\_\+mmm\+:\+:Particle\+:\+:Integrator\+:\+:R\+K2\+Integrator$<$ dim, T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_ac34a83951d1d6eacee9637438e141e84}{R\+K2\+Integrator} (void)
+\item 
+virtual bool \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_af5c9d0b30c061017e5afbb2719060313}{integrate\+\_\+step} (\hyperlink{classps__mmm_1_1_particle_1_1_world}{Particle\+::\+World}$<$ dim, T $>$ $\ast$world, const double dt)
+\begin{DoxyCompactList}\small\item\em Perform an integration step of moving the particles by the specified timestep dt. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_ac612c8ef6762663a5e4bc111c5116290}{add\+\_\+mpi\+\_\+types} (std\+::vector$<$ \hyperlink{classps__mmm_1_1_particle_1_1_m_p_i_data_info}{M\+P\+I\+Data\+Info} $>$ \&data\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Secify the M\+P\+I types and data sizes involved in transferring integration related information between processes. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_a48882ad43f5b0bda026be9f3813f1155}{data\+\_\+len} () const 
+\begin{DoxyCompactList}\small\item\em Return data length of the integration related data required for communication in terms of number of doubles. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_aefa62be524024d365dbd25964dca98eb}{read\+\_\+data} (const std\+::vector$<$ double $>$ \&data, const unsigned int \&pos, const double \&id\+\_\+num)
+\begin{DoxyCompactList}\small\item\em Read integration related data for a particle specified by id\+\_\+num from the data vector. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_af9967cb9fa46f5ab1378796c7b2e80b5}{write\+\_\+data} (std\+::vector$<$ double $>$ \&data, const double \&id\+\_\+num) const 
+\begin{DoxyCompactList}\small\item\em Write integration related data to a vector for a particle specified by id\+\_\+num. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$int dim, class T$>$class ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator$<$ dim, T $>$}
+
+Runge Kutta second order integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt$\ast$v(0.\+5$\ast$k\+\_\+1), k\+\_\+1 = dt$\ast$v(y\+\_\+n). 
+
+This scheme requires storing the original location, and the read/write\+\_\+data functions reflect this. 
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_ac34a83951d1d6eacee9637438e141e84}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}!R\+K2\+Integrator@{R\+K2\+Integrator}}
+\index{R\+K2\+Integrator@{R\+K2\+Integrator}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}}
+\paragraph[{R\+K2\+Integrator(void)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}$<$ dim, T $>$\+::{\bf R\+K2\+Integrator} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_ac34a83951d1d6eacee9637438e141e84}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_ac612c8ef6762663a5e4bc111c5116290}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}!add\+\_\+mpi\+\_\+types@{add\+\_\+mpi\+\_\+types}}
+\index{add\+\_\+mpi\+\_\+types@{add\+\_\+mpi\+\_\+types}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}}
+\paragraph[{add\+\_\+mpi\+\_\+types(std\+::vector$<$ M\+P\+I\+Data\+Info $>$ \&data\+\_\+info)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}$<$ dim, T $>$\+::add\+\_\+mpi\+\_\+types (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf M\+P\+I\+Data\+Info} $>$ \&}]{data\+\_\+info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_ac612c8ef6762663a5e4bc111c5116290}
+
+
+Secify the M\+P\+I types and data sizes involved in transferring integration related information between processes. 
+
+If the integrator samples velocities at different locations and the particle moves between processes during the integration step, the sampled velocities must be transferred with the particle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em data\+\_\+info} & Adds M\+P\+I data info to the specified vector indicating the quantity and type of values the integrator needs saved for this particle. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_aab598f85b5f1d9036122a35629f7b6e5}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_a48882ad43f5b0bda026be9f3813f1155}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}!data\+\_\+len@{data\+\_\+len}}
+\index{data\+\_\+len@{data\+\_\+len}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}}
+\paragraph[{data\+\_\+len() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual unsigned int {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}$<$ dim, T $>$\+::data\+\_\+len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_a48882ad43f5b0bda026be9f3813f1155}
+
+
+Return data length of the integration related data required for communication in terms of number of doubles. 
+
+\begin{DoxyReturn}{Returns}
+The number of doubles required to store the relevant integrator data. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_a66188d76381fde488b2a5b367123501c}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_af5c9d0b30c061017e5afbb2719060313}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}!integrate\+\_\+step@{integrate\+\_\+step}}
+\index{integrate\+\_\+step@{integrate\+\_\+step}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}}
+\paragraph[{integrate\+\_\+step(\+Particle\+::\+World$<$ dim, T $>$ $\ast$world, const double dt)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual bool {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}$<$ dim, T $>$\+::integrate\+\_\+step (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle\+::\+World}$<$ dim, T $>$ $\ast$}]{world, }
+\item[{const double}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_af5c9d0b30c061017e5afbb2719060313}
+
+
+Perform an integration step of moving the particles by the specified timestep dt. 
+
+Implementations of this function must update the particle location. If the integrator requires multiple internal steps, this function must return true until all internal steps are finished. Between calls to this function the velocity at the updated particle positions is evaluated and passed to integrate\+\_\+step during the next call.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em world} & The world to integrate particles in. The particle positions will be changed in this function based on the integration scheme. \\
+\hline
+\mbox{\tt in}  & {\em dt} & The timestep length to perform the integration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this function needs to be called again (true) for additional integration steps or if all internal steps are complete (false). 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_ab5021dc21cc53a4b3f893b7c5310e1b0}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_aefa62be524024d365dbd25964dca98eb}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}!read\+\_\+data@{read\+\_\+data}}
+\index{read\+\_\+data@{read\+\_\+data}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}}
+\paragraph[{read\+\_\+data(const std\+::vector$<$ double $>$ \&data, const unsigned int \&pos, const double \&id\+\_\+num)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual unsigned int {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}$<$ dim, T $>$\+::read\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ double $>$ \&}]{data, }
+\item[{const unsigned int \&}]{pos, }
+\item[{const double \&}]{id\+\_\+num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_aefa62be524024d365dbd25964dca98eb}
+
+
+Read integration related data for a particle specified by id\+\_\+num from the data vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The vector of double data to read from. \\
+\hline
+\mbox{\tt in}  & {\em pos} & The position in the data vector to start reading from. \\
+\hline
+\mbox{\tt in}  & {\em id\+\_\+num} & The id number of the particle to read the data for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position in the vector of the next unread double. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_af4db60d66fff7ad2e7eebf2657e3200e}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_af9967cb9fa46f5ab1378796c7b2e80b5}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}!write\+\_\+data@{write\+\_\+data}}
+\index{write\+\_\+data@{write\+\_\+data}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}}
+\paragraph[{write\+\_\+data(std\+::vector$<$ double $>$ \&data, const double \&id\+\_\+num) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator}$<$ dim, T $>$\+::write\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$ \&}]{data, }
+\item[{const double \&}]{id\+\_\+num}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator_af9967cb9fa46f5ab1378796c7b2e80b5}
+
+
+Write integration related data to a vector for a particle specified by id\+\_\+num. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em data} & The vector of doubles to write integrator data into. \\
+\hline
+\mbox{\tt in}  & {\em id\+\_\+num} & The id number of the particle to read the data for. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_a1d483c5c2c3b55040415d32eb322b080}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/\hyperlink{integrator_8cc}{integrator.\+cc}\end{DoxyCompactItemize}

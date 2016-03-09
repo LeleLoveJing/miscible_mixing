@@ -1,9 +1,9 @@
 #ifndef __equation_data_h__
 #define __equation_data_h__
 
-#include "include.h"
+#include <deal.II/base/function.h>
 
-namespace EquationData
+  namespace EquationData
   {
     const double pipe_diameter = 19.05; /* mm */
     const double gravitiy_accelation = 9800; /* mm/s^2 */
@@ -14,26 +14,25 @@ namespace EquationData
     template <int dim>
     class Inflow_Velocity : public Function<dim>
     {
+      public:
 
-     public:
+      Inflow_Velocity (double, unsigned int);
+      virtual double value (const Point<dim>   &p,
+                      const unsigned int  component = 0) const;
 
-     Inflow_Velocity (double, unsigned int);
-     virtual double value (const Point<dim>   &p,
-                     const unsigned int  component = 0) const;
+      virtual void vector_value (const Point<dim> &p,
+                        Vector<double>   &value) const;
 
-     virtual void vector_value (const Point<dim> &p,
-                       Vector<double>   &value) const;
+      virtual void vector_value_list (const std::vector<Point<dim> > &p,
+                          std::vector<Vector<double> > &values) const;
 
-     virtual void vector_value_list (const std::vector<Point<dim> > &p,
-                         std::vector<Vector<double> > &values) const;
-
-     double init_mean_vel;
-     unsigned int which_inflow_type;
+      double init_mean_vel;
+      unsigned int which_inflow_type;
     };
 
     template <int dim>
     Inflow_Velocity<dim>::Inflow_Velocity (double init_mean_vel,
-                            unsigned int which_inflow_type) :
+                                           unsigned int which_inflow_type) :
     Function<dim> (dim),
     init_mean_vel (init_mean_vel),
     which_inflow_type (which_inflow_type)
@@ -48,14 +47,14 @@ namespace EquationData
       
       if (dim == 2 && component == 0)
       {
-     double pp = p(1) + 0.5;
-     zz = 4.*1.5*init_mean_vel*pp*(H - pp)/(H*H);
-      if (which_inflow_type == 0) zz = 1.0;
+        double pp = p(1) + 0.5;
+        zz = 4.*1.5*init_mean_vel*pp*(H - pp)/(H*H);
+        if (which_inflow_type == 0) zz = 1.0;
       } 
       else if (dim == 3 && component == 2)
       {
-     double pp = p[0]*p[0] + p[1]*p[1]; pp = std::sqrt(pp);
-     zz = -4.0*2.0*init_mean_vel*(pp - 0.5)*(pp + 0.5);
+        double pp = p[0]*p[0] + p[1]*p[1]; pp = std::sqrt(pp);
+        zz = -4.0*2.0*init_mean_vel*(pp - 0.5)*(pp + 0.5);
         if (which_inflow_type == 0) zz = 1.0;
       }
       
@@ -66,41 +65,40 @@ namespace EquationData
     void Inflow_Velocity<dim>::vector_value (const Point<dim> &p,
                                              Vector<double>   &values) const
     {
-     for (unsigned int c=0; c<this->n_components; ++c)
-      values(c) = Inflow_Velocity<dim>::value (p, c);
+      for (unsigned int c=0; c<this->n_components; ++c)
+        values(c) = Inflow_Velocity<dim>::value (p, c);
     }
 
     template <int dim>
     void Inflow_Velocity<dim>::vector_value_list (const std::vector<Point<dim> > &points,
                                                   std::vector<Vector<double> >   &value_list) const
     {
-     for (unsigned int p=0; p<points.size(); ++p)
-      Inflow_Velocity<dim>::vector_value (points[p], value_list[p]);
+      for (unsigned int p=0; p<points.size(); ++p)
+        Inflow_Velocity<dim>::vector_value (points[p], value_list[p]);
     }
 
     template <int dim>
     class Outflow_Pressure : public Function<dim>
     {
 
-     public:
+      public:
 
-     Outflow_Pressure (double, double);
-     virtual double value (const Point<dim>   &p,
-         const unsigned int  component = 0) const;
+      Outflow_Pressure (double, double);
+      virtual double value (const Point<dim>   &p,
+          const unsigned int  component = 0) const;
 
-     virtual void vector_value (const Point<dim> &p,
-       Vector<double>   &value) const;
+      virtual void vector_value (const Point<dim> &p,
+        Vector<double>   &value) const;
 
-     virtual void vector_value_list (const std::vector<Point<dim> > &p,
-           std::vector<Vector<double> > &values) const;
+      virtual void vector_value_list (const std::vector<Point<dim> > &p,
+            std::vector<Vector<double> > &values) const;
 
-     double inclined_angle, Froude_number;
+      double inclined_angle, Froude_number;
     
     };
 
     template <int dim>
-    Outflow_Pressure<dim>::Outflow_Pressure (double inclined_angle,
-          double Froude_number) :
+    Outflow_Pressure<dim>::Outflow_Pressure (double inclined_angle,double Froude_number) :
     Function<dim> (1),
     inclined_angle (inclined_angle),
     Froude_number (Froude_number)
@@ -110,36 +108,36 @@ namespace EquationData
     double Outflow_Pressure<dim>::value (const Point<dim>  &p,
                                          const unsigned int component) const
     {
-     return (1./(Froude_number*Froude_number))*inclined_angle*(1.0-p[1])  + 0.0;
+      return (1./(Froude_number*Froude_number))*inclined_angle*(1.0-p[1])  + 0.0;
     }
 
     template <int dim>
     void Outflow_Pressure<dim>::vector_value (const Point<dim> &p,
                                               Vector<double>   &values) const
     {
-     for (unsigned int c=0; c<this->n_components; ++c)
-      values(c) = Outflow_Pressure<dim>::value (p, c);
+      for (unsigned int c=0; c<this->n_components; ++c)
+        values(c) = Outflow_Pressure<dim>::value (p, c);
     }
 
     template <int dim>
     void Outflow_Pressure<dim>::vector_value_list (const std::vector<Point<dim> > &points,
                                                    std::vector<Vector<double> >   &value_list) const
     {
-     for (unsigned int p=0; p<points.size(); ++p)
-      Outflow_Pressure<dim>::vector_value (points[p], value_list[p]);
+      for (unsigned int p=0; p<points.size(); ++p)
+        Outflow_Pressure<dim>::vector_value (points[p], value_list[p]);
     }
 
     template <int dim>
     class concentrInletValues : public Function<dim>
     {
-     public:
-     concentrInletValues () : Function<dim>(1) {}
+      public:
+      concentrInletValues () : Function<dim>(1) {}
 
-     virtual double value (const Point<dim>   &p,
-                              const unsigned int  component = 0) const;
+      virtual double value (const Point<dim>   &p,
+                            const unsigned int  component = 0) const;
 
-     virtual void vector_value (const Point<dim> &p,
-                                   Vector<double>   &value) const;
+      virtual void vector_value (const Point<dim> &p,
+                                 Vector<double>   &value) const;
     };
 
 
@@ -149,7 +147,7 @@ namespace EquationData
     concentrInletValues<dim>::value (const Point<dim>  &p,
                                      const unsigned int) const
     {
-     return 0;
+      return 0;
     }
 
 
@@ -158,63 +156,62 @@ namespace EquationData
     concentrInletValues<dim>::vector_value (const Point<dim> &p,
                                             Vector<double>   &values) const
     {
-     for (unsigned int c=0; c<this->n_components; ++c)
-      values(c) = concentrInletValues<dim>::value (p, c);
+      for (unsigned int c=0; c<this->n_components; ++c)
+        values(c) = concentrInletValues<dim>::value (p, c);
     }
     
     template <int dim>
     class concentrInitialValues : public Function<dim>
     {
 
-     public:
+      public:
 
-     concentrInitialValues (double x);
+      concentrInitialValues (double x);
 
-     virtual double value (const Point<dim>   &p,
-                             const unsigned int  component = 0) const;
+      virtual double value (const Point<dim>   &p,
+                              const unsigned int  component = 0) const;
 
-     virtual void vector_value (const Point<dim> &p,
-                                   Vector<double>   &value) const;
+      virtual void vector_value (const Point<dim> &p,
+                                    Vector<double>   &value) const;
 
-     virtual void vector_value_list (const std::vector<Point<dim> > &p,
-                                     std::vector<Vector<double> > &values) const;
+      virtual void vector_value_list (const std::vector<Point<dim> > &p,
+                                      std::vector<Vector<double> > &values) const;
 
-     double x;
+      double x;
 
     };
 
     template <int dim>
     concentrInitialValues<dim>::concentrInitialValues (double x) :
     Function<dim>(1),
-    x (x)
-    {}
+    x (x) {}
 
     template <int dim>
     double concentrInitialValues<dim>::value (const Point<dim>  &p,
            const unsigned int component) const
     {
-     double zz = downstream_concentr;
+      double zz = downstream_concentr;
 
-     if (p[0] < x && dim == 2)  zz = upstream_concentr;
-     if (p[dim-1] < x && dim == 3)  zz = upstream_concentr;
+      if (p[0] < x && dim == 2)  zz = upstream_concentr;
+      if (p[dim-1] < x && dim == 3)  zz = upstream_concentr;
 
-     return zz;
+      return zz;
     }
 
     template <int dim>
     void concentrInitialValues<dim>::vector_value (const Point<dim> &p,
                                             Vector<double>   &values) const
     {
-     for (unsigned int c=0; c<this->n_components; ++c)
-      values(c) = concentrInitialValues<dim>::value (p, c);
+      for (unsigned int c=0; c<this->n_components; ++c)
+       values(c) = concentrInitialValues<dim>::value (p, c);
     }
 
     template <int dim>
     void concentrInitialValues<dim>::vector_value_list (const std::vector<Point<dim> > &points,
                                                  std::vector<Vector<double> >   &value_list) const
     {
-     for (unsigned int p=0; p<points.size(); ++p)
-       concentrInitialValues<dim>::vector_value (points[p], value_list[p]);
+      for (unsigned int p=0; p<points.size(); ++p)
+        concentrInitialValues<dim>::vector_value (points[p], value_list[p]);
     }
     
   } //END-EquationData

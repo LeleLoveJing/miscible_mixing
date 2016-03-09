@@ -1,0 +1,84 @@
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Generator\+:\+:Random\+Uniform\+Generator$<$ dim, T $>$ Class Template Reference}
+\label{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator$<$ dim, T $>$@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator$<$ dim, T $>$}}
+Inheritance diagram for ps\+\_\+mmm\+:\+:Particle\+:\+:Generator\+:\+:Random\+Uniform\+Generator$<$ dim, T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_a583230a57623763138135b4268fcc938}{Random\+Uniform\+Generator} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_acab198ee19a6972e015fce1f472349d9}{generate\+\_\+particles} (\hyperlink{classps__mmm_1_1_particle_1_1_world}{Particle\+::\+World}$<$ dim, T $>$ \&world, const double total\+\_\+num\+\_\+particles)
+\begin{DoxyCompactList}\small\item\em Generate a uniformly randomly distributed set of particles in the current triangulation. \end{DoxyCompactList}\item 
+void \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_a4f66c5035c5af52f15228265aa5d1457}{uniform\+\_\+random\+\_\+particles\+\_\+in\+\_\+subdomain} (\hyperlink{classps__mmm_1_1_particle_1_1_world}{Particle\+::\+World}$<$ dim, T $>$ \&world, const unsigned int num\+\_\+particles, const unsigned int start\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Generate a set of particles uniformly randomly distributed within the specified triangulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_a583230a57623763138135b4268fcc938}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}!Random\+Uniform\+Generator@{Random\+Uniform\+Generator}}
+\index{Random\+Uniform\+Generator@{Random\+Uniform\+Generator}!ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}}
+\paragraph[{Random\+Uniform\+Generator()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}$<$ dim, T $>$\+::{\bf Random\+Uniform\+Generator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_a583230a57623763138135b4268fcc938}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em The} & M\+P\+I communicator for synchronizing particle generation. \\
+\hline
+\end{DoxyParams}
+
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_acab198ee19a6972e015fce1f472349d9}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}!generate\+\_\+particles@{generate\+\_\+particles}}
+\index{generate\+\_\+particles@{generate\+\_\+particles}!ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}}
+\paragraph[{generate\+\_\+particles(\+Particle\+::\+World$<$ dim, T $>$ \&world, const double total\+\_\+num\+\_\+particles)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}$<$ dim, T $>$\+::generate\+\_\+particles (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle\+::\+World}$<$ dim, T $>$ \&}]{world, }
+\item[{const double}]{total\+\_\+num\+\_\+particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_acab198ee19a6972e015fce1f472349d9}
+
+
+Generate a uniformly randomly distributed set of particles in the current triangulation. 
+
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_interface_af5e1063d3042cd3244ffcfcdfe86757c}{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_a4f66c5035c5af52f15228265aa5d1457}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}!uniform\+\_\+random\+\_\+particles\+\_\+in\+\_\+subdomain@{uniform\+\_\+random\+\_\+particles\+\_\+in\+\_\+subdomain}}
+\index{uniform\+\_\+random\+\_\+particles\+\_\+in\+\_\+subdomain@{uniform\+\_\+random\+\_\+particles\+\_\+in\+\_\+subdomain}!ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}}
+\paragraph[{uniform\+\_\+random\+\_\+particles\+\_\+in\+\_\+subdomain(\+Particle\+::\+World$<$ dim, T $>$ \&world, const unsigned int num\+\_\+particles, const unsigned int start\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator}$<$ dim, T $>$\+::uniform\+\_\+random\+\_\+particles\+\_\+in\+\_\+subdomain (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle\+::\+World}$<$ dim, T $>$ \&}]{world, }
+\item[{const unsigned int}]{num\+\_\+particles, }
+\item[{const unsigned int}]{start\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_a4f66c5035c5af52f15228265aa5d1457}
+
+
+Generate a set of particles uniformly randomly distributed within the specified triangulation. 
+
+This is done using \char`\"{}roulette wheel\char`\"{} style selection weighted by cell volume. We do cell-\/by-\/cell assignment of particles because the decomposition of the mesh may result in a highly non-\/rectangular local mesh which makes uniform particle distribution difficult.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world} & The particle world the particles will exist in \\
+\hline
+\mbox{\tt in}  & {\em num\+\_\+particles} & The number of particles to generate in this subdomain \\
+\hline
+\mbox{\tt in}  & {\em start\+\_\+id} & The starting I\+D to assign to generated particles \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/\hyperlink{generator_8cc}{generator.\+cc}\end{DoxyCompactItemize}

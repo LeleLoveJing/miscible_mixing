@@ -1,0 +1,87 @@
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_interface}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Generator\+:\+:Interface$<$ dim, T $>$ Class Template Reference}
+\label{classps__mmm_1_1_particle_1_1_generator_1_1_interface}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface$<$ dim, T $>$@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface$<$ dim, T $>$}}
+
+
+Abstract base class used for classes that generate particles.  
+
+
+
+
+{\ttfamily \#include $<$generator.\+h$>$}
+
+Inheritance diagram for ps\+\_\+mmm\+:\+:Particle\+:\+:Generator\+:\+:Interface$<$ dim, T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classps__mmm_1_1_particle_1_1_generator_1_1_interface}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_interface_a1adf5ff14443557eeb1b1ff02b76ec60}{Interface} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_interface_aa5986d3cf735f41d53513bba0900e681}{$\sim$\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_interface_af5e1063d3042cd3244ffcfcdfe86757c}{generate\+\_\+particles} (\hyperlink{classps__mmm_1_1_particle_1_1_world}{Particle\+::\+World}$<$ dim, T $>$ \&world, const double total\+\_\+num\+\_\+particles)=0
+\begin{DoxyCompactList}\small\item\em Generate a specified number of particles in the specified world using the type of generation function implemented by this \hyperlink{namespaceps__mmm_1_1_particle_1_1_generator}{Generator}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$int dim, class T$>$class ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface$<$ dim, T $>$}
+
+Abstract base class used for classes that generate particles. 
+
+\subsubsection{Constructor \& Destructor Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_interface_a1adf5ff14443557eeb1b1ff02b76ec60}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}!Interface@{Interface}}
+\index{Interface@{Interface}!ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}}
+\paragraph[{Interface()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ {\bf ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}$<$ dim, T $>$\+::{\bf Interface} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classps__mmm_1_1_particle_1_1_generator_1_1_interface_a1adf5ff14443557eeb1b1ff02b76ec60}
+
+
+Constructor. 
+
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_interface_aa5986d3cf735f41d53513bba0900e681}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}!````~Interface@{$\sim$\+Interface}}
+\index{````~Interface@{$\sim$\+Interface}!ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}}
+\paragraph[{$\sim$\+Interface()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual {\bf ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}$<$ dim, T $>$\+::$\sim${\bf Interface} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_generator_1_1_interface_aa5986d3cf735f41d53513bba0900e681}
+
+
+Destructor. 
+
+Made virtual so that derived classes can be created and destroyed through pointers to the base class. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_generator_1_1_interface_af5e1063d3042cd3244ffcfcdfe86757c}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}!generate\+\_\+particles@{generate\+\_\+particles}}
+\index{generate\+\_\+particles@{generate\+\_\+particles}!ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface@{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}}
+\paragraph[{generate\+\_\+particles(\+Particle\+::\+World$<$ dim, T $>$ \&world, const double total\+\_\+num\+\_\+particles)=0}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Interface}$<$ dim, T $>$\+::generate\+\_\+particles (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle\+::\+World}$<$ dim, T $>$ \&}]{world, }
+\item[{const double}]{total\+\_\+num\+\_\+particles}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{classps__mmm_1_1_particle_1_1_generator_1_1_interface_af5e1063d3042cd3244ffcfcdfe86757c}
+
+
+Generate a specified number of particles in the specified world using the type of generation function implemented by this \hyperlink{namespaceps__mmm_1_1_particle_1_1_generator}{Generator}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em world} & The particle world the particles will exist in \\
+\hline
+\mbox{\tt in}  & {\em total\+\_\+num\+\_\+particles} & Total number of particles to generate. The actual number of generated particles may differ, for example if the generator reads particles from a file this parameter may be ignored. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator_acab198ee19a6972e015fce1f472349d9}{ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::\+Random\+Uniform\+Generator$<$ dim, T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/include/mismix/particle/\hyperlink{generator_8h}{generator.\+h}\end{DoxyCompactItemize}

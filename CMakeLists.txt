@@ -1,13 +1,16 @@
 # Set the name of the project and target:
 SET(TARGET ../test/mismix_p4est)
 
-file(GLOB _files source/AMR/*.cc 
-                 source/Main/*.cc 
-                 source/Pre_Processing/*.cc
-                 source/Support/*.cc
-                 source/Constitutive_Model/*.cc
-                 source/Post_Processing/*.cc
-                 source/Solver/*.cc)
+file(GLOB _files source/amr/*.cc 
+                 source/main/*.cc 
+                 source/pre_process/*.cc
+                 source/support/*.cc
+                 source/constitutive_model/*.cc
+                 source/post_process/*.cc
+                 source/solver/phase/*.cc
+                 source/particle/*.cc
+                 source/solver/navier_stokes/*.cc
+                 source/solver/stokes/*.cc)
 
 #ADD_SUBDIRECTORY(source/AMR)
 #ADD_SUBDIRECTORY(source/Main)

@@ -1,0 +1,30 @@
+\hypertarget{integrator_8cc}{}\subsection{/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/integrator.cc File Reference}
+\label{integrator_8cc}\index{/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/integrator.\+cc@{/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/integrator.\+cc}}
+{\ttfamily \#include $<$mismix/particle/integrator.\+h$>$}\\*
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator$<$ dim, T $>$}
+\begin{DoxyCompactList}\small\item\em Euler scheme integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt $\ast$ v(y\+\_\+n). \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K2\+Integrator$<$ dim, T $>$}
+\begin{DoxyCompactList}\small\item\em Runge Kutta second order integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt$\ast$v(0.\+5$\ast$k\+\_\+1), k\+\_\+1 = dt$\ast$v(y\+\_\+n). \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+R\+K4\+Integrator$<$ dim, T $>$}
+\begin{DoxyCompactList}\small\item\em Runge Kutta fourth order integrator, where y\+\_\+\{n+1\} = y\+\_\+n + (1/6)$\ast$k1 + (1/3)$\ast$k2 + (1/3)$\ast$k3 + (1/6)$\ast$k4 and k1, k2, k3, k4 are defined as usual. \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_hybrid_integrator}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Hybrid\+Integrator$<$ dim, T $>$}
+\begin{DoxyCompactList}\small\item\em \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator}{Integrator} which chooses Euler, R\+K2 or R\+K4 depending on characteristics of the cell a particle is in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceps__mmm}{ps\+\_\+mmm}
+\item 
+ \hyperlink{namespaceps__mmm_1_1_particle}{ps\+\_\+mmm\+::\+Particle}
+\item 
+ \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int dim, class T $>$ }\\Interface$<$ dim, T $>$ $\ast$ \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator_aff9038919a8d3a7325a41f9e049172e0}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::create\+\_\+integrator\+\_\+object} (const std\+::string \&integrator\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Create an integrator object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceps__mmm_1_1_particle_1_1_integrator_ad2d14aa5e78e1ee56a8f9511bb4055d8}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::integrator\+\_\+object\+\_\+names} ()
+\begin{DoxyCompactList}\small\item\em Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible integrator classes for particles. \end{DoxyCompactList}\end{DoxyCompactItemize}

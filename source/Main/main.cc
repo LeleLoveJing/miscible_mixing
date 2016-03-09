@@ -7,7 +7,7 @@
 int main (int argc, char *argv[])
 {
     using namespace dealii;
-    
+
     try
     {
         deallog.depth_console (0);

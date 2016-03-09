@@ -1,0 +1,161 @@
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Integrator\+:\+:Euler\+Integrator$<$ dim, T $>$ Class Template Reference}
+\label{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator$<$ dim, T $>$@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator$<$ dim, T $>$}}
+
+
+Euler scheme integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt $\ast$ v(y\+\_\+n).  
+
+
+Inheritance diagram for ps\+\_\+mmm\+:\+:Particle\+:\+:Integrator\+:\+:Euler\+Integrator$<$ dim, T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_af532d448a98f6202509183e2bc84cfc7}{integrate\+\_\+step} (\hyperlink{classps__mmm_1_1_particle_1_1_world}{Particle\+::\+World}$<$ dim, T $>$ $\ast$world, const double dt)
+\begin{DoxyCompactList}\small\item\em Perform an integration step of moving the particles by the specified timestep dt. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a44c5a363e86f8ed107c89b6d38d23cb9}{add\+\_\+mpi\+\_\+types} (std\+::vector$<$ \hyperlink{classps__mmm_1_1_particle_1_1_m_p_i_data_info}{M\+P\+I\+Data\+Info} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Secify the M\+P\+I types and data sizes involved in transferring integration related information between processes. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a828d3ce7730bc4faf56709f0d026f132}{data\+\_\+len} () const 
+\begin{DoxyCompactList}\small\item\em Return data length of the integration related data required for communication in terms of number of doubles. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_aa34c86ccfa31bdf02205546f4d57d722}{read\+\_\+data} (const std\+::vector$<$ double $>$ \&, const unsigned int \&pos, const double \&)
+\begin{DoxyCompactList}\small\item\em Read integration related data for a particle specified by id\+\_\+num from the data vector. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a6e86fe0923c8edb062fe8e713a9bf884}{write\+\_\+data} (std\+::vector$<$ double $>$ \&, const double \&) const 
+\begin{DoxyCompactList}\small\item\em Write integration related data to a vector for a particle specified by id\+\_\+num. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+\subsubsection*{template$<$int dim, class T$>$class ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator$<$ dim, T $>$}
+
+Euler scheme integrator, where y\+\_\+\{n+1\} = y\+\_\+n + dt $\ast$ v(y\+\_\+n). 
+
+This requires only one step per integration, and doesn\textquotesingle{}t involve any extra data. 
+
+\subsubsection{Member Function Documentation}
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a44c5a363e86f8ed107c89b6d38d23cb9}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}!add\+\_\+mpi\+\_\+types@{add\+\_\+mpi\+\_\+types}}
+\index{add\+\_\+mpi\+\_\+types@{add\+\_\+mpi\+\_\+types}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}}
+\paragraph[{add\+\_\+mpi\+\_\+types(std\+::vector$<$ M\+P\+I\+Data\+Info $>$ \&)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}$<$ dim, T $>$\+::add\+\_\+mpi\+\_\+types (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf M\+P\+I\+Data\+Info} $>$ \&}]{data\+\_\+info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a44c5a363e86f8ed107c89b6d38d23cb9}
+
+
+Secify the M\+P\+I types and data sizes involved in transferring integration related information between processes. 
+
+If the integrator samples velocities at different locations and the particle moves between processes during the integration step, the sampled velocities must be transferred with the particle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em data\+\_\+info} & Adds M\+P\+I data info to the specified vector indicating the quantity and type of values the integrator needs saved for this particle. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_aab598f85b5f1d9036122a35629f7b6e5}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a828d3ce7730bc4faf56709f0d026f132}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}!data\+\_\+len@{data\+\_\+len}}
+\index{data\+\_\+len@{data\+\_\+len}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}}
+\paragraph[{data\+\_\+len() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual unsigned int {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}$<$ dim, T $>$\+::data\+\_\+len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a828d3ce7730bc4faf56709f0d026f132}
+
+
+Return data length of the integration related data required for communication in terms of number of doubles. 
+
+\begin{DoxyReturn}{Returns}
+The number of doubles required to store the relevant integrator data. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_a66188d76381fde488b2a5b367123501c}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_af532d448a98f6202509183e2bc84cfc7}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}!integrate\+\_\+step@{integrate\+\_\+step}}
+\index{integrate\+\_\+step@{integrate\+\_\+step}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}}
+\paragraph[{integrate\+\_\+step(\+Particle\+::\+World$<$ dim, T $>$ $\ast$world, const double dt)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual bool {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}$<$ dim, T $>$\+::integrate\+\_\+step (
+\begin{DoxyParamCaption}
+\item[{{\bf Particle\+::\+World}$<$ dim, T $>$ $\ast$}]{world, }
+\item[{const double}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_af532d448a98f6202509183e2bc84cfc7}
+
+
+Perform an integration step of moving the particles by the specified timestep dt. 
+
+Implementations of this function must update the particle location. If the integrator requires multiple internal steps, this function must return true until all internal steps are finished. Between calls to this function the velocity at the updated particle positions is evaluated and passed to integrate\+\_\+step during the next call.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em world} & The world to integrate particles in. The particle positions will be changed in this function based on the integration scheme. \\
+\hline
+\mbox{\tt in}  & {\em dt} & The timestep length to perform the integration. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether this function needs to be called again (true) for additional integration steps or if all internal steps are complete (false). 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_ab5021dc21cc53a4b3f893b7c5310e1b0}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_aa34c86ccfa31bdf02205546f4d57d722}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}!read\+\_\+data@{read\+\_\+data}}
+\index{read\+\_\+data@{read\+\_\+data}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}}
+\paragraph[{read\+\_\+data(const std\+::vector$<$ double $>$ \&, const unsigned int \&pos, const double \&)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual unsigned int {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}$<$ dim, T $>$\+::read\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ double $>$ \&}]{data, }
+\item[{const unsigned int \&}]{pos, }
+\item[{const double \&}]{id\+\_\+num}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_aa34c86ccfa31bdf02205546f4d57d722}
+
+
+Read integration related data for a particle specified by id\+\_\+num from the data vector. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & The vector of double data to read from. \\
+\hline
+\mbox{\tt in}  & {\em pos} & The position in the data vector to start reading from. \\
+\hline
+\mbox{\tt in}  & {\em id\+\_\+num} & The id number of the particle to read the data for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position in the vector of the next unread double. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_af4db60d66fff7ad2e7eebf2657e3200e}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+\hypertarget{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a6e86fe0923c8edb062fe8e713a9bf884}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}!write\+\_\+data@{write\+\_\+data}}
+\index{write\+\_\+data@{write\+\_\+data}!ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator@{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}}
+\paragraph[{write\+\_\+data(std\+::vector$<$ double $>$ \&, const double \&) const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ virtual void {\bf ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Euler\+Integrator}$<$ dim, T $>$\+::write\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ double $>$ \&}]{data, }
+\item[{const double \&}]{id\+\_\+num}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{classps__mmm_1_1_particle_1_1_integrator_1_1_euler_integrator_a6e86fe0923c8edb062fe8e713a9bf884}
+
+
+Write integration related data to a vector for a particle specified by id\+\_\+num. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em data} & The vector of doubles to write integrator data into. \\
+\hline
+\mbox{\tt in}  & {\em id\+\_\+num} & The id number of the particle to read the data for. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classps__mmm_1_1_particle_1_1_integrator_1_1_interface_a1d483c5c2c3b55040415d32eb322b080}{ps\+\_\+mmm\+::\+Particle\+::\+Integrator\+::\+Interface$<$ dim, T $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/miranus/work/\+Devs/miscible\+\_\+mixing\+\_\+series/miscible\+\_\+mixing/source/particle/\hyperlink{integrator_8cc}{integrator.\+cc}\end{DoxyCompactItemize}

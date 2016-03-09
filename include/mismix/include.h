@@ -25,7 +25,6 @@
 #include <deal.II/lac/trilinos_vector.h>
 #include <deal.II/lac/trilinos_precondition.h>
 #include <deal.II/lac/trilinos_solver.h>
-#include <deal.II/lac/petsc_solver.h>
 
 #include <deal.II/grid/tria.h>
 #include <deal.II/grid/grid_in.h>

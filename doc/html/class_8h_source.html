@@ -114,107 +114,107 @@ $(document).ready(function(){initNavTree('class_8h_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim&gt;</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_u_b_c__mis__mixing.html">   15</a></span>&#160;  <span class="keyword">class </span><a class="code" href="class_u_b_c__mis__mixing.html">UBC_mis_mixing</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">public</span> :</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_u_b_c__mis__mixing_1_1_parameters.html">Parameters</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_u_b_c__mis__mixing.html#afa6c307e072aa39b67789ebf0d12f1ea">UBC_mis_mixing</a> (<a class="code" href="struct_u_b_c__mis__mixing_1_1_parameters.html">Parameters</a> &amp;parameters);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_b_c__mis__mixing.html#ae79c1b323d4871dce321243fafd0e368">run</a> ();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">private</span> :</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> print_input_parameters (); </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> create_triangulation ();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> assgined_boundary_indicator ();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setup_dofs_velocity ();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> setup_dofs_pressure ();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> setup_dofs_auxilary ();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> setup_dofs_concentr ();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setup_dofs_error    ();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> solve_fluid_equation (<span class="keywordtype">double</span> increase_dimless_vel);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> extrapolation_step ();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> diffusion_step (<span class="keywordtype">double</span> increase_dimless_vel);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> relaxation_div_velocity_step ();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> projection_step ();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> pressure_rot_step ();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> solution_update ();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> solve_concentr_equation (<span class="keyword">const</span> <span class="keywordtype">double</span> maximal_velocity);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> assemble_concentr_matrix ();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> assemble_concentr_system (<span class="keyword">const</span> <span class="keywordtype">double</span> maximal_velocity);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> project_concentr_field ();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">double</span> get_maximal_velocity () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">double</span> get_cfl_number () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">double</span> get_entropy_variation (<span class="keyword">const</span> <span class="keywordtype">double</span> average_concentr) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::pair&lt;double,double&gt; get_extrapolated_concentr_range () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> output_results (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> out_index);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> initial_refine_mesh ();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> loop_over_cell_error_indicator ();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> loop_over_cell_error_indicator2 ();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> compute_for_SymmTensorFlux ();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;   </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> refine_mesh (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_grid_level);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span>    save_data_and_mesh ();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span>    load_data_and_mesh ();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span>    move_file (<span class="keyword">const</span> std::string &amp;old_name,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                       <span class="keyword">const</span> std::string &amp;new_name);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span>    save_snapshot_template (std::vector&lt;const TrilinosWrappers::MPI::Vector *&gt; &amp;system,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                    std::stringstream                                  &amp;file_stream,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                    std::stringstream                                  &amp;file_zlib_stream,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                    DoFHandler&lt;dim&gt;                                    &amp;dof_handler_this);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">private</span> :</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> print_input_parameters (); </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> create_triangulation ();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> assgined_boundary_indicator ();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> setup_dofs_velocity ();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> setup_dofs_pressure ();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> setup_dofs_auxilary ();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> setup_dofs_concentr ();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setup_dofs_error    ();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> solve_fluid_equation (<span class="keywordtype">double</span> increase_dimless_vel);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> extrapolation_step ();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> diffusion_step (<span class="keywordtype">double</span> increase_dimless_vel);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> relaxation_div_velocity_step ();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> projection_step ();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> pressure_rot_step ();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> solution_update ();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> solve_concentr_equation (<span class="keyword">const</span> <span class="keywordtype">double</span> maximal_velocity);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> assemble_concentr_matrix ();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> assemble_concentr_system (<span class="keyword">const</span> <span class="keywordtype">double</span> maximal_velocity);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> project_concentr_field ();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">double</span> get_maximal_velocity () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">double</span> get_cfl_number () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">double</span> get_entropy_variation (<span class="keyword">const</span> <span class="keywordtype">double</span> average_concentr) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::pair&lt;double,double&gt; get_extrapolated_concentr_range () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> output_results (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> out_index);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> initial_refine_mesh ();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> loop_over_cell_error_indicator ();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> loop_over_cell_error_indicator2 ();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> compute_for_SymmTensorFlux ();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;   </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> refine_mesh (<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> max_grid_level);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span>    save_data_and_mesh ();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span>    load_data_and_mesh ();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span>    move_file (<span class="keyword">const</span> std::string &amp;old_name,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                       <span class="keyword">const</span> std::string &amp;new_name);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span>    save_snapshot_template (std::vector&lt;const TrilinosWrappers::MPI::Vector *&gt; &amp;system,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                    std::stringstream                                  &amp;file_stream,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                    std::stringstream                                  &amp;file_zlib_stream,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                    DoFHandler&lt;dim&gt;                                    &amp;dof_handler_this);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span>    load_snapshot_template (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                       which_variable,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                    std::stringstream                                  &amp;file_stream,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                    std::stringstream                                  &amp;file_zlib_stream);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span>    load_snapshot_template (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                       which_variable,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                    std::stringstream                                  &amp;file_stream,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                    std::stringstream                                  &amp;file_zlib_stream);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span>    compute_for_avrage_quantities_surfIntgl (std::ofstream &amp;out_avr_c,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                     std::ofstream &amp;out_avr_vFlow_c,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                     std::ofstream &amp;out_avr_vvFlow_c,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                     std::ofstream &amp;out_avr_vvLati_c,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                     std::ofstream &amp;out_avr_vvDept_c);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span>    compute_for_post_error (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> no_type, </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                    Vector&lt;float&gt; &amp;estimated_error_per_cell);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">double</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    compute_entropy_viscosity_for_hyperbolic(</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_concentr,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_old_concentr,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_concentr_grads,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_old_concentr_grads,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_concentr_laplacians,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_old_concentr_laplacians,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_velocity_values,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_old_velocity_values,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                              <span class="keyword">const</span> std::vector&lt;SymmetricTensor&lt;2,dim&gt; &gt; &amp;old_strain_rates,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                              <span class="keyword">const</span> std::vector&lt;SymmetricTensor&lt;2,dim&gt; &gt; &amp;old_old_strain_rates,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           global_u_infty,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           global_T_variation,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           average_concentr,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           global_entropy_variation,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           cell_diameter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    std::pair&lt;double,double&gt;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    compute_entropy_viscosity_for_navier_stokes(</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_velocity,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_old_velocity,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;2,dim&gt; &gt;     &amp;old_velocity_grads,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_velocity_laplacians,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_pressure_grads,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                              <span class="keyword">const</span> Tensor&lt;1,dim&gt;                   &amp;source_vector,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           coeff1_for_adv,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           coeff2_for_visco,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           coeff3_for_source,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           cell_diameter) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> compute_global_error_norm (std::ofstream &amp;);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::pair&lt;double,double&gt; compute_discont_variable_on_cell (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                               std::vector&lt;double&gt; &amp;,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                                               std::vector&lt;Tensor&lt;2,dim&gt; &gt; &amp;);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span>    compute_for_avrage_quantities_surfIntgl (std::ofstream &amp;out_avr_c,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                     std::ofstream &amp;out_avr_vFlow_c,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                     std::ofstream &amp;out_avr_vvFlow_c,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                     std::ofstream &amp;out_avr_vvLati_c,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                     std::ofstream &amp;out_avr_vvDept_c);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span>    compute_for_post_error (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> no_type, </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                    Vector&lt;float&gt; &amp;estimated_error_per_cell);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">double</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    compute_entropy_viscosity_for_hyperbolic(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_concentr,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_old_concentr,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_concentr_grads,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_old_concentr_grads,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_concentr_laplacians,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;             &amp;old_old_concentr_laplacians,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_velocity_values,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_old_velocity_values,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                              <span class="keyword">const</span> std::vector&lt;SymmetricTensor&lt;2,dim&gt; &gt; &amp;old_strain_rates,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                              <span class="keyword">const</span> std::vector&lt;SymmetricTensor&lt;2,dim&gt; &gt; &amp;old_old_strain_rates,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           global_u_infty,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           global_T_variation,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           average_concentr,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           global_entropy_variation,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           cell_diameter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::pair&lt;double,double&gt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    compute_entropy_viscosity_for_navier_stokes(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_velocity,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_old_velocity,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;2,dim&gt; &gt;     &amp;old_velocity_grads,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_velocity_laplacians,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                              <span class="keyword">const</span> std::vector&lt;Tensor&lt;1,dim&gt; &gt;     &amp;old_pressure_grads,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                              <span class="keyword">const</span> Tensor&lt;1,dim&gt;                   &amp;source_vector,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           coeff1_for_adv,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           coeff2_for_visco,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           coeff3_for_source,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                              <span class="keyword">const</span> <span class="keywordtype">double</span>                           cell_diameter) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> compute_global_error_norm (std::ofstream &amp;);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::pair&lt;double,double&gt; compute_discont_variable_on_cell (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                               std::vector&lt;double&gt; &amp;,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                               std::vector&lt;Tensor&lt;2,dim&gt; &gt; &amp;);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">public</span> :</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_u_b_c__mis__mixing_1_1_parameters.html">Parameters</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_u_b_c__mis__mixing.html#afa6c307e072aa39b67789ebf0d12f1ea">UBC_mis_mixing</a> (<a class="code" href="struct_u_b_c__mis__mixing_1_1_parameters.html">Parameters</a> &amp;parameters);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_u_b_c__mis__mixing.html#ae79c1b323d4871dce321243fafd0e368">run</a> ();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">public</span> :</div>
 <div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="struct_u_b_c__mis__mixing_1_1_parameters.html">  120</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_u_b_c__mis__mixing_1_1_parameters.html">Parameters</a></div>
@@ -585,7 +585,7 @@ $(document).ready(function(){initNavTree('class_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_9e51036813d6151dfecc72d5fa7c02b3.html">Users</a></li><li class="navelem"><a class="el" href="dir_01d45c4c1f296b17431a75f9a08dc6da.html">miranus</a></li><li class="navelem"><a class="el" href="dir_ab768de8934b5e1ea8bd73b273f3e7d9.html">work</a></li><li class="navelem"><a class="el" href="dir_8f206134eec618ab61599200f87a9a81.html">Devs</a></li><li class="navelem"><a class="el" href="dir_287d60dd4b0e499af16288d0827e5afe.html">miscible_mixing_series</a></li><li class="navelem"><a class="el" href="dir_890b2b0d01e374d2ff900789cff27ede.html">miscible_mixing</a></li><li class="navelem"><a class="el" href="dir_2480799f9debc468e3b0d8d37167df51.html">include</a></li><li class="navelem"><a class="el" href="dir_4ea4f9911567d5039519c1538c0216cb.html">mismix</a></li><li class="navelem"><a class="el" href="class_8h.html">class.h</a></li>
-    <li class="footer">Generated on Tue Mar 8 2016 22:53:49 for PS-MMM : Parallel Simulator for (IM-)Miscible Multi-Phase Mixing Flow by
+    <li class="footer">Generated on Thu Mar 10 2016 04:55:26 for PS-MMM : Parallel Simulator for (IM-)Miscible Multi-Phase Mixing Flow by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

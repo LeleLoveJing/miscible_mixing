@@ -1,0 +1,49 @@
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_generator}{}\subsection{ps\+\_\+mmm\+:\+:Particle\+:\+:Generator Namespace Reference}
+\label{namespaceps__mmm_1_1_particle_1_1_generator}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator}}
+\subsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_interface}{Interface}
+\begin{DoxyCompactList}\small\item\em Abstract base class used for classes that generate particles. \end{DoxyCompactList}\item 
+class \hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_random_uniform_generator}{Random\+Uniform\+Generator}
+\end{DoxyCompactItemize}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int dim, class T $>$ }\\\hyperlink{classps__mmm_1_1_particle_1_1_generator_1_1_interface}{Interface}$<$ dim, T $>$ $\ast$ \hyperlink{namespaceps__mmm_1_1_particle_1_1_generator_afe60bf37b63313495eb459cf11c071b5}{create\+\_\+generator\+\_\+object} (const std\+::string \&generator\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Create a generator object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespaceps__mmm_1_1_particle_1_1_generator_a93ad21f27ac5821f6c3a398db128537c}{generator\+\_\+object\+\_\+names} ()
+\begin{DoxyCompactList}\small\item\em Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible particle generators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_generator_afe60bf37b63313495eb459cf11c071b5}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator}!create\+\_\+generator\+\_\+object@{create\+\_\+generator\+\_\+object}}
+\index{create\+\_\+generator\+\_\+object@{create\+\_\+generator\+\_\+object}!ps\+\_\+mmm\+::\+Particle\+::\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator}}
+\paragraph[{create\+\_\+generator\+\_\+object(const std\+::string \&generator\+\_\+type)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$int dim, class T $>$ {\bf Interface}$<$ dim, T $>$ $\ast$ ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::create\+\_\+generator\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{generator\+\_\+type}
+\end{DoxyParamCaption}
+)}\label{namespaceps__mmm_1_1_particle_1_1_generator_afe60bf37b63313495eb459cf11c071b5}
+
+
+Create a generator object. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em generator\+\_\+type} & Name of the type of generator to create \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the generator. Caller needs to delete this pointer. 
+\end{DoxyReturn}
+\hypertarget{namespaceps__mmm_1_1_particle_1_1_generator_a93ad21f27ac5821f6c3a398db128537c}{}\index{ps\+\_\+mmm\+::\+Particle\+::\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator}!generator\+\_\+object\+\_\+names@{generator\+\_\+object\+\_\+names}}
+\index{generator\+\_\+object\+\_\+names@{generator\+\_\+object\+\_\+names}!ps\+\_\+mmm\+::\+Particle\+::\+Generator@{ps\+\_\+mmm\+::\+Particle\+::\+Generator}}
+\paragraph[{generator\+\_\+object\+\_\+names()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string ps\+\_\+mmm\+::\+Particle\+::\+Generator\+::generator\+\_\+object\+\_\+names (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespaceps__mmm_1_1_particle_1_1_generator_a93ad21f27ac5821f6c3a398db128537c}
+
+
+Return a list of names (separated by \textquotesingle{}$\vert$\textquotesingle{}) of possible particle generators. 
+

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ubc_5fmis_5fmixing',['UBC_mis_mixing',['../class_u_b_c__mis__mixing.html#afa6c307e072aa39b67789ebf0d12f1ea',1,'UBC_mis_mixing']]]
+  ['local',['local',['../classps__mmm_1_1_particle_1_1_base_particle.html#ac5cf041fb75d56259a3bc62760abf5b5',1,'ps_mmm::Particle::BaseParticle']]]
 ];
