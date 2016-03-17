@@ -33,7 +33,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "amr_8cc.html",
-"namespaceps__mmm_1_1_particle_1_1_generator.html"
+"namespace_assembly_1_1_scratch.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

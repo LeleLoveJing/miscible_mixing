@@ -33,6 +33,7 @@ var hierarchy =
       [ "ps_mmm::Particle::Integrator::RK2Integrator< dim, T >", "classps__mmm_1_1_particle_1_1_integrator_1_1_r_k2_integrator.html", null ],
       [ "ps_mmm::Particle::Integrator::RK4Integrator< dim, T >", "classps__mmm_1_1_particle_1_1_integrator_1_1_r_k4_integrator.html", null ]
     ] ],
+    [ "ps_mmm::immicible::Levelset< dim >", "classps__mmm_1_1immicible_1_1_levelset.html", null ],
     [ "ps_mmm::Particle::MPIDataInfo", "classps__mmm_1_1_particle_1_1_m_p_i_data_info.html", null ],
     [ "UBC_mis_mixing< dim >::Parameters", "struct_u_b_c__mis__mixing_1_1_parameters.html", null ],
     [ "Assembly::Scratch::pressure_rot_step< dim >", "struct_assembly_1_1_scratch_1_1pressure__rot__step.html", null ],

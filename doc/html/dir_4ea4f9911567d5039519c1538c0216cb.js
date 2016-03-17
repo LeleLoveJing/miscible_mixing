@@ -1,6 +1,7 @@
 var dir_4ea4f9911567d5039519c1538c0216cb =
 [
     [ "particle", "dir_f4c7d7ebaa1bc821a9575111314d3bc9.html", "dir_f4c7d7ebaa1bc821a9575111314d3bc9" ],
+    [ "phase", "dir_97bb3b26a410cd9afc79d5e0ac93707c.html", "dir_97bb3b26a410cd9afc79d5e0ac93707c" ],
     [ "assembly_copydata.h", "assembly__copydata_8h.html", [
       [ "diffusion_step", "struct_assembly_1_1_scratch_1_1diffusion__step.html", "struct_assembly_1_1_scratch_1_1diffusion__step" ],
       [ "relaxation_div_velocity_step", "struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step.html", "struct_assembly_1_1_scratch_1_1relaxation__div__velocity__step" ],

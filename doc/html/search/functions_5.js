@@ -10,6 +10,7 @@ var searchData=
   ['get_5fmapping',['get_mapping',['../classps__mmm_1_1_particle_1_1_world.html#a01a471e7660f9a740216567d9f476b08',1,'ps_mmm::Particle::World']]],
   ['get_5fnames',['get_names',['../class_u_b_c__mis__mixing_1_1_postprocessor.html#a05ee9a5d6d913c2fe41cb67f9f6f3893',1,'UBC_mis_mixing::Postprocessor']]],
   ['get_5fneeded_5fupdate_5fflags',['get_needed_update_flags',['../class_u_b_c__mis__mixing_1_1_postprocessor.html#a002ab5928ee9d405325b9804355ccb9c',1,'UBC_mis_mixing::Postprocessor']]],
+  ['get_5fparameters',['get_parameters',['../classps__mmm_1_1immicible_1_1_levelset.html#a25af16f71dcb1ab8565e5be3f2cc17fb',1,'ps_mmm::immicible::Levelset']]],
   ['get_5fparticle_5fvelocities',['get_particle_velocities',['../classps__mmm_1_1_particle_1_1_world.html#a6050b826fa0e9a84cbd341d67894c17c',1,'ps_mmm::Particle::World']]],
   ['get_5fparticles',['get_particles',['../classps__mmm_1_1_particle_1_1_world.html#a5d6070289c4f84978f4577dfafc1bbd1',1,'ps_mmm::Particle::World::get_particles()'],['../classps__mmm_1_1_particle_1_1_world.html#a27f16128b40b4645ccebac61e4181d8a',1,'ps_mmm::Particle::World::get_particles() const ']]],
   ['get_5fsolution',['get_solution',['../classps__mmm_1_1_particle_1_1_world.html#afe9e737c5bbbacdc4fcaf38944c16b5b',1,'ps_mmm::Particle::World']]],

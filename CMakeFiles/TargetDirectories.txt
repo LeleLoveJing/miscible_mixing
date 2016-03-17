@@ -1,0 +1,9 @@
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/../test/mismix_p4est.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/runclean.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/sign.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/strip_comments.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/run.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/info.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/debug.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/distclean.dir
+/Users/miranus/work/Devs/miscible_mixing_series/miscible_mixing/CMakeFiles/release.dir
