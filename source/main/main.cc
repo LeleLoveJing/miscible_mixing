@@ -4,83 +4,18 @@
 #include <mismix/class.h>
 #include <mismix/parameter.h>
 
-// get the value of a particular parameter from the contents of the input
-// file. return an empty string if not found
-std::string
-get_last_value_of_parameter(const std::string &parameters,
-                            const std::string &parameter_name)
-{
-  std::string return_value;
-
-  std::istringstream x_file(parameters);
-  while (x_file)
-    {
-      // get one line and strip spaces at the front and back
-      std::string line;
-      std::getline(x_file, line);
-      while ((line.size() > 0) && (line[0] == ' ' || line[0] == '\t'))
-        line.erase(0, 1);
-      while ((line.size() > 0)
-             && (line[line.size() - 1] == ' ' || line[line.size() - 1] == '\t'))
-        line.erase(line.size() - 1, std::string::npos);
-      // now see whether the line starts with 'set' followed by multiple spaces
-      // if not, try next line
-      if (line.size() < 4)
-        continue;
-
-      if ((line[0] != 's') || (line[1] != 'e') || (line[2] != 't')
-          || !(line[3] == ' ' || line[3] == '\t'))
-        continue;
-
-      // delete the "set " and then delete more spaces if present
-      line.erase(0, 4);
-      while ((line.size() > 0) && (line[0] == ' ' || line[0] == '\t'))
-        line.erase(0, 1);
-      // now see whether the next word is the word we look for
-      if (line.find(parameter_name) != 0)
-        continue;
-
-      line.erase(0, parameter_name.size());
-      while ((line.size() > 0) && (line[0] == ' ' || line[0] == '\t'))
-        line.erase(0, 1);
-
-      // we'd expect an equals size here
-      if ((line.size() < 1) || (line[0] != '='))
-        continue;
-
-      // remove comment
-      std::string::size_type pos = line.find('#');
-      if (pos != std::string::npos)
-        line.erase (pos);
-
-      // trim the equals sign at the beginning and possibly following spaces
-      // as well as spaces at the end
-      line.erase(0, 1);
-      while ((line.size() > 0) && (line[0] == ' ' || line[0] == '\t'))
-        line.erase(0, 1);
-      while ((line.size() > 0) && (line[line.size()-1] == ' ' || line[line.size()-1] == '\t'))
-        line.erase(line.size()-1, std::string::npos);
-
-      // the rest should now be what we were looking for
-      return_value = line;
-    }
-
-  return return_value;
-}
-
 // extract the dimension in which to run ps_MMM from the
 // the contents of the parameter file. this is something that
 // we need to do before processing the parameter file since we
 // need to know whether to use the dim=2 or dim=3 instantiation
 // of the main classes
 unsigned int
-get_dimension(const std::string &parameters)
+get_dimension(std::ifstream &input_string_dimension)
 {
-  const std::string dimension = get_last_value_of_parameter(parameters, "Dimension");
-  if (dimension.size() > 0)
-    return dealii::Utilities::string_to_int (dimension);
-  else
-    return 2;
+  std::string output_string;
+  input_string_dimension >> output_string;
+
+  return dealii::Utilities::string_to_int (output_string);
 }
 
 int main (int argc, char *argv[])
@@ -106,13 +41,9 @@ int main (int argc, char *argv[])
        return 0;
      }
 
-//     int dimn;
-//     std::ifstream dim_xx ("dimension.prm");
-//     dim_xx >> dimn;
-
-     const unsigned int dimn = get_dimension(parameter_filename);
-
-     std::cout << "<-- " << dimn << " Dimension Input" << std::endl;
+     std::ifstream input_string_dimension ("dimension.prm");
+     const unsigned int dimn = get_dimension(input_string_dimension);
+     std::cout << "#### " << dimn << " Dimensional ps-MMM Simulation......" << std::endl;
 
      switch (dimn)
      {
